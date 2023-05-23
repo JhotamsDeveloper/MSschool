@@ -67,6 +67,10 @@ public partial class MsschoolContext: DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Settings();
+        modelBuilder.Entity<Category>()
+            .HasData(MsschoolContextSeed
+            .PreloadedCategories());
+        
         OnModelCreatingPartial(modelBuilder);
     }
 

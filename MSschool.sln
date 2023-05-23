@@ -5,21 +5,25 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7D3F33B1-958C-4A8B-8691-AD0F3159B7D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Presentation.Api", "MSschool.Presentation.Api\MSschool.Presentation.Api.csproj", "{506B3421-BB41-44C1-A059-424218824344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Presentation.Api", "MSschool.Presentation.Api\MSschool.Presentation.Api.csproj", "{506B3421-BB41-44C1-A059-424218824344}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSschool.Presentation", "MSschool.Presentation", "{E0A91A91-444C-484A-A23D-99805253BFA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Presentation.Endpoints", "MSschool.Presentation.Endpoints\MSschool.Presentation.Endpoints.csproj", "{3F6FBC64-A83C-4E68-A834-0F19C093498C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Presentation.Endpoints", "MSschool.Presentation.Endpoints\MSschool.Presentation.Endpoints.csproj", "{3F6FBC64-A83C-4E68-A834-0F19C093498C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSschool.Infrastructure", "MSschool.Infrastructure", "{127541B6-CF06-45BB-A219-DD84CB260B45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Infrastructure.EntityFramework", "MSschool.Infrastructure.EntityFramework\MSschool.Infrastructure.EntityFramework.csproj", "{BD76833E-E2F0-4C7A-A548-9C6BAE721693}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Infrastructure.EntityFramework", "MSschool.Infrastructure.EntityFramework\MSschool.Infrastructure.EntityFramework.csproj", "{BD76833E-E2F0-4C7A-A548-9C6BAE721693}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSschool.Core", "MSschool.Core", "{C216A20A-751D-453D-A51C-A1B1BC64D767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Application", "MSschool.Application\MSschool.Application.csproj", "{A58EC9BE-96E2-448B-8E58-63A3E24E84F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Application", "MSschool.Application\MSschool.Application.csproj", "{A58EC9BE-96E2-448B-8E58-63A3E24E84F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Application.Domain", "MSschool.Application.Domain\MSschool.Application.Domain.csproj", "{1867C6C9-CBF3-408B-AB4D-379C0EA87CEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Application.Domain", "MSschool.Application.Domain\MSschool.Application.Domain.csproj", "{1867C6C9-CBF3-408B-AB4D-379C0EA87CEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{99EC0E23-F043-4041-A49A-05D2C5E14DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Test", "MSschool.Test\MSschool.Test.csproj", "{91103066-B405-4CF4-8204-6C112A135441}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,10 @@ Global
 		{1867C6C9-CBF3-408B-AB4D-379C0EA87CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1867C6C9-CBF3-408B-AB4D-379C0EA87CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1867C6C9-CBF3-408B-AB4D-379C0EA87CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91103066-B405-4CF4-8204-6C112A135441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91103066-B405-4CF4-8204-6C112A135441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91103066-B405-4CF4-8204-6C112A135441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91103066-B405-4CF4-8204-6C112A135441}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 		{C216A20A-751D-453D-A51C-A1B1BC64D767} = {7D3F33B1-958C-4A8B-8691-AD0F3159B7D8}
 		{A58EC9BE-96E2-448B-8E58-63A3E24E84F4} = {C216A20A-751D-453D-A51C-A1B1BC64D767}
 		{1867C6C9-CBF3-408B-AB4D-379C0EA87CEE} = {C216A20A-751D-453D-A51C-A1B1BC64D767}
+		{91103066-B405-4CF4-8204-6C112A135441} = {99EC0E23-F043-4041-A49A-05D2C5E14DFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F3310CD-A715-4D09-BDE3-AEA986305537}

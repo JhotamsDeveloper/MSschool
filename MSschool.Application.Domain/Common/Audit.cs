@@ -1,6 +1,6 @@
 ﻿namespace MSschool.Application.Domain.Common
 {
-    public class Audit
+    public partial class Audit
     {
         public Guid Id { get; set; }
         public bool Availability { get; set; }
