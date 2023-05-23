@@ -3,5 +3,5 @@
 public interface IUnitOfWork : IDisposable
 {
     IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : class;
-    Task<int> Complete();
+    ValueTask<int> Complete();
 }

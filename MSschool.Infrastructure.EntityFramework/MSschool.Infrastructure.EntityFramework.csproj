@@ -19,8 +19,4 @@
     <ProjectReference Include="..\MSschool.Application\MSschool.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
