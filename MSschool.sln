@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Application.Domain
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{99EC0E23-F043-4041-A49A-05D2C5E14DFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Test", "MSschool.Test\MSschool.Test.csproj", "{91103066-B405-4CF4-8204-6C112A135441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Test", "MSschool.Test\MSschool.Test.csproj", "{91103066-B405-4CF4-8204-6C112A135441}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

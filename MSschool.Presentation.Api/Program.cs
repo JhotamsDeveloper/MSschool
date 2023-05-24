@@ -1,4 +1,14 @@
+using MSschool.Application;
+using MSschool.Infrastructure.EntityFramework;
+
+private readonly IConfiguration? Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services
+    .AddInfraestructureEntityFramework(null)
+    .AddAplication();
+
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
