@@ -1,12 +1,11 @@
 using MSschool.Application;
 using MSschool.Infrastructure.EntityFramework;
 
-private readonly IConfiguration? Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
-    .AddInfraestructureEntityFramework(null)
+    .AddInfraestructureEntityFramework(builder.Configuration)
     .AddAplication();
 
 

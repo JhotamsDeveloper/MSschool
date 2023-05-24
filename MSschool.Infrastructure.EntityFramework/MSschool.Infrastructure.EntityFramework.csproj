@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MSschool.Application\MSschool.Application.csproj" />
-    <ProjectReference Include="..\MSschool.Common\MSschool.Common.csproj" />
   </ItemGroup>
 
 </Project>
