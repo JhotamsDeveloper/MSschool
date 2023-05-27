@@ -12,6 +12,7 @@ namespace MSschool.Infrastructure.EntityFramework
         {
             services.AddDbContext<MsschoolContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("ConnectionString")));
+
             return services;
         }
     }

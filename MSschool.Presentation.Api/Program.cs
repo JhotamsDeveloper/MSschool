@@ -1,4 +1,6 @@
 using Carter;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using MSschool.Application;
 using MSschool.Infrastructure.EntityFramework;
 
@@ -13,6 +15,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCarter();
+
+
+builder.Services.AddHealthChecks();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -23,5 +29,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapCarter();
 app.UseHttpsRedirection();
+
+app.MapHealthChecks("/health");
 
 app.Run();
