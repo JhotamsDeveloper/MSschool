@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Constants\" />
     <Folder Include="Contracts\Insfrastructure\" />
-    <Folder Include="Features\" />
     <Folder Include="Handlers\" />
     <Folder Include="Mappings\" />
     <Folder Include="Models\" />
