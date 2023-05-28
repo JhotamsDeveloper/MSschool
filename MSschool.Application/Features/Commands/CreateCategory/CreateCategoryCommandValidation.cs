@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSschool.Application.Features.Commands.CreateCategory
 {
-    internal class CreateCommandValidation
+    internal class CreateCategoryCommandValidation
     {
     }
 }

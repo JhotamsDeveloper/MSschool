@@ -7,6 +7,10 @@ namespace MSschool.Application
         public static IServiceCollection AddAplication(
             this IServiceCollection services)
         {
+            var assemby = typeof(DependencyInjection).Assembly;
+
+            services.AddMediatR(configuration =>
+                configuration.RegisterServicesFromAssembly(assemby));
 
             return services;
         }

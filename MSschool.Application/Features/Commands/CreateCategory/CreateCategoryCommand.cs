@@ -3,7 +3,7 @@ using MSschool.Application.Domain.Common;
 
 namespace MSschool.Application.Features.Commands.CreateCategory;
 
-public record CreateCommand(
+public record CreateCategoryCommand(
     string Name, 
     string Description,
     Guid DreatedByIdUser) : IRequest<Id>;

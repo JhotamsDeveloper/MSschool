@@ -2,20 +2,19 @@
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
-using System.ComponentModel.DataAnnotations;
 
 namespace MSschool.Application.Features.Commands.CreateCategory;
 
-internal class CreateCommandHandler : IRequestHandler<CreateCommand,Id>
+internal class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Id>
 {
     private readonly IUnitOfWork _unitOfWork;
 
-    public CreateCommandHandler(IUnitOfWork unitOfWork)
+    public CreateCategoryCommandHandler(IUnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<Id> Handle(CreateCommand request, CancellationToken cancellationToken)
+    public async Task<Id> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
     {
         var category = new Category(
             new Id(Guid.NewGuid()),
