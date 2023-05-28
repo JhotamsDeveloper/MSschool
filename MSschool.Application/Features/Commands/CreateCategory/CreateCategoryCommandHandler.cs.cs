@@ -1,4 +1,5 @@
 ﻿using MSschool.Application.Abstracions;
+using MSschool.Application.Constants;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
@@ -15,7 +16,7 @@ internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComm
     }
 
     public async Task<Id> Handle(
-        CreateCategoryCommand request, 
+        CreateCategoryCommand request,
         CancellationToken cancellationToken)
     {
         var existCategory = await _unitOfWork
@@ -23,9 +24,8 @@ internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComm
             .Exitst(e => e.Name!.Equals(new Name(request.Name)));
 
         if (existCategory)
-        {
-            throw new Exception("La categoria que esta intando registrar ya existe");
-        }
+            throw new Exception(
+                "La categoria que esta intando registrar ya existe");
 
         var category = new Category(
             new Id(Guid.NewGuid()),
@@ -33,11 +33,15 @@ internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComm
             request.Description,
             new Id(request.DreatedByIdUser));
 
-        await _unitOfWork.Repository<Category>().AddAsync(category);
+        await _unitOfWork
+            .Repository<Category>()
+            .AddAsync(category);
+
         var result = await _unitOfWork.SaveChangesAsync();
 
-        if (result.Equals(0))
-            throw new Exception("Error al guardar la categoria");
+        if (result.Equals(UnitOfWorkSaveChangesEnum.Failed))
+            throw new Exception(
+                "Error al guardar la categoria");
 
         return category.Id;
     }
