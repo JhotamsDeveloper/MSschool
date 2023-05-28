@@ -4,6 +4,7 @@ using MSschool.Infrastructure.EntityFramework.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MSschool.Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(MsschoolContext))]
-    partial class MsschoolContextModelSnapshot : ModelSnapshot
+    [Migration("20230528010833_v0-0-3")]
+    partial class v003
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,14 +38,14 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -68,8 +71,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -80,8 +83,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<Guid?>("IdUser")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -108,8 +111,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -123,8 +126,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<Guid?>("IdInstitution")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -163,8 +166,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -173,8 +176,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -183,6 +186,9 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("number")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
@@ -190,21 +196,15 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("48d3c63c-a34a-4e80-99c2-068aab3c6a04"),
-                            Availability = true,
-                            CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 27, 21, 24, 8, 119, DateTimeKind.Unspecified).AddTicks(6474),
-                            Description = "Persona que presta los servicios de docencia a la institución.",
-                            Name = "Docente"
+                            Id = new Guid("612d88f0-e9b6-4110-b664-089feed2008e"),
+                            Availability = false,
+                            number = 0
                         },
                         new
                         {
-                            Id = new Guid("91e1a27d-6184-4e23-a63c-394505f78b3e"),
-                            Availability = true,
-                            CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 27, 21, 24, 8, 119, DateTimeKind.Unspecified).AddTicks(6502),
-                            Description = "Persona que se encuentra estudiando a la institución.",
-                            Name = "Estudiante"
+                            Id = new Guid("16369831-5518-4615-b13f-fa74f7155d0d"),
+                            Availability = false,
+                            number = 0
                         });
                 });
 
@@ -216,8 +216,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -231,8 +231,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<Guid?>("IdUser")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -284,8 +284,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nchar(10)")
                         .IsFixedLength();
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -306,8 +306,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -330,8 +330,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -342,8 +342,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<Guid?>("IdAcademicProgram")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -371,8 +371,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -380,8 +380,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<int>("Credit")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -416,8 +416,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -428,8 +428,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<Guid?>("IdSubject")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -451,8 +451,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -463,8 +463,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<Guid?>("IdUser")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -490,8 +490,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -502,8 +502,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<Guid?>("IdUser")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -552,8 +552,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -596,8 +596,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nchar(10)")
                         .IsFixedLength();
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -632,8 +632,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("CreatedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -644,8 +644,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.Property<int?>("Iva")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("LastModifiedByIdUser")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");

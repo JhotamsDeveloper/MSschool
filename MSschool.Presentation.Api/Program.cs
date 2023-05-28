@@ -1,6 +1,4 @@
 using Carter;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using MSschool.Application;
 using MSschool.Infrastructure.EntityFramework;
 

@@ -1,12 +1,22 @@
-﻿namespace MSschool.Application.Domain.Common
+﻿using MSschool.Application.Domain.Helpers;
+
+namespace MSschool.Application.Domain.Common
 {
     public partial class Audit
     {
-        public Guid Id { get; set; }
-        public bool Availability { get; set; }
-        public DateTime? CreatedDate { get; set; }
-        public string? CreatedBy { get; set; }
-        public DateTime? LastModifiedDate { get; set; }
-        public string? LastModifiedBy { get; set; }
+        public Audit(Id id, Id createdByIdUser)
+        {
+            Id = id;
+            Availability = true;
+            CreatedDate = new CreatedDate(DateTimeHelper.GetDateAndTime().DateTime);
+            CreatedByIdUser = createdByIdUser;
+        }
+
+        public Id Id { get; private set; }
+        public bool Availability { get; private set; }
+        public CreatedDate? CreatedDate { get; private set; }
+        public Id CreatedByIdUser { get; private set; }
+        public LastModifiedDate? LastModifiedDate { get; private set; }
+        public Id? LastModifiedByIdUser { get; private set; }
     }
 }

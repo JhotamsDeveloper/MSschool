@@ -12,7 +12,7 @@ public sealed class UnitOfWorkService : IUnitOfWork
 
     public MsschoolContext MsschoolContext { get; }
 
-    public async ValueTask<int> Complete()
+    public async ValueTask<int> SaveChangesAsync()
     {
         return await MsschoolContext.SaveChangesAsync();
     }

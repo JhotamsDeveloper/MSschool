@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
+using MSschool.Application.Domain.Common;
 
-namespace MSschool.Application.Features.Commands.CreateCategory
-{
-    internal class CreateCommand
-    {
-    }
-}
+namespace MSschool.Application.Features.Commands.CreateCategory;
+
+public record CreateCommand(
+    string Name, 
+    string Description,
+    Guid DreatedByIdUser) : IRequest<Id>;
