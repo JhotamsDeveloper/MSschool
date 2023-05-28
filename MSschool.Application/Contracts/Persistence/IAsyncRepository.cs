@@ -20,6 +20,8 @@ public interface IAsyncRepository<T> where T : class
         List<Expression<Func<T, object>>>? includes = null, 
         bool? disableTracking = true);
 
+    Task<bool> Exitst(Expression<Func<T, bool>> predicate);
+
     Task<T> GetByIdAsync(Guid id);
 
     Task AddAsync(T entity);

@@ -9,8 +9,8 @@ internal static class MsschoolContextSeed
     {
         return new Category[]
         {
-            new Category(new Id(Guid.NewGuid()), "Docente", "Persona que presta los servicios de docencia a la institución.", new Id(Guid.Empty)),
-            new Category(new Id(Guid.NewGuid()), "Estudiante", "Persona que se encuentra estudiando a la institución.", new Id(Guid.Empty)),
+            new Category(new Id(Guid.NewGuid()), new Name("Docente"), "Persona que presta los servicios de docencia a la institución.", new Id(Guid.Empty)),
+            new Category(new Id(Guid.NewGuid()), new Name("Estudiante"), "Persona que se encuentra estudiando a la institución.", new Id(Guid.Empty)),
         };
     } 
 }

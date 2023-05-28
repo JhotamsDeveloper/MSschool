@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.AcademicLevels;
 using MSschool.Application.Domain.Models.AcademicProgramUsers;
 using MSschool.Application.Domain.Models.AcademicsProgram;
-using MSschool.Application.Domain.Models.Categories;
 using MSschool.Application.Domain.Models.CourseNotes;
 using MSschool.Application.Domain.Models.Institutions;
 using MSschool.Application.Domain.Models.Schedules;
@@ -14,6 +12,7 @@ using MSschool.Application.Domain.Models.UserAssignments;
 using MSschool.Application.Domain.Models.ValueOfTheSubjects;
 using MSschool.Infrastructure.EntityFramework.Configurations;
 using MSschool.Application.Domain.Models.UserCategories;
+using MSschool.Application.Domain.Models.Categories;
 
 namespace MSschool.Infrastructure.EntityFramework.Persistence;
 

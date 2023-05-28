@@ -4,6 +4,7 @@ using MSschool.Infrastructure.EntityFramework.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MSschool.Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(MsschoolContext))]
-    partial class MsschoolContextModelSnapshot : ModelSnapshot
+    [Migration("20230528183056_v0-0-5")]
+    partial class v005
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,6 +51,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -134,8 +138,9 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("ProgramStatus")
                         .IsRequired()
@@ -188,19 +193,19 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ef002964-0fef-46b4-8a82-2da298ad5c21"),
+                            Id = new Guid("d3bca9c6-5283-4050-833b-32e13368f002"),
                             Availability = true,
                             CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 28, 13, 38, 3, 539, DateTimeKind.Unspecified).AddTicks(1392),
+                            CreatedDate = new DateTime(2023, 5, 28, 13, 30, 56, 707, DateTimeKind.Unspecified).AddTicks(4830),
                             Description = "Persona que presta los servicios de docencia a la institución.",
                             Name = "Docente"
                         },
                         new
                         {
-                            Id = new Guid("83fac49a-99eb-43a5-89b1-22a2fc40a592"),
+                            Id = new Guid("df3e4454-8e66-49be-bcd4-6791377b3f73"),
                             Availability = true,
                             CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 28, 13, 38, 3, 539, DateTimeKind.Unspecified).AddTicks(1422),
+                            CreatedDate = new DateTime(2023, 5, 28, 13, 30, 56, 707, DateTimeKind.Unspecified).AddTicks(4858),
                             Description = "Persona que se encuentra estudiando a la institución.",
                             Name = "Estudiante"
                         });
@@ -311,6 +316,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -389,8 +395,9 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("PreRequisite")
                         .HasMaxLength(50)

@@ -42,6 +42,14 @@ namespace MSschool.Infrastructure.EntityFramework.Repositories
             await Task.CompletedTask;
         }
 
+        public async Task<bool> Exitst(Expression<Func<T, bool>> predicate)
+        {
+            var result = await _context.Set<T>()
+                .AnyAsync(predicate);
+
+            return result;
+        }
+
         public async Task<IReadOnlyList<T>> GetAllAsync() 
         { 
             return await _context

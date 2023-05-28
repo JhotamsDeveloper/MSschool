@@ -15,7 +15,11 @@ internal class AcademicsProgramConfiguration : IEntityTypeConfiguration<Academic
 
         builder.Property(e => e.Code).HasMaxLength(50);
         builder.Property(e => e.Modality).HasMaxLength(50);
-        builder.Property(e => e.Name).HasMaxLength(200);
+
+        builder.Property(e => e.Name)
+            .HasConversion(e => e!.Value, value => new Name(value))
+            .HasMaxLength(50);
+
         builder.Property(e => e.ProgramStatus).HasMaxLength(50);
 
         builder.HasOne(d => d.IdAcademicDirectorNavigation).WithMany(p => p.AcademicsPrograms)

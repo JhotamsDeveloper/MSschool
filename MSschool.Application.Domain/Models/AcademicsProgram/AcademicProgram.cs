@@ -14,7 +14,7 @@ public partial class AcademicProgram : Audit
     {
     }
 
-    public string Name { get; private set; } = null!;
+    public Name? Name { get; private set; }
 
     public string Code { get; private set; } = null!;
 

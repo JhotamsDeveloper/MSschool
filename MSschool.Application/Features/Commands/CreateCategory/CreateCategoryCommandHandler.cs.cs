@@ -18,9 +18,18 @@ internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComm
         CreateCategoryCommand request, 
         CancellationToken cancellationToken)
     {
+        var existCategory = await _unitOfWork
+            .Repository<Category>()
+            .Exitst(e => e.Name!.Equals(new Name(request.Name)));
+
+        if (existCategory)
+        {
+            throw new Exception("La categoria que esta intando registrar ya existe");
+        }
+
         var category = new Category(
             new Id(Guid.NewGuid()),
-            request.Name,
+            new Name(request.Name),
             request.Description,
             new Id(request.DreatedByIdUser));
 

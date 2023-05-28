@@ -14,7 +14,11 @@ internal class SubjectConfiguration : IEntityTypeConfiguration<Subject>
             value => new Id(value));
 
         builder.Property(e => e.Modality).HasMaxLength(50);
-        builder.Property(e => e.Name).HasMaxLength(100);
+
+        builder.Property(e => e.Name)
+            .HasConversion(e => e!.Value, value => new Name(value))
+            .HasMaxLength(50);
+
         builder.Property(e => e.PreRequisite).HasMaxLength(50);
 
         builder.Property(e => e.CreatedDate).HasConversion(

@@ -23,7 +23,10 @@ internal class InstitutionConfiguration : IEntityTypeConfiguration<Institution>
             .HasMaxLength(10)
             .IsFixedLength();
         builder.Property(e => e.Email).HasMaxLength(50);
-        builder.Property(e => e.Name).HasMaxLength(50);
+
+        builder.Property(e => e.Name)
+            .HasConversion(e => e!.Value, value => new Name(value))
+            .HasMaxLength(50);
 
         builder.Property(e => e.CreatedDate).HasConversion(
             CreatedDate => CreatedDate!.Date,

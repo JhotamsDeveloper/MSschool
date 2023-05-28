@@ -12,7 +12,7 @@ public partial class Subject : Audit
     {
     }
 
-    public string Name { get; private set; } = null!;
+    public Name? Name { get; private set; }
 
     public int Credit { get; private set; }
 

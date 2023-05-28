@@ -9,7 +9,7 @@ public partial class Institution : Audit
     {
     }
 
-    public string Name { get; private set; } = null!;
+    public Name? Name { get; private set; }
 
     public string Email { get; private set; } = null!;
 
