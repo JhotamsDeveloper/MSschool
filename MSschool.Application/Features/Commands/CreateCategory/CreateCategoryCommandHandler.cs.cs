@@ -1,11 +1,11 @@
-﻿using MediatR;
+﻿using MSschool.Application.Abstracions;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
 
 namespace MSschool.Application.Features.Commands.CreateCategory;
 
-internal class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Id>
+internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryCommand, Id>
 {
     private readonly IUnitOfWork _unitOfWork;
 
@@ -14,7 +14,9 @@ internal class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryComm
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<Id> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
+    public async Task<Id> Handle(
+        CreateCategoryCommand request, 
+        CancellationToken cancellationToken)
     {
         var category = new Category(
             new Id(Guid.NewGuid()),
