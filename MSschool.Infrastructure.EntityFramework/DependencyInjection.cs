@@ -13,7 +13,13 @@ namespace MSschool.Infrastructure.EntityFramework
             this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<MsschoolContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("ConnectionString")));
+                options.UseSqlServer(
+                    configuration.GetConnectionString("ConnectionString"), 
+                    sqlServerOptionsAction => 
+                    {
+                        sqlServerOptionsAction
+                        .EnableRetryOnFailure(maxRetryCount: 5);
+                    }));
 
             services.AddScoped<IUnitOfWork, UnitOfWorkService>();
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBaseService<>));

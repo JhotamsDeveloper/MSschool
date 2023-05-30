@@ -1,5 +1,4 @@
 using Carter;
-using Microsoft.Extensions.DependencyInjection;
 using MSschool.Application;
 using MSschool.Infrastructure.EntityFramework;
 
