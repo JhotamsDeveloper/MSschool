@@ -1,4 +1,5 @@
 using Carter;
+using Microsoft.Extensions.DependencyInjection;
 using MSschool.Application;
 using MSschool.Infrastructure.EntityFramework;
 
@@ -15,7 +16,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCarter();
 
 
-builder.Services.AddHealthChecks();
+builder.Services.AddHealthChecks()
+    .AddSqlServer(builder
+    .Configuration
+    .GetConnectionString("ConnectionString")!);
 
 var app = builder.Build();
 
