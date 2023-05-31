@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MSschool.Application\MSschool.Application.csproj" />
     <ProjectReference Include="..\MSschool.Infrastructure.EntityFramework\MSschool.Infrastructure.EntityFramework.csproj" />
+    <ProjectReference Include="..\MSschool.Infrastructure.Migrations\MSschool.Infrastructure.Migrations.csproj" />
     <ProjectReference Include="..\MSschool.Presentation.Endpoints\MSschool.Presentation.Endpoints.csproj" />
   </ItemGroup>
 

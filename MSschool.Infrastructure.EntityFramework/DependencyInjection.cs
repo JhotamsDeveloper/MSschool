@@ -18,6 +18,8 @@ namespace MSschool.Infrastructure.EntityFramework
                     sqlServerOptionsAction => 
                     {
                         sqlServerOptionsAction
+                        .MigrationsAssembly("MSschool.Infrastructure.Migrations");
+                        sqlServerOptionsAction
                         .EnableRetryOnFailure(maxRetryCount: 5);
                     }));
 

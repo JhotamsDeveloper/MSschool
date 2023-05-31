@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MSschool.Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(MsschoolContext))]
-    [Migration("20230528022408_v0-0-4")]
+    [Migration("20230531042131_v0-0-4")]
     partial class v004
     {
         /// <inheritdoc />
@@ -51,7 +51,6 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -138,9 +137,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("ProgramStatus")
                         .IsRequired()
@@ -193,19 +191,19 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("48d3c63c-a34a-4e80-99c2-068aab3c6a04"),
+                            Id = new Guid("476412ec-4a73-41ec-8bf0-196cd3863da3"),
                             Availability = true,
                             CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 27, 21, 24, 8, 119, DateTimeKind.Unspecified).AddTicks(6474),
+                            CreatedDate = new DateTime(2023, 5, 30, 23, 21, 31, 640, DateTimeKind.Unspecified).AddTicks(3752),
                             Description = "Persona que presta los servicios de docencia a la institución.",
                             Name = "Docente"
                         },
                         new
                         {
-                            Id = new Guid("91e1a27d-6184-4e23-a63c-394505f78b3e"),
+                            Id = new Guid("c41ab635-a7d9-43f1-8c21-28ec37ce8f50"),
                             Availability = true,
                             CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 27, 21, 24, 8, 119, DateTimeKind.Unspecified).AddTicks(6502),
+                            CreatedDate = new DateTime(2023, 5, 30, 23, 21, 31, 640, DateTimeKind.Unspecified).AddTicks(3781),
                             Description = "Persona que se encuentra estudiando a la institución.",
                             Name = "Estudiante"
                         });
@@ -316,7 +314,6 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -395,9 +392,8 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("PreRequisite")
                         .HasMaxLength(50)

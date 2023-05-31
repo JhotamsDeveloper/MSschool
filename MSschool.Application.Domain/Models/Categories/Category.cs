@@ -6,10 +6,10 @@ namespace MSschool.Application.Domain.Models.Categories;
 public class Category : Audit
 {
     public Category(
-        Id id,
-        Name name,
-        string description,
-        Id createdByIdUser) : base(id, createdByIdUser)
+    Id id,
+    Name name,
+    string description,
+    Id createdByIdUser) : base(id, createdByIdUser)
     {
         Name = name;
         Description = description;

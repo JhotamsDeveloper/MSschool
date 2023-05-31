@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MSschool.Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(MsschoolContext))]
-    [Migration("20230528183803_v0-0-6")]
-    partial class v006
+    [Migration("20230531032913_v0-0-2")]
+    partial class v002
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -184,6 +184,11 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("Test")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
@@ -191,21 +196,23 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ef002964-0fef-46b4-8a82-2da298ad5c21"),
+                            Id = new Guid("afcaa75d-cdc6-4701-a436-10d1176cf424"),
                             Availability = true,
                             CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 28, 13, 38, 3, 539, DateTimeKind.Unspecified).AddTicks(1392),
+                            CreatedDate = new DateTime(2023, 5, 30, 22, 29, 12, 897, DateTimeKind.Unspecified).AddTicks(7326),
                             Description = "Persona que presta los servicios de docencia a la institución.",
-                            Name = "Docente"
+                            Name = "Docente",
+                            Test = "tes"
                         },
                         new
                         {
-                            Id = new Guid("83fac49a-99eb-43a5-89b1-22a2fc40a592"),
+                            Id = new Guid("876c6673-8b45-4936-b005-1b467549b274"),
                             Availability = true,
                             CreatedByIdUser = new Guid("00000000-0000-0000-0000-000000000000"),
-                            CreatedDate = new DateTime(2023, 5, 28, 13, 38, 3, 539, DateTimeKind.Unspecified).AddTicks(1422),
+                            CreatedDate = new DateTime(2023, 5, 30, 22, 29, 12, 897, DateTimeKind.Unspecified).AddTicks(7355),
                             Description = "Persona que se encuentra estudiando a la institución.",
-                            Name = "Estudiante"
+                            Name = "Estudiante",
+                            Test = "tes"
                         });
                 });
 

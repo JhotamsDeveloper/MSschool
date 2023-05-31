@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{99EC0E23-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Test", "MSschool.Test\MSschool.Test.csproj", "{91103066-B405-4CF4-8204-6C112A135441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Infrastructure.Migrations", "MSschool.Infrastructure.Migrations\MSschool.Infrastructure.Migrations.csproj", "{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{91103066-B405-4CF4-8204-6C112A135441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91103066-B405-4CF4-8204-6C112A135441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91103066-B405-4CF4-8204-6C112A135441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{A58EC9BE-96E2-448B-8E58-63A3E24E84F4} = {C216A20A-751D-453D-A51C-A1B1BC64D767}
 		{1867C6C9-CBF3-408B-AB4D-379C0EA87CEE} = {C216A20A-751D-453D-A51C-A1B1BC64D767}
 		{91103066-B405-4CF4-8204-6C112A135441} = {99EC0E23-F043-4041-A49A-05D2C5E14DFD}
+		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA} = {127541B6-CF06-45BB-A219-DD84CB260B45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F3310CD-A715-4D09-BDE3-AEA986305537}
