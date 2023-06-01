@@ -31,7 +31,7 @@ internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComm
             new Id(Guid.NewGuid()),
             new Name(request.Name),
             request.Description,
-            new Id(request.DreatedByIdUser));
+            new Id(Guid.Empty));
 
         await _unitOfWork
             .Repository<Category>()
@@ -43,6 +43,6 @@ internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComm
             throw new Exception(
                 "Error al guardar la categoria");
 
-        return category.Id;
+        return category.Id!;
     }
 }

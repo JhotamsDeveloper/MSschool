@@ -5,8 +5,18 @@ namespace MSschool.Application.Domain.Models.Schedules;
 
 public partial class Schedule : Audit
 {
-    public Schedule(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public Schedule(
+        Id id,
+        Id? idAcademicProgram,
+        string weekday,
+        DateTime? startTime,
+        DateTime? endTime,
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        IdAcademicProgram = idAcademicProgram;
+        Weekday = weekday;
+        StartTime = startTime;
+        EndTime = endTime;
     }
 
     public Id? IdAcademicProgram { get; private set; }

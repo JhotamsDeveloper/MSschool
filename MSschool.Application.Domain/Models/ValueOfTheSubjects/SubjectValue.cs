@@ -5,8 +5,18 @@ namespace MSschool.Application.Domain.Models.ValueOfTheSubjects;
 
 public partial class SubjectValue : Audit
 {
-    public SubjectValue(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public SubjectValue(
+        Id id, 
+        string year, 
+        double value, 
+        int? iva, 
+        Id? idSubject,
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        Year = year;
+        Value = value;
+        Iva = iva;
+        IdSubject = idSubject;
     }
 
     public string Year { get; private set; } = null!;

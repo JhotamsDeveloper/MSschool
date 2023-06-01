@@ -9,8 +9,48 @@ namespace MSschool.Application.Domain.Models.Users;
 
 public partial class User : Audit
 {
-    public User(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public User(
+        Id id, 
+        string firstName, 
+        string? secondName, 
+        string surname, 
+        string? secondSurname, 
+        string documentType, 
+        string documentNumber, 
+        string email, 
+        string? phone, 
+        DateTime? birthdate, 
+        string? cellPhone, 
+        string? indicativeCountryOfBirth, 
+        string? countryOfBirth, 
+        string? departmentOfBirth, 
+        string? cityOfBirth, 
+        string? indicativeCountryOfDomicile, 
+        string? countryOfDomicile, 
+        string? departmentOdDomicile, 
+        string? cityOfDomicile, 
+        string? addressOfDomicile,
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        FirstName = firstName;
+        SecondName = secondName;
+        Surname = surname;
+        SecondSurname = secondSurname;
+        DocumentType = documentType;
+        DocumentNumber = documentNumber;
+        Email = email;
+        Phone = phone;
+        Birthdate = birthdate;
+        CellPhone = cellPhone;
+        IndicativeCountryOfBirth = indicativeCountryOfBirth;
+        CountryOfBirth = countryOfBirth;
+        DepartmentOfBirth = departmentOfBirth;
+        CityOfBirth = cityOfBirth;
+        IndicativeCountryOfDomicile = indicativeCountryOfDomicile;
+        CountryOfDomicile = countryOfDomicile;
+        DepartmentOdDomicile = departmentOdDomicile;
+        CityOfDomicile = cityOfDomicile;
+        AddressOfDomicile = addressOfDomicile;
     }
 
     public string FirstName { get; private set; } = null!;

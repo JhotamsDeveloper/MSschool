@@ -5,8 +5,24 @@ namespace MSschool.Application.Domain.Models.Institutions;
 
 public partial class Institution : Audit
 {
-    public Institution(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public Institution(
+        Id id, 
+        Name? name, 
+        string email, 
+        string department, 
+        string departmentCode, 
+        string city, 
+        string cityCode, 
+        string address,
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        Name = name;
+        Email = email;
+        Department = department;
+        DepartmentCode = departmentCode;
+        City = city;
+        CityCode = cityCode;
+        Address = address;
     }
 
     public Name? Name { get; private set; }

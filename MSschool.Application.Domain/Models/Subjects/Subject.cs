@@ -8,8 +8,20 @@ namespace MSschool.Application.Domain.Models.Subjects;
 
 public partial class Subject : Audit
 {
-    public Subject(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public Subject(
+        Id id, 
+        Name? name, 
+        int credit, 
+        int semester, 
+        string? preRequisite, 
+        string modality, 
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        Name = name;
+        Credit = credit;
+        Semester = semester;
+        PreRequisite = preRequisite;
+        Modality = modality;
     }
 
     public Name? Name { get; private set; }

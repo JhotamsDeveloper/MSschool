@@ -9,12 +9,6 @@ internal class SubjectsAcademicProgramConfiguration : IEntityTypeConfiguration<S
 {
     public void Configure(EntityTypeBuilder<SubjectOfTheAcademicProgram> builder)
     {
-        builder.ToTable("SubjectsAcademicProgram");
-
-        builder.Property(e => e.Id).HasConversion(
-            e => e!.Value,
-            value => new Id(value));
-
         builder.HasOne(d => d.IdAcademicProgramNavigation).WithMany(p => p.SubjectsAcademicPrograms)
             .HasForeignKey(d => d.IdAcademicProgram)
             .OnDelete(DeleteBehavior.ClientSetNull);
@@ -23,13 +17,24 @@ internal class SubjectsAcademicProgramConfiguration : IEntityTypeConfiguration<S
             .HasForeignKey(d => d.IdSubject)
             .OnDelete(DeleteBehavior.ClientSetNull);
 
+        #region "AUDIT"
+        builder.HasKey(x => x.Id);
+        builder.Property(e => e.Id).HasConversion(
+            e => e!.Value,
+            value => new Id(value));
+
         builder.Property(e => e.CreatedDate).HasConversion(
-            CreatedDate => CreatedDate!.Date,
-            value => new CreatedDate(value));
+            CreatedDate => CreatedDate!.Value,
+            value => CreatedDate.CreationDate());
 
         builder.Property(e => e.LastModifiedDate).HasConversion(
-            LastModifiedDate => LastModifiedDate!.Date,
-            value => new LastModifiedDate(value));
+            LastModifiedDate => LastModifiedDate!.Value,
+            value => LastModifiedDate.CreationDate());
+
+        builder.Property(e => e.Availability)
+            .HasConversion(
+            e => e!.Value,
+            value => new Availability(value));
 
         builder.Property(e => e.CreatedByIdUser).HasConversion(
             e => e!.Value,
@@ -38,5 +43,6 @@ internal class SubjectsAcademicProgramConfiguration : IEntityTypeConfiguration<S
         builder.Property(e => e.LastModifiedByIdUser).HasConversion(
             e => e!.Value,
             value => new Id(value));
+        #endregion
     }
 }

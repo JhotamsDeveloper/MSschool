@@ -6,8 +6,24 @@ namespace MSschool.Application.Domain.Models.CourseNotes;
 
 public partial class CourseNote : Audit
 {
-    public CourseNote(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public CourseNote(
+        Id id, 
+        decimal percentages, 
+        decimal noteValue, 
+        DateTime noteDate,
+        string observation,
+        Id idUser,
+        Id idTeacher,
+        Id idSubject,
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        Percentages = percentages;
+        NoteValue = noteValue;
+        NoteDate = noteDate;
+        Observation = observation;
+        IdUser = idUser;
+        IdTeacher = idTeacher;
+        IdSubject = idSubject;
     }
 
     public decimal Percentages { get; private set; }

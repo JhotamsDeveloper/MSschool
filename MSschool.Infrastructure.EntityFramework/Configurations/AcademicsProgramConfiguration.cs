@@ -9,10 +9,6 @@ internal class AcademicsProgramConfiguration : IEntityTypeConfiguration<Academic
 {
     public void Configure(EntityTypeBuilder<AcademicProgram> builder)
     {
-        builder.Property(e => e.Id).HasConversion(
-            e => e!.Value,
-            value => new Id(value));
-
         builder.Property(e => e.Code).HasMaxLength(50);
         builder.Property(e => e.Modality).HasMaxLength(50);
 
@@ -34,13 +30,24 @@ internal class AcademicsProgramConfiguration : IEntityTypeConfiguration<Academic
             .HasForeignKey(d => d.IdInstitution)
             .OnDelete(DeleteBehavior.ClientSetNull);
 
+        #region "AUDIT"
+        builder.HasKey(x => x.Id);
+        builder.Property(e => e.Id).HasConversion(
+            e => e!.Value,
+            value => new Id(value));
+
         builder.Property(e => e.CreatedDate).HasConversion(
-            CreatedDate => CreatedDate!.Date,
-            value => new CreatedDate(value));
+            CreatedDate => CreatedDate!.Value,
+            value => CreatedDate.CreationDate());
 
         builder.Property(e => e.LastModifiedDate).HasConversion(
-            LastModifiedDate => LastModifiedDate!.Date,
-            value => new LastModifiedDate(value));
+            LastModifiedDate => LastModifiedDate!.Value,
+            value => LastModifiedDate.CreationDate());
+
+        builder.Property(e => e.Availability)
+            .HasConversion(
+            e => e!.Value,
+            value => new Availability(value));
 
         builder.Property(e => e.CreatedByIdUser).HasConversion(
             e => e!.Value,
@@ -49,5 +56,6 @@ internal class AcademicsProgramConfiguration : IEntityTypeConfiguration<Academic
         builder.Property(e => e.LastModifiedByIdUser).HasConversion(
             e => e!.Value,
             value => new Id(value));
+        #endregion
     }
 }

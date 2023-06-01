@@ -6,8 +6,14 @@ namespace MSschool.Application.Domain.Models.SubjectsAcademicProgram;
 
 public partial class SubjectOfTheAcademicProgram : Audit
 {
-    public SubjectOfTheAcademicProgram(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public SubjectOfTheAcademicProgram(
+        Id id, 
+        Id? idSubject, 
+        Id? idAcademicProgram,
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        IdSubject = idSubject;
+        IdAcademicProgram = idAcademicProgram;
     }
 
     public Id? IdSubject { get; private set; }

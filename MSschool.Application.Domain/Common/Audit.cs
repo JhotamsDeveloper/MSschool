@@ -1,22 +1,28 @@
-﻿using MSschool.Application.Domain.Helpers;
-
-namespace MSschool.Application.Domain.Common
+﻿namespace MSschool.Application.Domain.Common
 {
     public partial class Audit
     {
         public Audit(Id id, Id createdByIdUser)
         {
             Id = id;
-            Availability = true;
-            CreatedDate = new CreatedDate(DateTimeHelper.GetDateAndTime().DateTime);
             CreatedByIdUser = createdByIdUser;
+            Availability = new Availability(true);
+            CreatedDate = CreatedDate.CreationDate();
         }
 
-        public Id Id { get; private set; }
-        public bool Availability { get; private set; }
+        public Id? Id { get; private set; }
+        public Availability? Availability { get; private set; }
         public CreatedDate? CreatedDate { get; private set; }
-        public Id CreatedByIdUser { get; private set; }
+        public Id? CreatedByIdUser { get; private set; }
         public LastModifiedDate? LastModifiedDate { get; private set; }
         public Id? LastModifiedByIdUser { get; private set; }
+
+        public void Update(Id id, Id lastModifiedByIdUser)
+        {
+            Id = id;
+            LastModifiedByIdUser = lastModifiedByIdUser;
+            Availability = new Availability(false);
+            LastModifiedDate = LastModifiedDate.CreationDate();
+        }
     }
 }

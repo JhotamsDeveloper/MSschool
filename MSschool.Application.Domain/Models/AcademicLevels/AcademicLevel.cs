@@ -5,8 +5,12 @@ namespace MSschool.Application.Domain.Models.AcademicLevels;
 
 public partial class AcademicLevel : Audit
 {
-    public AcademicLevel(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public AcademicLevel(Id id, Name name, string code, int semesterQuantity, Id createdByIdUser) : 
+        base(id, createdByIdUser)
     {
+        Name = name;
+        Code = code;
+        SemesterQuantity = semesterQuantity;
     }
 
     public Name? Name { get; private set; }
@@ -14,6 +18,14 @@ public partial class AcademicLevel : Audit
     public string Code { get; private set; } = null!;
 
     public int SemesterQuantity { get; private set; }
+
+    public void Update(Id id, Name name, string code, int semesterQuantity, Id lastModifiedByIdUser)
+    {
+        Name = name;
+        Code = code;
+        SemesterQuantity = semesterQuantity;
+        Update(id, lastModifiedByIdUser);
+    }
 
     public virtual ICollection<AcademicProgram> AcademicsPrograms { get; set; } = new List<AcademicProgram>();
 }

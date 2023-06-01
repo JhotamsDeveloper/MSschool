@@ -6,8 +6,14 @@ namespace MSschool.Application.Domain.Models.UserCategories;
 
 public partial class UserCategory : Audit
 {
-    public UserCategory(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public UserCategory(
+        Id id, 
+        Id? idCategory, 
+        Id? idUser, 
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        IdCategory = idCategory;
+        IdUser = idUser;
     }
 
     public Id? IdCategory { get; private set; }

@@ -6,8 +6,16 @@ namespace MSschool.Application.Domain.Models.UserAssignments;
 
 public partial class UserAssignment : Audit
 {
-    public UserAssignment(Id id, Id createdByIdUser) : base(id, createdByIdUser)
+    public UserAssignment(
+        Id id, 
+        Id? idUser, 
+        Id? idSubject, 
+        string? subjectStatus,
+        Id createdByIdUser) : base(id, createdByIdUser)
     {
+        IdUser = idUser;
+        IdSubject = idSubject;
+        SubjectStatus = subjectStatus;
     }
 
     public Id? IdUser { get; private set; }
