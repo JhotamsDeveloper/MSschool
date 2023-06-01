@@ -13,7 +13,7 @@ internal class InstitutionConfiguration : IEntityTypeConfiguration<Institution>
             e => e!.Value,
             value => new Id(value));
 
-        builder.Property(e => e.Address).HasMaxLength(200);
+        builder.Property(e => e.Address).HasMaxLength(300);
         builder.Property(e => e.City).HasMaxLength(50);
         builder.Property(e => e.CityCode)
             .HasMaxLength(10)
@@ -43,5 +43,10 @@ internal class InstitutionConfiguration : IEntityTypeConfiguration<Institution>
         builder.Property(e => e.LastModifiedByIdUser).HasConversion(
             e => e!.Value,
             value => new Id(value));
+    }
+
+    public void Configure(EntityTypeBuilder<Institution> builder)
+    {
+        throw new NotImplementedException();
     }
 }

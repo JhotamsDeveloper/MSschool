@@ -13,6 +13,7 @@ using MSschool.Application.Domain.Models.ValueOfTheSubjects;
 using MSschool.Infrastructure.EntityFramework.Configurations;
 using MSschool.Application.Domain.Models.UserCategories;
 using MSschool.Application.Domain.Models.Categories;
+using System.Reflection;
 
 namespace MSschool.Infrastructure.EntityFramework.Persistence;
 
@@ -56,7 +57,10 @@ public partial class MsschoolContext: DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Settings();
+        modelBuilder
+            .ApplyConfigurationsFromAssembly(Assembly
+            .GetExecutingAssembly());
+
         modelBuilder.Entity<Category>()
             .HasData(MsschoolContextSeed
             .PreloadedCategories());
