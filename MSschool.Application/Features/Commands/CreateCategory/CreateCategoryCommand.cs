@@ -6,4 +6,4 @@ namespace MSschool.Application.Features.Commands.CreateCategory;
 public record CreateCategoryCommand(
     string Name,
     string Description,
-    Guid DreatedByIdUser) : ICommand<Id>;
+    Guid CreatedByIdUser) : ICommand<Id>;

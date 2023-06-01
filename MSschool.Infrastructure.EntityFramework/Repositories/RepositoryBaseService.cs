@@ -115,7 +115,9 @@ namespace MSschool.Infrastructure.EntityFramework.Repositories
         {
             var result = await _context
                 .Set<T>()
-                .FindAsync(id);
+                .AsNoTracking()
+                .FirstOrDefaultAsync(
+                firsth => firsth.Id!.Equals(new Id(id)));
 
             return result!;
         }
