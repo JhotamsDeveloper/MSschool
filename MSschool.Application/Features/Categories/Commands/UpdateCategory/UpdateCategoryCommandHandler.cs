@@ -4,7 +4,7 @@ using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
 
-namespace MSschool.Application.Features.Commands.UpdateCategory;
+namespace MSschool.Application.Features.Categories.Commands.UpdateCategory;
 
 internal class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryCommand, Id>
 {
@@ -27,6 +27,7 @@ internal class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryComm
             new Id(request.Id),
             new Name(request.Name),
             request.Description,
+            new Availability(true),
             new Id(request.LastModifiedByIdUser));
 
         await _unitOfWork.Repository<Category>().UpdateAsync(category);

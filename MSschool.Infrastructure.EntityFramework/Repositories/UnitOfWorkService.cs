@@ -1,4 +1,5 @@
-﻿using MSschool.Application.Contracts.Persistence;
+﻿using Microsoft.Extensions.Logging;
+using MSschool.Application.Contracts.Persistence;
 using MSschool.Infrastructure.EntityFramework.Persistence;
 using System.Collections;
 

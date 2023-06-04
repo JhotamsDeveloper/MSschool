@@ -19,13 +19,5 @@ public partial class AcademicLevel : Audit
 
     public int SemesterQuantity { get; private set; }
 
-    public void Update(Id id, Name name, string code, int semesterQuantity, Id lastModifiedByIdUser)
-    {
-        Name = name;
-        Code = code;
-        SemesterQuantity = semesterQuantity;
-        Update(id, lastModifiedByIdUser);
-    }
-
     public virtual ICollection<AcademicProgram> AcademicsPrograms { get; set; } = new List<AcademicProgram>();
 }

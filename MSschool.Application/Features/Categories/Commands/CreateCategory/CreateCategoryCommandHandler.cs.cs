@@ -4,7 +4,7 @@ using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
 
-namespace MSschool.Application.Features.Commands.CreateCategory;
+namespace MSschool.Application.Features.Categories.Commands.CreateCategory;
 
 internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryCommand, Id>
 {

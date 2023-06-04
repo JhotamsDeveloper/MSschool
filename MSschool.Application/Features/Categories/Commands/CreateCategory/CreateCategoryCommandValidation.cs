@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSschool.Application.Features.Queries.GetAllCategories
+namespace MSschool.Application.Features.Categories.Commands.CreateCategory
 {
-    internal class GetAllCategoriesQueryHandler
+    internal class CreateCategoryCommandValidation
     {
     }
 }

@@ -3,8 +3,9 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using MSschool.Application.Features.Commands.CreateCategory;
-using MSschool.Application.Features.Commands.UpdateCategory;
+using MSschool.Application.Features.Categories.Commands.CreateCategory;
+using MSschool.Application.Features.Categories.Commands.UpdateCategory;
+using MSschool.Application.Features.Categories.Queries.GetActiveCategory;
 
 namespace MSschool.Presentation.Endpoints.Endpoints;
 
@@ -26,6 +27,15 @@ public class CategoryEndpoints : ICarterModule
             return Results.Ok(result);
         })
         .WithName("UpdateCategory")
+        .WithOpenApi();
+
+        app.MapGet("/ActiveCategory/{id:guid}", async (Guid id, ISender sender) =>
+        {
+            var getActiveCategoryQuery = new GetActiveCategoryQuery(id);
+            var result = await sender.Send(getActiveCategoryQuery);
+            return Results.Ok(result);
+        })
+        .WithName("ActiveCategory")
         .WithOpenApi();
     }
 

@@ -17,11 +17,11 @@
         public LastModifiedDate? LastModifiedDate { get; private set; }
         public Id? LastModifiedByIdUser { get; private set; }
 
-        public void Update(Id id, Id lastModifiedByIdUser)
+        public void Update(Id id, Availability? availability, Id lastModifiedByIdUser)
         {
             Id = id;
             LastModifiedByIdUser = lastModifiedByIdUser;
-            Availability = new Availability(false);
+            Availability = availability;
             LastModifiedDate = LastModifiedDate.CreationDate();
         }
     }

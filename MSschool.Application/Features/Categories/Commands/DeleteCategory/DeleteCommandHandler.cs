@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSschool.Application.Features.Commands.CreateCategory
+namespace MSschool.Application.Features.Categories.Commands.DeleteCategory
 {
-    internal class CreateCategoryCommandValidation
+    internal class DeleteCommandHandler
     {
     }
 }

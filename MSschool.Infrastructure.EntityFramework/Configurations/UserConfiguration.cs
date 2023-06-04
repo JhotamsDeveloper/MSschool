@@ -20,7 +20,7 @@ internal class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(e => e.DepartmentOfBirth).HasMaxLength(50);
         builder.Property(e => e.DocumentNumber).HasMaxLength(50);
         builder.Property(e => e.DocumentType).HasMaxLength(50);
-        builder.Property(e => e.Email).HasMaxLength(200);
+        builder.Property(e => e.Email).HasMaxLength(200).IsUnicode();
         builder.Property(e => e.FirstName).HasMaxLength(50);
         builder.Property(e => e.IndicativeCountryOfBirth)
             .HasMaxLength(10)

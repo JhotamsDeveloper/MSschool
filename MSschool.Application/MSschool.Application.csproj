@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Contracts\Insfrastructure\" />
+    <Folder Include="Features\Categories\Queries\GetAllActiveCategories\" />
     <Folder Include="Handlers\" />
     <Folder Include="Mappings\" />
     <Folder Include="Models\" />
