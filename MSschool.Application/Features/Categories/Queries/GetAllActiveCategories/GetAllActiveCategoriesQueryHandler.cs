@@ -30,7 +30,7 @@ internal sealed class GetAllActiveCategoriesQueryHandler :
 
     private static Func<Category, GetAllActiveCategoriesResponse> Categories() =>
         cat => new GetAllActiveCategoriesResponse(
-            (Guid)cat.Id!.Value!,
+            cat.Id!.Value,
             cat.Name.Value,
             cat.Description);
 }

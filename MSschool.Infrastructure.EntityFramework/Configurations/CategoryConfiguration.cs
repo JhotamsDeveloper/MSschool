@@ -9,6 +9,8 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
 {
     public void Configure(EntityTypeBuilder<Category> builder)
     {
+        HasQueryFilter(builder);
+
         builder.HasKey(x => x.Id);
         builder.Property(e => e.Id).HasConversion(
             e => e!.Value,
@@ -47,5 +49,10 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
             e => e!.Value,
             value => new Id(value));
         #endregion
+    }
+
+    private static void HasQueryFilter(EntityTypeBuilder<Category> builder)
+    {
+        builder.HasQueryFilter(e => e.Availability!.Equals(new Availability(true)));
     }
 }
