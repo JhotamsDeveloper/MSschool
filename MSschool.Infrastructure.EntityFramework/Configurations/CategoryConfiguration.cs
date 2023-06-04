@@ -51,8 +51,11 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
         #endregion
     }
 
-    private static void HasQueryFilter(EntityTypeBuilder<Category> builder)
+    private static void HasQueryFilter(
+        EntityTypeBuilder<Category> builder)
     {
-        builder.HasQueryFilter(e => e.Availability!.Equals(new Availability(true)));
+        builder
+            .HasQueryFilter(e => e.Availability!
+            .Equals(new Availability(true)));
     }
 }
