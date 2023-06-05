@@ -5,7 +5,7 @@ using System.Collections;
 
 namespace MSschool.Infrastructure.EntityFramework.Repositories;
 
-public sealed class UnitOfWorkService : IUnitOfWork
+internal sealed class UnitOfWorkService : IUnitOfWork
 {
     private Hashtable? _repositories;
 

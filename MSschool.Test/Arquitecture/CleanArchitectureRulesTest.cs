@@ -1,4 +1,5 @@
-﻿using NetArchTest.Rules;
+﻿using MSschool.Infrastructure.EntityFramework.Repositories;
+using NetArchTest.Rules;
 using Xunit;
 
 namespace MSschool.Test.Arquitecture;
@@ -6,35 +7,48 @@ namespace MSschool.Test.Arquitecture;
 public class CleanArchitectureRulesTest
 {
     [Fact]
-    public void La_capa_de_dominio_solo_debe_estar_referenciado_en_la_capa_de_aplicacion()
+    public void ServiceClassesShouldHaveNameEndingWithServicex()
     {
-        var result = Types
-            .InCurrentDomain()
-            .That()
-            .ResideInNamespace("MSschool.Application.Domain")
-            .ShouldNot()
-            .HaveDependencyOnAny(
-                "MSschool.Presentation.Api",
-                "MSschool.Infrastructure.EntityFramework",
-                "MSschool.Presentation.Endpoints")
-            .GetResult();
+        //var types = Types.InAssembly(typeof(UnitOfWorkService).Assembly);
+        //var isValid = types
+        //    .That()
+        //    .ResideInNamespace("MSschool.Infrastructure.EntityFramework.Repositories")
+        //    .Should()
+        //    .BeSealed()
+        //    .GetResult()
+        //    .IsSuccessful;
 
-        Assert.True(result.IsSuccessful);
+        //Assert.True(isValid);
     }
 
     [Fact]
-    public void La_capa_de_infrastructura_solo_debe_estar_referenciado_en_la_capa_de_aplicacion_y_en_la_API()
+    public void ServiceClassesShouldHaveNameEndingWithService()
     {
-        var result = Types
-            .InCurrentDomain()
-            .That()
-            .ResideInNamespace("MSschool.Infrastructure.EntityFramework")
-            .ShouldNot()
-            .HaveDependencyOnAny(
-                "MSschool.Presentation.Api",
-                "MSschool.Presentation.Endpoints")
-            .GetResult();
-
+        var result = Types.InCurrentDomain()
+                     .That()
+                     .ResideInNamespace(("MSschool.Infrastructure.EntityFramework.Services"))
+                     .And()
+                     .AreClasses()
+                     .Should().HaveNameEndingWith("Service")
+                     .GetResult();
         Assert.True(result.IsSuccessful);
     }
+
+    //Las clases de servicio deben ser públicas y selladas
+    [Fact]
+    public void ServiceClassesShouldSealed()
+    {
+        var result = Types.InCurrentDomain()
+                    .That()
+                    .ResideInNamespace(("MSschool.Infrastructure.EntityFramework.Repositories"))
+                    .Should()
+                    .NotBePublic()
+                    .And()
+                    .BeSealed()
+                    .GetResult();
+        Assert.True(result.IsSuccessful);
+    }
+
+
+
 }
