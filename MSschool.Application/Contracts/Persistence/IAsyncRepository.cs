@@ -4,7 +4,8 @@ namespace MSschool.Application.Contracts.Persistence;
 
 public interface IAsyncRepository<T> where T : class
 {
-    Task<IReadOnlyList<T>> GetAllAsync(bool disableGlobalFilters = false);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task<IReadOnlyList<T>> GetAllIgnoreQueryFiltersAsync();
 
     Task<IReadOnlyList<T>> GetAsync(
         Expression<Func<T, bool>>? predicate);
@@ -33,4 +34,5 @@ public interface IAsyncRepository<T> where T : class
     void Add(T entity);
     void Update(T entity);
     void Delete(T entity);
+
 }

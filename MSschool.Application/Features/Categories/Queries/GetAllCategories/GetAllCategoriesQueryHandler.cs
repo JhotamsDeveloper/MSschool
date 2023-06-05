@@ -4,7 +4,7 @@ using MSschool.Application.Domain.Models.Categories;
 
 namespace MSschool.Application.Features.Categories.Queries.GetAllCategories;
 
-internal sealed class GetAllCategoriesQueryHandler : 
+internal sealed class GetAllCategoriesQueryHandler :
     IQueryHandler<GetAllCategoriesQuery, IReadOnlyList<GetAllCategoriesResponse>>
 {
     private readonly IUnitOfWork _unitOfWork;
@@ -15,16 +15,29 @@ internal sealed class GetAllCategoriesQueryHandler :
     }
 
     public async Task<IReadOnlyList<GetAllCategoriesResponse>> Handle(
-        GetAllCategoriesQuery request, 
+        GetAllCategoriesQuery request,
         CancellationToken cancellationToken)
     {
-        var getAll = await _unitOfWork
-            .Repository<Category>()
-            .GetAllAsync(request.DisableGlobalFilters);
+        IReadOnlyList<Category> getAllAsync;
+        
+        // Implementar un strategy
+        if (!request.DisableGlobalFilters)
+        {
+            getAllAsync = await _unitOfWork
+                .Repository<Category>()
+                .GetAllAsync();
+        }
+        else
+        {
+            getAllAsync = await _unitOfWork
+                .Repository<Category>()
+                .GetAllIgnoreQueryFiltersAsync();
+        }
 
-        var result = getAll
+        var result = getAllAsync
             .Select(Categories())
             .ToList();
+
         return result;
     }
 

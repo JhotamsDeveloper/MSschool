@@ -50,15 +50,17 @@ namespace MSschool.Infrastructure.EntityFramework.Repositories
             return result;
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync(
-            bool disableGlobalFilters = false) 
+        public async Task<IReadOnlyList<T>> GetAllAsync()
         {
-            IQueryable<T> query = _context.Set<T>();
-            if (disableGlobalFilters)
-            {
-                query.IgnoreQueryFilters();
-            }
-            return await query.ToListAsync();
+            return await _context.Set<T>()
+                .ToListAsync();
+        }
+
+        public async Task<IReadOnlyList<T>> GetAllIgnoreQueryFiltersAsync() 
+        {
+            return await _context.Set<T>()
+                .IgnoreQueryFilters()
+                .ToListAsync();
         }
 
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>>? predicate)
