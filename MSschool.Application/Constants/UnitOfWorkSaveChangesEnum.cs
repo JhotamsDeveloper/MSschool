@@ -1,6 +1,6 @@
 ﻿namespace MSschool.Application.Constants;
 
-internal enum UnitOfWorkSaveChangesEnum
+public enum UnitOfWorkSaveChangesEnum
 {
     Failed = 0,
     Saved = 1

@@ -6,7 +6,7 @@ using MSschool.Application.Domain.Models.Categories;
 
 namespace MSschool.Application.Features.Categories.Commands.CreateCategory;
 
-internal class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryCommand, Id>
+public class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryCommand, Id>
 {
     private readonly IUnitOfWork _unitOfWork;
 
