@@ -301,7 +301,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nchar(10)")
                         .IsFixedLength();
 
-                    b.Property<string>("Email")
+                    b.Property<string>("IEmail")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -574,7 +574,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("IEmail")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");

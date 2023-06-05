@@ -1,40 +1,25 @@
-﻿using MSschool.Infrastructure.EntityFramework.Repositories;
-using NetArchTest.Rules;
+﻿using NetArchTest.Rules;
 using Xunit;
 
 namespace MSschool.Test.Arquitecture;
 
 public class CleanArchitectureRulesTest
 {
-    [Fact]
-    public void ServiceClassesShouldHaveNameEndingWithServicex()
-    {
-        //var types = Types.InAssembly(typeof(UnitOfWorkService).Assembly);
-        //var isValid = types
-        //    .That()
-        //    .ResideInNamespace("MSschool.Infrastructure.EntityFramework.Repositories")
-        //    .Should()
-        //    .BeSealed()
-        //    .GetResult()
-        //    .IsSuccessful;
 
-        //Assert.True(isValid);
-    }
-
+    //Los nombres de las interfaces deben comenzar con una "I"
     [Fact]
-    public void ServiceClassesShouldHaveNameEndingWithService()
+    public void InterfaceNamesShouldStartWithAnI()
     {
         var result = Types.InCurrentDomain()
-                     .That()
-                     .ResideInNamespace(("MSschool.Infrastructure.EntityFramework.Services"))
-                     .And()
-                     .AreClasses()
-                     .Should().HaveNameEndingWith("Service")
-                     .GetResult();
+            .That().AreInterfaces()
+            .Should()
+            .HaveNameStartingWith("I")
+            .GetResult();
+
         Assert.True(result.IsSuccessful);
     }
 
-    //Las clases de servicio deben ser públicas y selladas
+    //Las clases de servicio deben ser no públicas y selladas
     [Fact]
     public void ServiceClassesShouldSealed()
     {
@@ -48,7 +33,5 @@ public class CleanArchitectureRulesTest
                     .GetResult();
         Assert.True(result.IsSuccessful);
     }
-
-
 
 }
