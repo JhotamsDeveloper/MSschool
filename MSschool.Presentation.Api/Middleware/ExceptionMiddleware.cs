@@ -39,8 +39,7 @@ namespace MSschool.Presentation.Api.Middleware
 
                     case ValidationException validationException:
                         statusCode = (int)HttpStatusCode.BadRequest;
-                        var validationJson = JsonConvert.SerializeObject(validationException.Errors);
-                        result = JsonConvert.SerializeObject(new CodeErrorException(statusCode, ex.Message, validationJson));
+                        result = JsonConvert.SerializeObject(new CodeErrorException(statusCode, ex.Message, validationException.Errors));
                         break;
 
                     case BadRequestException _:
