@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using MSschool.Application.Behaviours;
 
 namespace MSschool.Application
 {
@@ -12,6 +15,16 @@ namespace MSschool.Application
             services.AddMediatR(configuration =>
                 configuration.RegisterServicesFromAssembly(assemby));
 
+            services.AddValidatorsFromAssembly(assemby);
+
+            services.AddTransient(
+                typeof(IPipelineBehavior<,>), 
+                typeof(UnhandledExceptionBehaviour<,>));
+            
+            services.AddTransient(
+                typeof(IPipelineBehavior<,>), 
+                typeof(ValidationBehaviour<,>));
+            
             return services;
         }
     }

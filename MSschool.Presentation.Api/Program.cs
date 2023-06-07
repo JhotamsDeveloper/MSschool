@@ -1,7 +1,7 @@
 using Carter;
 using MSschool.Application;
 using MSschool.Infrastructure.EntityFramework;
-
+using MSschool.Presentation.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +28,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<ExceptionMiddleware>();
 app.MapCarter();
 app.UseHttpsRedirection();
 
