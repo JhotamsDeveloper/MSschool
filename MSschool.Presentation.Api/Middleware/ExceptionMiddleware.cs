@@ -3,72 +3,80 @@ using MSschool.Presentation.Api.Error;
 using Newtonsoft.Json;
 using System.Net;
 
-namespace MSschool.Presentation.Api.Middleware
+namespace MSschool.Presentation.Api.Middleware;
+
+public class ExceptionMiddleware
 {
-    public class ExceptionMiddleware
+    private readonly RequestDelegate _next;
+    private readonly ILogger<ExceptionMiddleware> _logger;
+    private readonly IHostEnvironment _environment;
+
+    public ExceptionMiddleware(
+        RequestDelegate next, 
+        ILogger<ExceptionMiddleware> logger, IHostEnvironment environment)
     {
-        private readonly RequestDelegate _next;
-        private readonly ILogger<ExceptionMiddleware> _logger;
-        private readonly IHostEnvironment _environment;
+        _next = next;
+        _logger = logger;
+        _environment = environment;
+    }
 
-        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger, IHostEnvironment environment)
+    public async Task InvokeAsync(HttpContext context)
+    {
+        try
         {
-            _next = next;
-            _logger = logger;
-            _environment = environment;
+            await _next(context);
         }
-
-        public async Task InvokeAsync(HttpContext context)
+        catch (Exception ex)
         {
-            try
+            _logger.LogError(ex, ex.Message);
+            context.Response.ContentType = "application/json";
+            var statusCode = (int)HttpStatusCode.InternalServerError;
+            var result = string.Empty;
+
+            switch (ex)
             {
-                await _next(context);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, ex.Message);
-                context.Response.ContentType = "application/json";
-                var statusCode = (int)HttpStatusCode.InternalServerError;
-                var result = string.Empty;
+                case NotFoundException _:
+                    statusCode = (int)HttpStatusCode.NotFound;
+                    break;
 
-                switch (ex)
-                {
-                    case NotFoundException _:
-                        statusCode = (int)HttpStatusCode.NotFound;
-                        break;
+                case ValidationException validationException:
+                    statusCode = (int)HttpStatusCode.BadRequest;
+                    result = JsonConvert.SerializeObject(
+                        new CodeErrorException(
+                            statusCode, 
+                            ex.Message, 
+                            validationException.Errors));
+                    break;
 
-                    case ValidationException validationException:
-                        statusCode = (int)HttpStatusCode.BadRequest;
-                        result = JsonConvert.SerializeObject(new CodeErrorException(statusCode, ex.Message, validationException.Errors));
-                        break;
+                case BadRequestException _:
+                    statusCode = (int)HttpStatusCode.BadRequest;
+                    break;
 
-                    case BadRequestException _:
-                        statusCode = (int)HttpStatusCode.BadRequest;
-                        break;
-
-                    default:
-                        break;
-                }
-
-                if (string.IsNullOrEmpty(result))
-                {
-                    if (_environment.IsDevelopment())
-                    {
-                        result = JsonConvert.SerializeObject(new CodeErrorException(statusCode, ex.Message, ex.StackTrace));
-                    }
-                    else
-                    {
-                        result = JsonConvert.SerializeObject(new CodeErrorException(statusCode, ex.Message));
-                    }
-                }
-
-
-                context.Response.StatusCode = statusCode;
-
-                await context.Response.WriteAsync(result);
-
+                default:
+                    break;
             }
 
+            if (string.IsNullOrEmpty(result))
+            {
+                if (_environment.IsDevelopment())
+                {
+                    result = JsonConvert.SerializeObject(
+                        new CodeErrorException(
+                            statusCode, 
+                            ex.Message, 
+                            ex.StackTrace));
+                }
+                else
+                {
+                    result = JsonConvert.SerializeObject(
+                        new CodeErrorException(
+                            statusCode, 
+                            ex.Message));
+                }
+            }
+
+            context.Response.StatusCode = statusCode;
+            await context.Response.WriteAsync(result);
         }
     }
 }
