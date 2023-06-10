@@ -43,13 +43,17 @@ public class ExceptionMiddleware
                     statusCode = (int)HttpStatusCode.BadRequest;
                     result = JsonConvert.SerializeObject(
                         new CodeErrorException(
-                            statusCode, 
-                            ex.Message, 
+                            statusCode,
+                            ex.Message,
                             validationException.Errors));
                     break;
 
                 case BadRequestException _:
                     statusCode = (int)HttpStatusCode.BadRequest;
+                    break;
+
+                case ErrorInternalException _:
+                    statusCode = (int)HttpStatusCode.InternalServerError;
                     break;
 
                 default:
@@ -62,15 +66,15 @@ public class ExceptionMiddleware
                 {
                     result = JsonConvert.SerializeObject(
                         new CodeErrorException(
-                            statusCode, 
-                            ex.Message, 
+                            statusCode,
+                            ex.Message,
                             ex.StackTrace));
                 }
                 else
                 {
                     result = JsonConvert.SerializeObject(
                         new CodeErrorException(
-                            statusCode, 
+                            statusCode,
                             ex.Message));
                 }
             }
@@ -79,4 +83,6 @@ public class ExceptionMiddleware
             await context.Response.WriteAsync(result);
         }
     }
+
+
 }

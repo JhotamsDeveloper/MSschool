@@ -19,8 +19,6 @@ namespace MSschool.Infrastructure.EntityFramework
                     {
                         sqlServerOptionsAction
                         .MigrationsAssembly("MSschool.Infrastructure.Migrations");
-                        sqlServerOptionsAction
-                        .EnableRetryOnFailure(maxRetryCount: 5);
                     }));
 
             services.AddScoped<IUnitOfWork, UnitOfWorkService>();

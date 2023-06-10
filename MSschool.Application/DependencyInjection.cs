@@ -13,17 +13,20 @@ namespace MSschool.Application
             var assemby = typeof(DependencyInjection).Assembly;
 
             services.AddMediatR(configuration =>
-                configuration.RegisterServicesFromAssembly(assemby));
+            {
+                configuration.RegisterServicesFromAssembly(assemby);
+                configuration.AddOpenBehavior(typeof(UnitOfWorkBehevior<,>));
+            });
 
             services.AddValidatorsFromAssembly(assemby);
 
             services.AddTransient(
                 typeof(IPipelineBehavior<,>), 
-                typeof(UnhandledExceptionBehaviour<,>));
+                typeof(UnhandledExceptionBehavior<,>));
             
             services.AddTransient(
                 typeof(IPipelineBehavior<,>), 
-                typeof(ValidationBehaviour<,>));
+                typeof(ValidationBehavior<,>));
             
             return services;
         }

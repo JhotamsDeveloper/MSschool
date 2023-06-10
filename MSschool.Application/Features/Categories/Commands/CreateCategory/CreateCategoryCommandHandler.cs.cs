@@ -3,6 +3,8 @@ using MSschool.Application.Constants;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
+using MSschool.Application.Domain.Models.Institutions;
+using System.Transactions;
 
 namespace MSschool.Application.Features.Categories.Commands.CreateCategory;
 
@@ -37,11 +39,33 @@ public class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComman
             .Repository<Category>()
             .AddAsync(category);
 
-        var result = await _unitOfWork.SaveChangesAsync();
+        await _unitOfWork
+            .Repository<Institution>()
+            .AddAsync(new Institution(
+                new Id(Guid.NewGuid()),
+                new Name("TECOC"),
+                "Jhotams@tecoc.educ.co",
+                "Antioquia",
+                "57",
+                "Santa Fe de Antioquia",
+                "0750501246787444578785",
+                "Llano de bolivar",
+                new Id(Guid.NewGuid())));
 
-        if (result.Equals(UnitOfWorkSaveChangesEnum.Failed))
-            throw new Exception(
-                "Error al guardar la categoria");
+        
+
+        //using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+        //{
+
+
+        //    if (result.Equals(UnitOfWorkSaveChangesEnum.Failed))
+        //        throw new Exception(
+        //            "Error al guardar la categoria");
+
+
+        //    transactionScope.Complete();
+        //    return category.Id!;
+        //}
 
         return category.Id!;
     }
