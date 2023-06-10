@@ -25,7 +25,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{99EC0E23-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Test", "MSschool.Test\MSschool.Test.csproj", "{91103066-B405-4CF4-8204-6C112A135441}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSschool.Infrastructure.Migrations", "MSschool.Infrastructure.Migrations\MSschool.Infrastructure.Migrations.csproj", "{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSschool.Infrastructure.Migrations", "MSschool.Infrastructure.Migrations\MSschool.Infrastructure.Migrations.csproj", "{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{356DE293-8099-4FA8-84BB-B292DBA34FFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C449C4D3-8EDC-4D40-B453-08A6E6113BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356DE293-8099-4FA8-84BB-B292DBA34FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356DE293-8099-4FA8-84BB-B292DBA34FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356DE293-8099-4FA8-84BB-B292DBA34FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356DE293-8099-4FA8-84BB-B292DBA34FFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  msschool.presentation.api:
+    image: ${DOCKER_REGISTRY-}msschoolpresentationapi
+    build:
+      context: .
+      dockerfile: MSschool.Presentation.Api/Dockerfile
