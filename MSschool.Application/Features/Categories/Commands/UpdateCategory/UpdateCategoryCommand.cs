@@ -1,4 +1,4 @@
-﻿using MSschool.Application.Abstracions;
+﻿using MSschool.Application.Abstractions;
 using MSschool.Application.Domain.Common;
 
 namespace MSschool.Application.Features.Categories.Commands.UpdateCategory;

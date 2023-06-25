@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace MSschool.Application.Abstracions;
+namespace MSschool.Application.Abstractions;
 
 public interface ICommandHandler<TCommnd> : IRequestHandler<TCommnd> where TCommnd : ICommand
 {

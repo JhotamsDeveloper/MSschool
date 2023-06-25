@@ -1,4 +1,4 @@
-﻿using MSschool.Application.Abstracions;
+﻿using MSschool.Application.Abstractions;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Models.Categories;
 

@@ -1,4 +1,4 @@
-﻿using MSschool.Application.Abstracions;
+﻿using MSschool.Application.Abstractions;
 
 namespace MSschool.Application.Features.Categories.Queries.GetActiveCategory;
 

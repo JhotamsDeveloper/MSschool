@@ -3,9 +3,10 @@ using MSschool.Application.Constants;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
+using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using Xunit;
 
-namespace MSschool.Application.Features.Categories.Commands.CreateCategory.Tests;
+namespace MSschool.Test.Features.Categories.Commands.CreateCategory;
 
 public class CreateCategoryCommandHandlerTest
 {
