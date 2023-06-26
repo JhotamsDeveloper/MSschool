@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using Microsoft.Extensions.Logging;
+using Moq;
 using MSschool.Application.Constants;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
@@ -13,12 +14,15 @@ public class CreateCategoryCommandHandlerTest
     private const string Id = "6717be28-4b35-48e8-8654-466ab8809b1d";
 
     Mock<IUnitOfWork>? _unitOfWork;
+    Mock<ILogger<CreateCategoryCommandHandler>>? _logger;
+
     CreateCategoryCommandHandler? handle;
 
     private void InitializeDependencies()
     {
         _unitOfWork = new Mock<IUnitOfWork>();
-        handle = new(_unitOfWork.Object);
+        _logger = new Mock<ILogger<CreateCategoryCommandHandler>>();
+        handle = new(_unitOfWork.Object, _logger.Object);
     }
 
     [Fact()]

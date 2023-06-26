@@ -1,12 +1,11 @@
 ﻿using MediatR;
-using MSschool.Application.Constants;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Exceptions;
 using System.Transactions;
 
 namespace MSschool.Application.Behaviours;
 
-public sealed class UnitOfWorkBehevior<TRequest, TResponse> : 
+public sealed class UnitOfWorkBehevior<TRequest, TResponse> :
     IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
 {
     private readonly IUnitOfWork _unitOfWork;

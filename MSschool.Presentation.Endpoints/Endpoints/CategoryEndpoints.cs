@@ -3,10 +3,12 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.OpenApi.Models;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using MSschool.Application.Features.Categories.Commands.UpdateCategory;
 using MSschool.Application.Features.Categories.Queries.GetActiveCategory;
 using MSschool.Application.Features.Categories.Queries.GetAllCategories;
+using System.Net;
 
 namespace MSschool.Presentation.Endpoints.Endpoints;
 
@@ -20,7 +22,7 @@ public class CategoryEndpoints : ICarterModule
             return Results.Ok(result);
         })
         .WithName("AddCategory")
-        .WithOpenApi();
+        .WithTags("Category");
 
         app.MapPost("/UpdateCategory", async (UpdateCategoryCommand command, ISender sender) =>
         {
@@ -28,7 +30,8 @@ public class CategoryEndpoints : ICarterModule
             return Results.Ok(result);
         })
         .WithName("UpdateCategory")
-        .WithOpenApi();
+        .WithOpenApi()
+        .WithTags("Category");
 
         app.MapGet("/ActiveCategory/{id:guid}", async (Guid id, ISender sender) =>
         {
@@ -37,7 +40,8 @@ public class CategoryEndpoints : ICarterModule
             return Results.Ok(result);
         })
         .WithName("ActiveCategory")
-        .WithOpenApi();
+        .WithOpenApi()
+        .WithTags("Category");
 
         app.MapGet("/AllActiveCategories", async (ISender sender) =>
         {
@@ -46,7 +50,8 @@ public class CategoryEndpoints : ICarterModule
             return Results.Ok(result);
         })
         .WithName("AllActiveCategories")
-        .WithOpenApi();
+        .WithOpenApi()
+        .WithTags("Category");
 
         app.MapGet("/AllCategoriesIncludingInactive", async (ISender sender) =>
         {
@@ -55,7 +60,8 @@ public class CategoryEndpoints : ICarterModule
             return Results.Ok(result);
         })
         .WithName("AllCategoriesIncludingInactive")
-        .WithOpenApi();
+        .WithOpenApi()
+        .WithTags("Category");
     }
 
 

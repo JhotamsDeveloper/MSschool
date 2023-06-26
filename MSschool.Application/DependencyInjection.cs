@@ -20,14 +20,18 @@ namespace MSschool.Application
 
             services.AddValidatorsFromAssembly(assemby);
 
-            services.AddTransient(
+            services.AddScoped(
                 typeof(IPipelineBehavior<,>), 
                 typeof(UnhandledExceptionBehavior<,>));
             
-            services.AddTransient(
+            services.AddScoped(
                 typeof(IPipelineBehavior<,>), 
                 typeof(ValidationBehavior<,>));
             
+            services.AddScoped(
+                typeof(IPipelineBehavior<,>),
+                typeof(LoggingPipelineBehavior<,>));
+
             return services;
         }
     }
