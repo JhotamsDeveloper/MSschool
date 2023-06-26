@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
-using MSschool.Application.Domain.Shared;
 
 namespace MSschool.Application.Behaviours;
 
