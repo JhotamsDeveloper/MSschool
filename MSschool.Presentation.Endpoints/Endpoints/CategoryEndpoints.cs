@@ -3,12 +3,10 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.OpenApi.Models;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using MSschool.Application.Features.Categories.Commands.UpdateCategory;
 using MSschool.Application.Features.Categories.Queries.GetActiveCategory;
 using MSschool.Application.Features.Categories.Queries.GetAllCategories;
-using System.Net;
 
 namespace MSschool.Presentation.Endpoints.Endpoints;
 
