@@ -10,7 +10,7 @@ public partial class Audit
         CreatedDate = CreatedDate.CreationDate();
     }
 
-    public Id? Id { get; private set; }
+    public Id Id { get; private set; }
     public Availability? Availability { get; private set; }
     public CreatedDate? CreatedDate { get; private set; }
     public Id? CreatedByIdUser { get; private set; }

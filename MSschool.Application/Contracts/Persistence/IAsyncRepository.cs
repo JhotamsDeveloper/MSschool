@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using MSschool.Application.Domain.Specifications;
+using System.Linq.Expressions;
 
 namespace MSschool.Application.Contracts.Persistence;
 
@@ -20,6 +21,9 @@ public interface IAsyncRepository<T> where T : class
         Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, 
         List<Expression<Func<T, object>>>? includes = null, 
         bool? disableTracking = true);
+
+    Task<T> GetIdWithSpecification(ISpecification<T> spec);
+    Task<IReadOnlyList<T>> GettAllWithSpec(ISpecification<T> spec);
 
     Task<bool> Exitst(Expression<Func<T, bool>> predicate);
 

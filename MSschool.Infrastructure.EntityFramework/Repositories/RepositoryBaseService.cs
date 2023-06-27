@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
+using MSschool.Application.Domain.Specifications;
 using MSschool.Infrastructure.EntityFramework.Persistence;
+using MSschool.Infrastructure.EntityFramework.Specification;
 using System.Linq.Expressions;
 
 namespace MSschool.Infrastructure.EntityFramework.Repositories;
@@ -128,6 +130,17 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
         return result!;
     }
 
+    public async Task<T> GetIdWithSpecification(ISpecification<T> spec)
+    {
+        var result = await ApplySpecification(spec).FirstOrDefaultAsync();
+        return result!;
+    }
+
+    public async Task<IReadOnlyList<T>> GettAllWithSpec(ISpecification<T> spec)
+    {
+        return await ApplySpecification(spec).ToListAsync();
+    }
+
     public void Update(T entity)
     {
         _context.Set<T>()
@@ -142,5 +155,10 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
         _context.Set<T>().Attach(entity);
         _context.Entry(entity).State = EntityState.Modified;
         await Task.CompletedTask;
+    }
+
+    private IQueryable<T> ApplySpecification(ISpecification<T> spec)
+    {
+        return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
     }
 }

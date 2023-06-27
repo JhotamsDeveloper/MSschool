@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using MSschool.Application.Features.Categories.Commands.UpdateCategory;
-using MSschool.Application.Features.Categories.Queries.GetActiveCategory;
+using MSschool.Application.Features.Categories.Queries.GetActiveCategoryById;
 using MSschool.Application.Features.Categories.Queries.GetAllCategories;
 
 namespace MSschool.Presentation.Endpoints.Endpoints;
@@ -31,13 +31,13 @@ public class CategoryEndpoints : ICarterModule
         .WithOpenApi()
         .WithTags("Category");
 
-        app.MapGet("/ActiveCategory/{id:guid}", async (Guid id, ISender sender) =>
+        app.MapGet("/GetCategoryActivaById/{id:guid}", async (Guid id, ISender sender) =>
         {
-            var category = new GetActiveCategoryQuery(id);
+            var category = new GetActiveCategoryByIdQuery(id);
             var result = await sender.Send(category);
             return Results.Ok(result);
         })
-        .WithName("ActiveCategory")
+        .WithName("GetCategoryActivaById")
         .WithOpenApi()
         .WithTags("Category");
 
