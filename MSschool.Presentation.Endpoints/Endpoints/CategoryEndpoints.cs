@@ -3,10 +3,14 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Primitives;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using MSschool.Application.Features.Categories.Commands.UpdateCategory;
 using MSschool.Application.Features.Categories.Queries.GetActiveCategoryById;
 using MSschool.Application.Features.Categories.Queries.GetAllCategories;
+using MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
+using System;
+using System.Net;
 
 namespace MSschool.Presentation.Endpoints.Endpoints;
 
@@ -41,14 +45,24 @@ public class CategoryEndpoints : ICarterModule
         .WithOpenApi()
         .WithTags("Category");
 
-        app.MapGet("/AllActiveCategories", async (ISender sender) =>
+        app.MapGet("/AllActiveCategories", async (HttpRequest request, ISender sender) =>
         {
-            var categories = new GetAllCategoriesQuery(false);
+            StringValues test = request.Query["PageIndex"];
+            var person = await request.ReadFromJsonAsync<PagGetAllCategoriesQuery>();
+            var categories = new PagGetAllCategoriesQuery() 
+            { 
+                PageIndex = 2,
+                PageSize= 2,
+                Search = string.Empty,
+                Sort = string.Empty,
+            };
+
             var result = await sender.Send(categories);
             return Results.Ok(result);
         })
         .WithName("AllActiveCategories")
         .WithOpenApi()
+        .Produces((int)HttpStatusCode.OK, typeof(PagGetAllCategoriesQuery))
         .WithTags("Category");
 
         app.MapGet("/AllCategoriesIncludingInactive", async (ISender sender) =>

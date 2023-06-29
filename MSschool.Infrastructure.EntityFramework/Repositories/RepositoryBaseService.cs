@@ -28,6 +28,11 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
             .AddAsync(entity);
     }
 
+    public async Task<int> CountAsync(ISpecification<T> spec)
+    {
+        return await ApplySpecification(spec).CountAsync();
+    }
+
     public void Delete(T entity)
     {
         _context
@@ -130,13 +135,13 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
         return result!;
     }
 
-    public async Task<T> GetIdWithSpecification(ISpecification<T> spec)
+    public async Task<T> GetIdWithSpec(ISpecification<T> spec)
     {
         var result = await ApplySpecification(spec).FirstOrDefaultAsync();
         return result!;
     }
 
-    public async Task<IReadOnlyList<T>> GettAllWithSpec(ISpecification<T> spec)
+    public async Task<IReadOnlyList<T>> GetAllWithSpec(ISpecification<T> spec)
     {
         return await ApplySpecification(spec).ToListAsync();
     }
