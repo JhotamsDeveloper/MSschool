@@ -45,16 +45,21 @@ public class CategoryEndpoints : ICarterModule
         .WithOpenApi()
         .WithTags("Category");
 
+        //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc
+        //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc&Search=ms
         app.MapGet("/AllActiveCategories", async (HttpRequest request, ISender sender) =>
         {
-            StringValues test = request.Query["PageIndex"];
-            var person = await request.ReadFromJsonAsync<PagGetAllCategoriesQuery>();
-            var categories = new PagGetAllCategoriesQuery() 
-            { 
-                PageIndex = 2,
-                PageSize= 2,
-                Search = string.Empty,
-                Sort = string.Empty,
+            _ = int.TryParse(request.Query["PageIndex"], out int pageIndex);
+            _ = int.TryParse(request.Query["PageSize"], out int pageSize);
+            var search = request.Query["Search"];
+            var sort = request.Query["Sort"];
+
+            var categories = new PagGetAllCategoriesQuery()
+            {
+                PageIndex= pageIndex,
+                PageSize = pageSize,
+                Search = search,
+                Sort = sort,
             };
 
             var result = await sender.Send(categories);

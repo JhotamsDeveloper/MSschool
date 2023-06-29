@@ -1,4 +1,6 @@
-﻿namespace MSschool.Application.Domain.Common;
+﻿using System.Text.RegularExpressions;
+
+namespace MSschool.Application.Domain.Common;
 
 public record Name
 {
@@ -11,10 +13,8 @@ public record Name
 
     public string Value { get; init; }
 
-    public static bool Equals(string value, string expectation)
+    public static bool Contains(string value, string contain)
     {
-        return string
-            .Equals(value, expectation, ordinalIgnoreCase);
+        return value.Contains(contain);
     }
-
 }
