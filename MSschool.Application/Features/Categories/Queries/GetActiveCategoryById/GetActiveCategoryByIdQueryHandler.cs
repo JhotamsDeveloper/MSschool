@@ -18,7 +18,7 @@ public sealed class GetActiveCategoryByIdQueryHandler : IQueryHandler<GetActiveC
         var category = await _unitOfWork.Repository<Category>().GetByIdAsync(request.Id);
         var result = new GetActiveCategoryByIdResponse(
             (Guid)category.Id!.Value!,
-            category.Name.Value,
+            category.Name,
             category.Description);
 
         return result;

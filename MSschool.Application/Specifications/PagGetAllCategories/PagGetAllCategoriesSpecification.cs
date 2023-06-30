@@ -1,4 +1,5 @@
-﻿using MSschool.Application.Domain.Models.Categories;
+﻿using MSschool.Application.Domain.Common;
+using MSschool.Application.Domain.Models.Categories;
 using MSschool.Application.Domain.Specifications;
 
 namespace MSschool.Application.Specifications.PagGetAllCategories;
@@ -6,7 +7,7 @@ namespace MSschool.Application.Specifications.PagGetAllCategories;
 public sealed class PagGetAllCategoriesSpecification : BaseSpecification<Category>
 {
     public PagGetAllCategoriesSpecification(PagGetAllCategoriesSettingsParams settings) :
-        base(bs => string.IsNullOrEmpty(settings.Search) || bs.Description.Contains(settings.Search))
+        base(bs => string.IsNullOrEmpty(settings.Search) || bs.Name.Contains(settings.Search))
     {
         ApplyPaging(settings.PageSize * (settings.PageIndex - 1), settings.PageSize);
 

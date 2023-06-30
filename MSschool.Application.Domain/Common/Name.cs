@@ -13,8 +13,8 @@ public record Name
 
     public string Value { get; init; }
 
-    public static bool Contains(string value, string contain)
+    public bool Contains(string contain)
     {
-        return value.Contains(contain);
+        return Value.Contains(contain);
     }
 }

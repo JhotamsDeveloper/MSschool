@@ -34,7 +34,7 @@ public sealed class PagGetAllCategoriesQueryHandler : ICommandHandler<PagGetAllC
         var rounded = Math.Ceiling(Convert.ToDecimal(totalCategories) / Convert.ToDecimal(request.PageSize));
         var totalPages = Convert.ToInt32(rounded);
 
-        var data = categories.Select(category => new PagGetAllCategoriesResponse(category.Id.Value, category.Name.Value, category.Description)).ToList();
+        var data = categories.Select(category => new PagGetAllCategoriesResponse(category.Id.Value, category.Name, category.Description)).ToList();
 
         var result = new PaginationResponse<PagGetAllCategoriesResponse>()
         {

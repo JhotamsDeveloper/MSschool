@@ -44,6 +44,6 @@ internal sealed class GetAllCategoriesQueryHandler :
     private static Func<Category, GetAllCategoriesResponse> Categories() =>
         cat => new GetAllCategoriesResponse(
             cat.Id!.Value,
-            cat.Name.Value,
+            cat.Name,
             cat.Description);
 }

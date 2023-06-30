@@ -7,7 +7,7 @@ public class Category : Audit
 {
     public Category(
         Id id, 
-        Name name, 
+        string name, 
         string description, 
         Id createdByIdUser) : base (id, createdByIdUser)
     {
@@ -15,11 +15,11 @@ public class Category : Audit
         Description = description;
     }
 
-    public Name Name { get; private set; }
+    public string Name { get; private set; }
 
     public string Description { get; private set; }
 
-    public void Update(Id id, Name name, string description, Availability availability, Id lastModifiedByIdUser)
+    public void Update(Id id, string name, string description, Availability availability, Id lastModifiedByIdUser)
     {
         Name = name;
         Description= description;

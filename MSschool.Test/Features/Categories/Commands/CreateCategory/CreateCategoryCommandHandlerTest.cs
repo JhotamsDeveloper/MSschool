@@ -34,7 +34,7 @@ public class CreateCategoryCommandHandlerTest
 
         var category = new Category(
             new Id(Guid.Parse(Id)),
-            new Name("Docente"),
+            "Docente",
             "Description",
             new Id(Guid.NewGuid()));
 

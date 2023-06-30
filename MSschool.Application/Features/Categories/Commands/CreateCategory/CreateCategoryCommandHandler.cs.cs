@@ -34,7 +34,7 @@ public class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComman
 
         var category = new Category(
             new Id(Guid.NewGuid()),
-            new Name(request.Name),
+            request.Name,
             request.Description,
             new Id(Guid.Empty));
 

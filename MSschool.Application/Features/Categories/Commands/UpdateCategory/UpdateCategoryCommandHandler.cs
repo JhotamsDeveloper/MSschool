@@ -25,7 +25,7 @@ internal class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryComm
 
         category.Update(
             new Id(request.Id),
-            new Name(request.Name),
+            request.Name,
             request.Description,
             new Availability(true),
             new Id(request.LastModifiedByIdUser));

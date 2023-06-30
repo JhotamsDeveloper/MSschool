@@ -18,9 +18,7 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
 
         builder.Property(e => e.Description).HasMaxLength(250);
 
-        builder.Property(e => e.Name)
-            .HasConversion(e => e!.Value, value => new Name(value))
-            .HasMaxLength(50);
+        builder.Property(e => e.Name).HasMaxLength(50);
 
         #region "AUDIT"
         builder.HasKey(x => x.Id);
