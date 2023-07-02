@@ -8,7 +8,7 @@ public abstract class SpecificationParams
     public string? Sort { get; set; }
     public string? Search { get; set; }
     public int PageIndex { get; set; } = 1;
-
+    public bool DisableGlobalFilters { get; set; }
     public int PageSize
     {
         get => pageSize;

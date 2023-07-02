@@ -36,5 +36,7 @@ public sealed class PagGetAllCategoriesSpecification : BaseSpecification<Categor
                     break;
             }
         }
+
+        AddIgnoreQueryFilters(settings.DisableGlobalFilters);
     }
 }

@@ -2,17 +2,13 @@
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.Primitives;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using MSschool.Application.Features.Categories.Commands.UpdateCategory;
 using MSschool.Application.Features.Categories.Queries.GetActiveCategoryById;
 using MSschool.Application.Features.Categories.Queries.GetAllCategories;
 using MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
 using MSschool.Application.Handlers;
-using System;
-using System.Net;
 
 namespace MSschool.Presentation.Endpoints.Endpoints;
 
@@ -53,10 +49,11 @@ public class CategoryEndpoints : ICarterModule
         {
             var categories = new PagGetAllCategoriesQuery()
             {
-                PageIndex= query.PageIndex,
+                PageIndex = query.PageIndex,
                 PageSize = query.PageSize,
                 Search = query.Search,
                 Sort = query.Sort,
+                DisableGlobalFilters = false
             };
 
             var result = await sender.Send(categories);
@@ -67,9 +64,17 @@ public class CategoryEndpoints : ICarterModule
         .WithOpenApi()
         .WithTags("Category");
 
-        app.MapGet("/AllCategoriesIncludingInactive", async (ISender sender) =>
+        app.MapGet("/AllCategoriesIncludingInactive", async (PagApiMinimalHelper query, ISender sender) =>
         {
-            var categories = new GetAllCategoriesQuery(true);
+            var categories = new PagGetAllCategoriesQuery()
+            {
+                PageIndex = query.PageIndex,
+                PageSize = query.PageSize,
+                Search = query.Search,
+                Sort = query.Sort,
+                DisableGlobalFilters = true
+            };
+
             var result = await sender.Send(categories);
             return Results.Ok(result);
         })

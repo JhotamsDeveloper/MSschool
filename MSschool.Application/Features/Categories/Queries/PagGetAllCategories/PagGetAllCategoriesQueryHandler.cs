@@ -22,7 +22,8 @@ public sealed class PagGetAllCategoriesQueryHandler : ICommandHandler<PagGetAllC
             PageIndex = request.PageIndex,
             PageSize = request.PageSize,
             Search = request.Search,
-            Sort = request.Sort
+            Sort = request.Sort,
+            DisableGlobalFilters = request.DisableGlobalFilters
         };
 
         var getAllWithSpec = new PagGetAllCategoriesSpecification(settingsParams);

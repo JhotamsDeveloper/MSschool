@@ -48,9 +48,9 @@ public class BaseSpecification<T> : ISpecification<T>
         IsPagingEnable = true;
     }
 
-    protected void AddIgnoreQueryFilters()
+    protected void AddIgnoreQueryFilters(bool filter)
     {
-        IgnoreQueryFilters = true;
+        IgnoreQueryFilters = filter;
     }
 
 }
