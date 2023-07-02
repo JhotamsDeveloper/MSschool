@@ -1,4 +1,4 @@
-﻿using MSschool.Application.Domain.Common;
+﻿using MSschool.Application.Constants;
 using MSschool.Application.Domain.Models.Categories;
 using MSschool.Application.Domain.Specifications;
 
@@ -15,19 +15,19 @@ public sealed class PagGetAllCategoriesSpecification : BaseSpecification<Categor
         {
             switch (settings.Sort)
             {
-                case "nameAsc":
+                case CategoryOrdering.nameAsc:
                     AddOrderBy(x => x.Name);
                     break;
 
-                case "nameDesc":
+                case CategoryOrdering.nameDesc:
                     AddOrderByDesc(x => x.Name);
                     break;
 
-                case "idAsc":
+                case CategoryOrdering.idAsc:
                     AddOrderBy(x => x.Id);
                     break;
 
-                case "idDesc":
+                case CategoryOrdering.idDesc:
                     AddOrderByDesc(x => x.Id);
                     break;
 
