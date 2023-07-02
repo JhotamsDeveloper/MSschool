@@ -51,7 +51,6 @@ public class CategoryEndpoints : ICarterModule
         //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc&Search=ms
         app.MapGet("/AllActiveCategories", async (PagApiMinimalHelper query, ISender sender) =>
         {
-
             var categories = new PagGetAllCategoriesQuery()
             {
                 PageIndex= query.PageIndex,

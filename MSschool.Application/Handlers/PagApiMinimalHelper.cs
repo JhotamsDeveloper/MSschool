@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using MSschool.Application.Constants.Pagination;
 using System.Reflection;
 
 namespace MSschool.Application.Handlers;
@@ -12,33 +13,16 @@ public record class PagApiMinimalHelper(string Sort, string Search, int PageInde
             throw new ArgumentNullException(nameof(parameter));
         }
 
-        const string sortkey = "sort";
-        const string searchkey = "search";
-        const string pageindexkey = "pageIndex";
-        const string pagesizekey = "pagesize";
+        string sort = context.Request.Query[PaginationHandlerKeys.sortkey]!;
+        string search = context.Request.Query[PaginationHandlerKeys.searchkey]!;
 
-        Enum.TryParse<SortDirection>(context.Request.Query[sortkey],
-                             ignoreCase: true, out var _);
-
-        _ = int.TryParse(context.Request.Query[pageindexkey], out var pageIndex);
+        _ = int.TryParse(context.Request.Query[PaginationHandlerKeys.pageindexkey], out var pageIndex);
         pageIndex = pageIndex == 0 ? 1 : pageIndex;
 
-        _ = int.TryParse(context.Request.Query[pagesizekey], out var pagesize);
+        _ = int.TryParse(context.Request.Query[PaginationHandlerKeys.pagesizekey], out var pagesize);
         pagesize = pagesize == 0 ? 3 : pagesize;
 
-        var result = new PagApiMinimalHelper(
-            context.Request.Query[sortkey].ToString(),
-            context.Request.Query[searchkey].ToString(),
-            pageIndex,
-            pagesize);
-
+        var result = new PagApiMinimalHelper(sort, search, pageIndex, pagesize);
         return ValueTask.FromResult<PagApiMinimalHelper?>(result);
     }
-}
-
-public enum SortDirection
-{
-    Default,
-    Asc,
-    Desc
 }
