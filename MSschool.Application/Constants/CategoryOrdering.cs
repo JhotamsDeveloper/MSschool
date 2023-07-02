@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace MSschool.Application.Constants;
 
-namespace MSschool.Application.Constants
+public static class CategoryOrdering
 {
-    internal class CategoryOrdering
-    {
-    }
+    public const string nameAsc = "nameAsc";
+    public const string nameDesc = "nameDesc";
+    public const string idAsc = "idAsc";
+    public const string idDesc = "idDesc";
 }
