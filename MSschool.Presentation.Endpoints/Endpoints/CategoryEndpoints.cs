@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Primitives;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
@@ -9,6 +10,7 @@ using MSschool.Application.Features.Categories.Commands.UpdateCategory;
 using MSschool.Application.Features.Categories.Queries.GetActiveCategoryById;
 using MSschool.Application.Features.Categories.Queries.GetAllCategories;
 using MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
+using MSschool.Application.Handlers;
 using System;
 using System.Net;
 
@@ -47,27 +49,23 @@ public class CategoryEndpoints : ICarterModule
 
         //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc
         //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc&Search=ms
-        app.MapGet("/AllActiveCategories", async (HttpRequest request, ISender sender) =>
+        app.MapGet("/AllActiveCategories", async (PagApiMinimalHelper query, ISender sender) =>
         {
-            _ = int.TryParse(request.Query["PageIndex"], out int pageIndex);
-            _ = int.TryParse(request.Query["PageSize"], out int pageSize);
-            var search = request.Query["Search"];
-            var sort = request.Query["Sort"];
 
             var categories = new PagGetAllCategoriesQuery()
             {
-                PageIndex= pageIndex,
-                PageSize = pageSize,
-                Search = search,
-                Sort = sort,
+                PageIndex= query.PageIndex,
+                PageSize = query.PageSize,
+                Search = query.Search,
+                Sort = query.Sort,
             };
 
             var result = await sender.Send(categories);
             return Results.Ok(result);
         })
         .WithName("AllActiveCategories")
+        .Produces<PagApiMinimalHelper>(StatusCodes.Status200OK)
         .WithOpenApi()
-        .Produces((int)HttpStatusCode.OK, typeof(PagGetAllCategoriesQuery))
         .WithTags("Category");
 
         app.MapGet("/AllCategoriesIncludingInactive", async (ISender sender) =>
