@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.OpenApi.Models;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using MSschool.Application.Features.Categories.Commands.UpdateCategory;
 using MSschool.Application.Features.Categories.Queries.GetActiveCategoryById;
@@ -18,6 +19,16 @@ public class CategoryEndpoints : ICarterModule
         var category = app.MapGroup("/category");
 
         category.MapPost("/Add", AddCategory)
+            .WithOpenApi(generatedOperation =>
+            {
+                var parameter = new OpenApiParameter
+                {
+                    Deprecated = true,
+                    Description = "Esto es una prueba",
+                    Name = "categoryTEST"
+                };
+                return generatedOperation;
+            })
             .WithName("AddCategory")
             .WithTags("Category"); ;
 
