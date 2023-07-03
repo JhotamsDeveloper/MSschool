@@ -21,13 +21,13 @@ namespace MSschool.Application
             services.AddValidatorsFromAssembly(assemby);
 
             services.AddScoped(
-                typeof(IPipelineBehavior<,>), 
+                typeof(IPipelineBehavior<,>),
                 typeof(UnhandledExceptionBehavior<,>));
-            
+
             services.AddScoped(
-                typeof(IPipelineBehavior<,>), 
+                typeof(IPipelineBehavior<,>),
                 typeof(ValidationBehavior<,>));
-            
+
             services.AddScoped(
                 typeof(IPipelineBehavior<,>),
                 typeof(LoggingPipelineBehavior<,>));

@@ -6,7 +6,9 @@ namespace MSschool.Infrastructure.EntityFramework.Specification;
 
 public sealed class SpecificationEvaluator<T> where T : Audit
 {
-    public static IQueryable<T> GetQuery(IQueryable<T> inputQuery, ISpecification<T> spec)
+    public static IQueryable<T> GetQuery(
+        IQueryable<T> inputQuery, 
+        ISpecification<T> spec)
     {
         if (spec.OrderBy != null)
         {

@@ -5,5 +5,4 @@ namespace MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
 
 public class PagGetAllCategoriesQuery : PaginationBaseQuery, ICommand<PaginationResponse<PagGetAllCategoriesResponse>>
 {
-    public bool DisableGlobalFilters { get; set; }
 }

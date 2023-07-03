@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using MSschool.Application.Contracts.Persistence;
-using MSschool.Application.Exceptions;
 using System.Transactions;
 
 namespace MSschool.Application.Behaviours;
@@ -30,23 +29,14 @@ public sealed class UnitOfWorkBehevior<TRequest, TResponse> :
             transactionScope.Complete();
             return response;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            var message = ex.Message;
-            if (ValidateInnerExceptionMessage(ex))
-                message = $"{message}, {ex.InnerException!.Message}";
-
-            throw new ErrorInternalException(message);
+            throw;
         }
     }
 
     private static bool IsNotCommand()
     {
         return !typeof(TRequest).Name.EndsWith("Command");
-    }
-
-    private static bool ValidateInnerExceptionMessage(Exception ex)
-    {
-        return ex.InnerException is not null && !string.IsNullOrEmpty(ex.InnerException.Message);
     }
 }

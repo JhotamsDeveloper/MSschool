@@ -6,7 +6,8 @@ using MSschool.Application.Specifications.PagGetAllCategories;
 
 namespace MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
 
-public sealed class PagGetAllCategoriesQueryHandler : ICommandHandler<PagGetAllCategoriesQuery, PaginationResponse<PagGetAllCategoriesResponse>>
+public sealed class PagGetAllCategoriesQueryHandler :
+    ICommandHandler<PagGetAllCategoriesQuery, PaginationResponse<PagGetAllCategoriesResponse>>
 {
     private readonly IUnitOfWork _unitOfWork;
 
@@ -15,7 +16,8 @@ public sealed class PagGetAllCategoriesQueryHandler : ICommandHandler<PagGetAllC
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<PaginationResponse<PagGetAllCategoriesResponse>> Handle(PagGetAllCategoriesQuery request, CancellationToken cancellationToken)
+    public async Task<PaginationResponse<PagGetAllCategoriesResponse>> Handle(
+        PagGetAllCategoriesQuery request, CancellationToken cancellationToken)
     {
         var settingsParams = new PagGetAllCategoriesSettingsParams()
         {
@@ -27,15 +29,25 @@ public sealed class PagGetAllCategoriesQueryHandler : ICommandHandler<PagGetAllC
         };
 
         var getAllWithSpec = new PagGetAllCategoriesSpecification(settingsParams);
-        var categories = await _unitOfWork.Repository<Category>().GetAllWithSpec(getAllWithSpec);
+        var categories = await _unitOfWork
+            .Repository<Category>()
+            .GetAllWithSpec(getAllWithSpec);
 
         var countSpec = new PagGetAllCategoriesCounterSpec(settingsParams);
-        var totalCategories = await _unitOfWork.Repository<Category>().CountAsync(countSpec);
+        var totalCategories = await _unitOfWork
+            .Repository<Category>()
+            .CountAsync(countSpec);
 
-        var rounded = Math.Ceiling(Convert.ToDecimal(totalCategories) / Convert.ToDecimal(request.PageSize));
+        var rounded = Math
+            .Ceiling(Convert.ToDecimal(totalCategories) / Convert.ToDecimal(request.PageSize));
         var totalPages = Convert.ToInt32(rounded);
 
-        var data = categories.Select(category => new PagGetAllCategoriesResponse(category.Id.Value, category.Name, category.Description)).ToList();
+        var data = categories.Select(category =>
+        new PagGetAllCategoriesResponse(
+            category.Id.Value,
+            category.Name,
+            category.Description))
+            .ToList();
 
         var result = new PaginationResponse<PagGetAllCategoriesResponse>()
         {

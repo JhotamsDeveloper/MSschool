@@ -24,12 +24,12 @@ public class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComman
     {
         var existCategory = await _unitOfWork
             .Repository<Category>()
-            .Exitst(e => e.Name!.Equals(new Name(request.Name)));
+            .Exitst(e => e.Name!.Equals(request.Name));
 
         if (existCategory)
         {
             _logger.LogWarning("La {@category}, {@request} ya existe", nameof(Category), request);
-            throw new BadRequestException($"La {nameof(Category)} ya existe");
+            throw new BadRequestEx($"La {nameof(Category)} ya existe");
         }
 
         var category = new Category(

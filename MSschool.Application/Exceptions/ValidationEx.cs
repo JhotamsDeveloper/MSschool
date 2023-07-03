@@ -2,16 +2,16 @@
 
 namespace MSschool.Application.Exceptions;
 
-public class ValidationException : ApplicationException
+public class ValidationEx : ApplicationException
 {
     public IDictionary<string, string[]> Errors { get; set; }
 
-    public ValidationException() : base("Se ha presentado uno o más errores de validación")
+    public ValidationEx() : base("Se ha presentado uno o más errores de validación")
     {
         Errors = new Dictionary<string, string[]>();
     }
 
-    public ValidationException(IEnumerable<ValidationFailure> failures) : this()
+    public ValidationEx(IEnumerable<ValidationFailure> failures) : this()
     {
         Errors = failures
             .GroupBy(e => e.PropertyName, e => e.ErrorMessage)

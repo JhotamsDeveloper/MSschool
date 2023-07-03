@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Routing;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using MSschool.Application.Features.Categories.Commands.UpdateCategory;
 using MSschool.Application.Features.Categories.Queries.GetActiveCategoryById;
-using MSschool.Application.Features.Categories.Queries.GetAllCategories;
 using MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
 using MSschool.Application.Handlers;
 
@@ -16,15 +15,20 @@ public class CategoryEndpoints : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("/AddCategory", async (CreateCategoryCommand command, ISender sender) =>
+        var category = app.MapGroup("/category");
+
+        category.MapPost("/Add", AddCategory)
+            .WithName("AddCategory")
+            .WithTags("Category"); ;
+
+        static async Task<IResult> AddCategory(CreateCategoryCommand command, ISender sender)
         {
             var result = await sender.Send(command);
-            return Results.Ok(result);
-        })
-        .WithName("AddCategory")
-        .WithTags("Category");
+            return TypedResults.Ok(result);
+        }
 
-        app.MapPost("/UpdateCategory", async (UpdateCategoryCommand command, ISender sender) =>
+
+        category.MapPost("/Update", async (UpdateCategoryCommand command, ISender sender) =>
         {
             var result = await sender.Send(command);
             return Results.Ok(result);
@@ -33,7 +37,7 @@ public class CategoryEndpoints : ICarterModule
         .WithOpenApi()
         .WithTags("Category");
 
-        app.MapGet("/GetCategoryActivaById/{id:guid}", async (Guid id, ISender sender) =>
+        category.MapGet("/GetActivaById/{id:guid}", async (Guid id, ISender sender) =>
         {
             var category = new GetActiveCategoryByIdQuery(id);
             var result = await sender.Send(category);
@@ -45,7 +49,7 @@ public class CategoryEndpoints : ICarterModule
 
         //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc
         //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc&Search=ms
-        app.MapGet("/AllActiveCategories", async (PagApiMinimalHelper query, ISender sender) =>
+        category.MapGet("/AllActive", async (PagApiMinimalHelper query, ISender sender) =>
         {
             var categories = new PagGetAllCategoriesQuery()
             {
@@ -60,11 +64,10 @@ public class CategoryEndpoints : ICarterModule
             return Results.Ok(result);
         })
         .WithName("AllActiveCategories")
-        .Produces<PagApiMinimalHelper>(StatusCodes.Status200OK)
         .WithOpenApi()
         .WithTags("Category");
 
-        app.MapGet("/AllCategoriesIncludingInactive", async (PagApiMinimalHelper query, ISender sender) =>
+        category.MapGet("/AllIncludingInactive", async (PagApiMinimalHelper query, ISender sender) =>
         {
             var categories = new PagGetAllCategoriesQuery()
             {
@@ -82,6 +85,4 @@ public class CategoryEndpoints : ICarterModule
         .WithOpenApi()
         .WithTags("Category");
     }
-
-
 }

@@ -35,11 +35,11 @@ public class ExceptionMiddleware
 
             switch (ex)
             {
-                case NotFoundException _:
+                case NotFoundEx _:
                     statusCode = (int)HttpStatusCode.NotFound;
                     break;
 
-                case ValidationException validationException:
+                case ValidationEx validationException:
                     statusCode = (int)HttpStatusCode.BadRequest;
                     result = JsonConvert.SerializeObject(
                         new CodeErrorException(
@@ -48,11 +48,11 @@ public class ExceptionMiddleware
                             validationException.Errors));
                     break;
 
-                case BadRequestException _:
+                case BadRequestEx _:
                     statusCode = (int)HttpStatusCode.BadRequest;
                     break;
 
-                case ErrorInternalException _:
+                case ErrorInternalEx _:
                     statusCode = (int)HttpStatusCode.InternalServerError;
                     break;
 
