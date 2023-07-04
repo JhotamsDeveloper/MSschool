@@ -7,8 +7,8 @@ public record CreatedDate
     private CreatedDate(DateTime value) => 
         Value = value;
 
-    public DateTime Value { get; init; }
-    
+    public DateTime Value { get; private set; }
+
     public static CreatedDate CreationDate()
     {
         var date = DateTimeHelper.GetDateAndTime();

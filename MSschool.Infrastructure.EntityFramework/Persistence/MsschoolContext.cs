@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.AcademicLevels;
 using MSschool.Application.Domain.Models.AcademicProgramUsers;
 using MSschool.Application.Domain.Models.AcademicsProgram;
@@ -53,6 +54,26 @@ public partial class MsschoolContext : DbContext
     public virtual DbSet<UserAssignment> UserAssignments { get; set; }
 
     public virtual DbSet<UserCategory> UserCategories { get; set; }
+
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        foreach (var entry in ChangeTracker.Entries<Audit>())
+        {
+            switch (entry.State)
+            {
+                case EntityState.Added:
+                    entry.Entity.SetAvailability(new Availability(true));
+                    entry.Entity.SetCreatedDate(CreatedDate.CreationDate());
+                    break;
+
+                case EntityState.Modified:
+                    entry.Entity.SetLastModifiedDate(LastModifiedDate.CreationDate());
+                    break;
+            }
+        }
+
+        return base.SaveChangesAsync(cancellationToken);
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

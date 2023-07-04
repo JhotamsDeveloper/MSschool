@@ -6,8 +6,6 @@ public partial class Audit
     {
         Id = id;
         CreatedByIdUser = createdByIdUser;
-        Availability = new Availability(true);
-        CreatedDate = CreatedDate.CreationDate();
     }
 
     public Id Id { get; private set; }
@@ -23,5 +21,20 @@ public partial class Audit
         LastModifiedByIdUser = lastModifiedByIdUser;
         Availability = availability;
         LastModifiedDate = LastModifiedDate.CreationDate();
+    }
+
+    public void SetAvailability(Availability? availability)
+    {
+        Availability = availability;
+    }
+
+    public void SetCreatedDate(CreatedDate createdDate)
+    {
+        CreatedDate = createdDate;
+    }
+
+    public void SetLastModifiedDate(LastModifiedDate modifiedDate)
+    {
+        LastModifiedDate = modifiedDate;
     }
 }
