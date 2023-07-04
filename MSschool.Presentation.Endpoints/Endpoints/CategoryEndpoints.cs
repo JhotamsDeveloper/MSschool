@@ -19,18 +19,16 @@ public class CategoryEndpoints : ICarterModule
         var category = app.MapGroup("/category");
 
         category.MapPost("/Add", AddCategory)
-            .WithOpenApi(generatedOperation =>
+            .WithOpenApi(generatedOperation => new(generatedOperation)
             {
-                var parameter = new OpenApiParameter
-                {
-                    Deprecated = true,
-                    Description = "Esto es una prueba",
-                    Name = "categoryTEST"
-                };
-                return generatedOperation;
+                OperationId = "AddCategory",
+                Tags = new List<OpenApiTag>() { new OpenApiTag { Name = "Category" } },
+                Summary = "Servicio encargado de crear todas las categorias",
+                Description = "This is a description"
             })
-            .WithName("AddCategory")
-            .WithTags("Category"); ;
+            .Produces<CreateCategoryCommand>(StatusCodes.Status200OK)
+            .Produces(StatusCodes.Status400BadRequest)
+            .Accepts<CreateCategoryCommand>("application/json");
 
         static async Task<IResult> AddCategory(CreateCategoryCommand command, ISender sender)
         {
