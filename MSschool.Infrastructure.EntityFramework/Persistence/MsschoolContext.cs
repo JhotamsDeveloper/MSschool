@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MSschool.Application.Contracts.Insfrastructure;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.AcademicLevels;
 using MSschool.Application.Domain.Models.AcademicProgramUsers;
@@ -19,14 +20,15 @@ namespace MSschool.Infrastructure.EntityFramework.Persistence;
 
 public partial class MsschoolContext : DbContext
 {
+    private readonly IAuditContex? _auditContex;
     public MsschoolContext()
     {
 
     }
 
-    public MsschoolContext(DbContextOptions<MsschoolContext> options) : base(options)
+    public MsschoolContext(DbContextOptions<MsschoolContext> options, IAuditContex? auditContex) : base(options)
     {
-
+        _auditContex = auditContex;
     }
 
     public virtual DbSet<AcademicLevel> AcademicLevels { get; set; }

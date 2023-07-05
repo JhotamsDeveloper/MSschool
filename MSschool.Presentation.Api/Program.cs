@@ -11,6 +11,7 @@ builder.Services
     .AddInfraestructureEntityFramework(builder.Configuration)
     .AddAplication();
 
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(config =>
 {

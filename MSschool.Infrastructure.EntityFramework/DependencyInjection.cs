@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MSschool.Application.Contracts.Insfrastructure;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Infrastructure.EntityFramework.Persistence;
 using MSschool.Infrastructure.EntityFramework.Repositories;
@@ -14,13 +15,14 @@ namespace MSschool.Infrastructure.EntityFramework
         {
             services.AddDbContext<MsschoolContext>(options =>
                 options.UseSqlServer(
-                    configuration.GetConnectionString("ConnectionString"), 
-                    sqlServerOptionsAction => 
+                    configuration.GetConnectionString("ConnectionString"),
+                    sqlServerOptionsAction =>
                     {
                         sqlServerOptionsAction
                         .MigrationsAssembly("MSschool.Infrastructure.Migrations");
                     }));
 
+            services.AddScoped<IAuditContex, AuditContexService>();
             services.AddScoped<IUnitOfWork, UnitOfWorkService>();
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBaseService<>));
 
