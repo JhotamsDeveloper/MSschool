@@ -14,13 +14,6 @@ public partial class Audit
     public LastModifiedDate? LastModifiedDate { get; private set; }
     public string? LastModifiedByUser { get; private set; }
 
-    public void Update(Id id, Availability? availability)
-    {
-        Id = id;
-        Availability = availability;
-        LastModifiedDate = LastModifiedDate.CreationDate();
-    }
-
     public void SetAvailability(Availability? availability)
     {
         Availability = availability;
@@ -31,8 +24,18 @@ public partial class Audit
         CreatedDate = createdDate;
     }
 
+    public void SetCreatedByUser(string createdByUser)
+    {
+        CreatedByUser = createdByUser;
+    }
+
     public void SetLastModifiedDate(LastModifiedDate modifiedDate)
     {
         LastModifiedDate = modifiedDate;
+    }
+
+    public void SetLastModifiedByUser(string lastModifiedByUser)
+    {
+        LastModifiedByUser = lastModifiedByUser;
     }
 }

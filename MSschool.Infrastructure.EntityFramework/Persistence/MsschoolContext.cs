@@ -59,17 +59,20 @@ public partial class MsschoolContext : DbContext
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
+        var user = _auditContex!.GetUserFromRecord()!;
         foreach (var entry in ChangeTracker.Entries<Audit>())
         {
             switch (entry.State)
             {
                 case EntityState.Added:
+                    entry.Entity.SetCreatedByUser(user);
                     entry.Entity.SetAvailability(new Availability(true));
                     entry.Entity.SetCreatedDate(CreatedDate.CreationDate());
                     break;
 
                 case EntityState.Modified:
                     entry.Entity.SetLastModifiedDate(LastModifiedDate.CreationDate());
+                    entry.Entity.SetLastModifiedByUser(user);
                     break;
             }
         }
