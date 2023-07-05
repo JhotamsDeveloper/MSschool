@@ -10,8 +10,7 @@ public partial class Schedule : Audit
         Id? idAcademicProgram,
         string weekday,
         DateTime? startTime,
-        DateTime? endTime,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        DateTime? endTime) : base(id)
     {
         IdAcademicProgram = idAcademicProgram;
         Weekday = weekday;

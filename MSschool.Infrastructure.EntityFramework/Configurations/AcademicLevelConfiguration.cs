@@ -34,13 +34,8 @@ internal class AcademicLevelConfiguration : IEntityTypeConfiguration<AcademicLev
             e => e!.Value,
             value => new Availability(value));
 
-        builder.Property(e => e.CreatedByIdUser).HasConversion(
-            e => e!.Value,
-            value => new Id(value));
-
-        builder.Property(e => e.LastModifiedByIdUser).HasConversion(
-            e => e!.Value,
-            value => new Id(value));
+        builder.Property(e => e.CreatedByUser).IsRequired(false);
+        builder.Property(e => e.LastModifiedByUser).IsRequired(false);
         #endregion
     }
 }

@@ -10,8 +10,7 @@ public partial class UserAssignment : Audit
         Id id, 
         Id? idUser, 
         Id? idSubject, 
-        string? subjectStatus,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        string? subjectStatus) : base(id)
     {
         IdUser = idUser;
         IdSubject = idSubject;

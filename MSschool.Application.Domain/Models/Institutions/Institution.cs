@@ -13,8 +13,7 @@ public partial class Institution : Audit
         string departmentCode, 
         string city, 
         string cityCode, 
-        string address,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        string address) : base(id)
     {
         Name = name;
         Email = email;

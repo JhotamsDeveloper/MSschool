@@ -5,8 +5,8 @@ namespace MSschool.Application.Domain.Models.AcademicLevels;
 
 public partial class AcademicLevel : Audit
 {
-    public AcademicLevel(Id id, Name name, string code, int semesterQuantity, Id createdByIdUser) : 
-        base(id, createdByIdUser)
+    public AcademicLevel(Id id, Name name, string code, int semesterQuantity) : 
+        base(id)
     {
         Name = name;
         Code = code;

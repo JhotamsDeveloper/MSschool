@@ -18,8 +18,7 @@ public partial class AcademicProgram : Audit
         string modality,
         Id idAcademicLevel,
         Id idAcademicDirector,
-        Id idInstitution,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        Id idInstitution) : base(id)
     {
         Name = name; 
         Code= code; 

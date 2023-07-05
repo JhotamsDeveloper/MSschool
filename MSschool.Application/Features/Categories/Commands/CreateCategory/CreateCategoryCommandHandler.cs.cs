@@ -35,8 +35,7 @@ public class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryComman
         var category = new Category(
             new Id(Guid.NewGuid()),
             request.Name,
-            request.Description,
-            new Id(Guid.Empty));
+            request.Description);
 
         await _unitOfWork
             .Repository<Category>()

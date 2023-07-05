@@ -8,8 +8,7 @@ public class Category : Audit
     public Category(
         Id id, 
         string name, 
-        string description, 
-        Id createdByIdUser) : base (id, createdByIdUser)
+        string description) : base (id)
     {
         Name = name;
         Description = description;
@@ -19,11 +18,11 @@ public class Category : Audit
 
     public string Description { get; private set; }
 
-    public void Update(Id id, string name, string description, Availability availability, Id lastModifiedByIdUser)
+    public void Update(Id id, string name, string description, Availability availability)
     {
         Name = name;
         Description= description;
-        Update(id, availability, lastModifiedByIdUser);
+        Update(id, availability);
     }
 
     public virtual ICollection<UserCategory> UserCategories { get; private set; } = new List<UserCategory>();

@@ -2,23 +2,21 @@
 
 public partial class Audit
 {
-    public Audit(Id id, Id createdByIdUser)
+    public Audit(Id id)
     {
         Id = id;
-        CreatedByIdUser = createdByIdUser;
     }
 
     public Id Id { get; private set; }
     public Availability? Availability { get; private set; }
     public CreatedDate? CreatedDate { get; private set; }
-    public Id? CreatedByIdUser { get; private set; }
+    public string? CreatedByUser { get; private set; }
     public LastModifiedDate? LastModifiedDate { get; private set; }
-    public Id? LastModifiedByIdUser { get; private set; }
+    public string? LastModifiedByUser { get; private set; }
 
-    public void Update(Id id, Availability? availability, Id lastModifiedByIdUser)
+    public void Update(Id id, Availability? availability)
     {
         Id = id;
-        LastModifiedByIdUser = lastModifiedByIdUser;
         Availability = availability;
         LastModifiedDate = LastModifiedDate.CreationDate();
     }

@@ -9,8 +9,7 @@ public partial class SubjectOfTheAcademicProgram : Audit
     public SubjectOfTheAcademicProgram(
         Id id, 
         Id? idSubject, 
-        Id? idAcademicProgram,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        Id? idAcademicProgram) : base(id)
     {
         IdSubject = idSubject;
         IdAcademicProgram = idAcademicProgram;

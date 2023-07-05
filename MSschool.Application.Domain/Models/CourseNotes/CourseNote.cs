@@ -14,8 +14,7 @@ public partial class CourseNote : Audit
         string observation,
         Id idUser,
         Id idTeacher,
-        Id idSubject,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        Id idSubject) : base(id)
     {
         Percentages = percentages;
         NoteValue = noteValue;

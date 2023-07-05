@@ -10,8 +10,7 @@ public partial class SubjectValue : Audit
         string year, 
         double value, 
         int? iva, 
-        Id? idSubject,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        Id? idSubject) : base(id)
     {
         Year = year;
         Value = value;

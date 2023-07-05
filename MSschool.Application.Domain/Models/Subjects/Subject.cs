@@ -14,8 +14,7 @@ public partial class Subject : Audit
         int credit, 
         int semester, 
         string? preRequisite, 
-        string modality, 
-        Id createdByIdUser) : base(id, createdByIdUser)
+        string modality) : base(id)
     {
         Name = name;
         Credit = credit;

@@ -9,8 +9,7 @@ public partial class UserCategory : Audit
     public UserCategory(
         Id id, 
         Id? idCategory, 
-        Id? idUser, 
-        Id createdByIdUser) : base(id, createdByIdUser)
+        Id? idUser) : base(id)
     {
         IdCategory = idCategory;
         IdUser = idUser;

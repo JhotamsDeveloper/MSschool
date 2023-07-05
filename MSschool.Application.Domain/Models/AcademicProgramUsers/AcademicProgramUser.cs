@@ -6,8 +6,8 @@ namespace MSschool.Application.Domain.Models.AcademicProgramUsers;
 
 public class AcademicProgramUser : Audit
 {
-    public AcademicProgramUser(Id id, Id idUser, Id idAcademicProgram, Id createdByIdUser) : 
-        base(id, createdByIdUser)
+    public AcademicProgramUser(Id id, Id idUser, Id idAcademicProgram) : 
+        base(id)
     {
         IdUser= idUser;
         IdAcademicProgram= idAcademicProgram;

@@ -29,8 +29,7 @@ public partial class User : Audit
         string? countryOfDomicile, 
         string? departmentOdDomicile, 
         string? cityOfDomicile, 
-        string? addressOfDomicile,
-        Id createdByIdUser) : base(id, createdByIdUser)
+        string? addressOfDomicile) : base(id)
     {
         FirstName = firstName;
         SecondName = secondName;

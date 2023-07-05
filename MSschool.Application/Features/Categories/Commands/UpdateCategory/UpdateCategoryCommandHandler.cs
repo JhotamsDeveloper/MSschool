@@ -27,8 +27,7 @@ internal class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryComm
             new Id(request.Id),
             request.Name,
             request.Description,
-            new Availability(true),
-            new Id(request.LastModifiedByIdUser));
+            new Availability(true));
 
         await _unitOfWork.Repository<Category>().UpdateAsync(category);
         int saveChangesAsync = await _unitOfWork.SaveChangesAsync();

@@ -35,8 +35,7 @@ public class CreateCategoryCommandHandlerTest
         var category = new Category(
             new Id(Guid.Parse(Id)),
             "Docente",
-            "Description",
-            new Id(Guid.NewGuid()));
+            "Description");
 
         var existCategoryResult = false;
         _unitOfWork!
