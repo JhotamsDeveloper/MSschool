@@ -21,7 +21,6 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
         builder.Property(e => e.Name).HasMaxLength(50);
 
         #region "AUDIT"
-        builder.HasKey(x => x.Id);
         builder.Property(e => e.Id).HasConversion(
             e => e!.Value,
             value => new Id(value));

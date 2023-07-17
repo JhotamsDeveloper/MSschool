@@ -7,7 +7,7 @@ public partial class Audit
         Id = id;
     }
 
-    public Id Id { get; private set; }
+    public Id Id { get; set; }
     public Availability? Availability { get; private set; }
     public CreatedDate? CreatedDate { get; private set; }
     public string? CreatedByUser { get; private set; }
