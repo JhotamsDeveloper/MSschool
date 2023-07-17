@@ -21,12 +21,7 @@ public sealed class GetActiveCategoryByIdQueryHandler : IQueryHandler<GetActiveC
     {
         var category = await _unitOfWork
             .Repository<Category>()
-            .GetByIdAsync(request.Id);
-
-        if (category is null)
-        {
-            throw new BadRequestEx($"El id {request.Id} no existe");
-        }
+            .GetByIdAsync(request.Id) ?? throw new BadRequestEx($"El id {request.Id} no existe");
 
         var result = new GetActiveCategoryByIdResponse(
             (Guid)category.Id!.Value!,
