@@ -11,6 +11,7 @@ COPY ["MSschool.Presentation.Api/MSschool.Presentation.Api.csproj", "MSschool.Pr
 COPY ["MSschool.Application/MSschool.Application.csproj", "MSschool.Application/"]
 COPY ["MSschool.Application.Domain/MSschool.Application.Domain.csproj", "MSschool.Application.Domain/"]
 COPY ["MSschool.Infrastructure.EntityFramework/MSschool.Infrastructure.EntityFramework.csproj", "MSschool.Infrastructure.EntityFramework/"]
+COPY ["MSschool.Infrastructure.Migrations/MSschool.Infrastructure.Migrations.csproj", "MSschool.Infrastructure.Migrations/"]
 COPY ["MSschool.Presentation.Endpoints/MSschool.Presentation.Endpoints.csproj", "MSschool.Presentation.Endpoints/"]
 RUN dotnet restore "MSschool.Presentation.Api/MSschool.Presentation.Api.csproj"
 COPY . .
