@@ -17,24 +17,7 @@ public class CategoryEndpointsConfiguration : ICarterModule
         AddCategory.Endpoint(category);
         UpdateCategory.Endpoint(category);
         AllActive.Endpoint(category);
-
-        category.MapGet("/AllIncludingInactive", async (PagApiMinimalHelper query, ISender sender) =>
-        {
-            var categories = new PagGetAllCategoriesQuery()
-            {
-                PageIndex = query.PageIndex,
-                PageSize = query.PageSize,
-                Search = query.Search,
-                Sort = query.Sort,
-                DisableGlobalFilters = true
-            };
-
-            var result = await sender.Send(categories);
-            return Results.Ok(result);
-        })
-        .WithName("AllCategoriesIncludingInactive")
-        .WithOpenApi()
-        .WithTags("Category");
+        AllIncludingInactive.Endpoint(category);
 
 
     }

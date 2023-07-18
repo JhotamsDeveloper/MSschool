@@ -8,25 +8,22 @@ using MSschool.Application.Handlers;
 
 namespace MSschool.Presentation.Endpoints.Endpoints.Category;
 
-internal static class AllActive
+internal static class AllIncludingInactive
 {
     internal static void Endpoint(RouteGroupBuilder category)
     {
-        //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc
-        //https://localhost:7033/AllActiveCategories?pageindex=1&&pagesize=10&&sort=nameAsc&Search=ms
-
-        category.MapGet("AllActive", AllActive)
+        category.MapGet("AllIncludingInactive", AllIncludingInactive)
             .WithOpenApi(generatedOperation => new(generatedOperation)
             {
-                OperationId = "AllActive",
+                OperationId = "AllIncludingInactive",
                 Tags = new List<OpenApiTag>() { new OpenApiTag { Name = "Category" } },
-                Summary = "Servicio encargado de obtener todas las categorias activas",
+                Summary = "Servicio encargado de obtener todas las categorias incluyendo las inactivas",
                 Description = "This is a description"
             })
             .Produces<PagGetAllCategoriesResponse>(StatusCodes.Status200OK)
             .Produces(StatusCodes.Status400BadRequest);
 
-        static async Task<IResult> AllActive(PagApiMinimalHelper query, ISender sender)
+        static async Task<IResult> AllIncludingInactive(PagApiMinimalHelper query, ISender sender)
         {
             var categories = new PagGetAllCategoriesQuery()
             {
@@ -34,7 +31,7 @@ internal static class AllActive
                 PageSize = query.PageSize,
                 Search = query.Search,
                 Sort = query.Sort,
-                DisableGlobalFilters = false
+                DisableGlobalFilters = true
             };
 
             var result = await sender.Send(categories);
