@@ -19,7 +19,7 @@ public partial class Audit
         Availability = availability;
     }
 
-    public void SetCreatedDate(CreatedDate createdDate)
+    public void SetCreatedDate(CreatedDate? createdDate)
     {
         CreatedDate = createdDate;
     }
