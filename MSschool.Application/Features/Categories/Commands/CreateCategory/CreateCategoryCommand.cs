@@ -5,5 +5,4 @@ namespace MSschool.Application.Features.Categories.Commands.CreateCategory;
 
 public record CreateCategoryCommand(
     string Name,
-    string Description,
-    Guid CreatedByIdUser) : ICommand<Id>;
+    string Description) : ICommand<Id>;

@@ -59,7 +59,7 @@ public partial class MsschoolContext : DbContext
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
-        var user = _auditContex!.GetUserFromRecord()!;
+        var user = _auditContex?.GetUserFromRecord()!;
         foreach (var entry in ChangeTracker.Entries<Audit>())
         {
             switch (entry.State)

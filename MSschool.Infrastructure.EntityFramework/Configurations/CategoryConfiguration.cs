@@ -10,17 +10,12 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
     public void Configure(EntityTypeBuilder<Category> builder)
     {
         HasQueryFilter(builder);
-
-        builder.HasKey(x => x.Id);
-        builder.Property(e => e.Id).HasConversion(
-            e => e!.Value,
-            value => new Id(value));
-
         builder.Property(e => e.Description).HasMaxLength(250);
-
         builder.Property(e => e.Name).HasMaxLength(50);
 
         #region "AUDIT"
+
+        builder.HasKey(x => x.Id);
         builder.Property(e => e.Id).HasConversion(
             e => e!.Value,
             value => new Id(value));
@@ -33,8 +28,7 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
             LastModifiedDate => LastModifiedDate!.Value,
             value => LastModifiedDate.CreationDate());
 
-        builder.Property(e => e.Availability)
-            .HasConversion(
+        builder.Property(e => e.Availability).HasConversion(
             e => e!.Value,
             value => new Availability(value));
 

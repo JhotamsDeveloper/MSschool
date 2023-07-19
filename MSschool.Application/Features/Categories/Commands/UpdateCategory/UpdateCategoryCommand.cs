@@ -6,5 +6,4 @@ namespace MSschool.Application.Features.Categories.Commands.UpdateCategory;
 public record UpdateCategoryCommand(
     Guid Id,
     string Name,
-    string Description,
-    Guid LastModifiedByIdUser) : ICommand<Id>;
+    string Description) : ICommand<Id>;

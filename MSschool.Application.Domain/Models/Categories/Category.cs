@@ -14,19 +14,32 @@ public class Category : Audit
         Description = description;
     }
 
-    private Category(Id id, Availability availability) : base(id) { }
+    private Category(Id id) : base(id)
+    {
+        
+    }
 
-    public string Name { get; private set; }
+    public string? Name { get; private set; }
 
-    public string Description { get; private set; }
+    public string? Description { get; private set; }
 
     public virtual ICollection<UserCategory> UserCategories { get; private set; } = new List<UserCategory>();
 
     public static class Factory
     {
-        public static Category Update(Category entity)
+        public static Category Update(
+            Id id, 
+            Name name, 
+            string description, 
+            Availability? availability, 
+            CreatedDate? createdDate)
         {
-            return entity;
+            var category = new Category(id);
+            category.Name = name.Value;
+            category.Description = description;
+            category.SetAvailability(availability);
+            category.SetCreatedDate(createdDate);
+            return category;
         }
     }
 }

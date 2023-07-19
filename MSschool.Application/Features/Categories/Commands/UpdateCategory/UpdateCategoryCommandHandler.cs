@@ -24,13 +24,9 @@ internal class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryComm
                 "La categoria que intenta actualizar no existe");
 
         category = Category.Factory
-            .Update(category);
+            .Update(new Id(request.Id), new Name(request.Name),request.Description,category.Availability,category.CreatedDate);
 
         await _unitOfWork.Repository<Category>().UpdateAsync(category);
-        int saveChangesAsync = await _unitOfWork.SaveChangesAsync();
-
-        if (saveChangesAsync.Equals((int)UnitOfWorkSaveChangesEnum.Failed))
-            throw new Exception("Error al actualizar la categoria");
 
         return category.Id!;
     }
