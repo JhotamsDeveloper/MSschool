@@ -7,7 +7,7 @@ namespace MSschool.Application.Specifications.PagGetAllCategories;
 public sealed class PagGetAllCategoriesSpecification : BaseSpecification<Category>
 {
     public PagGetAllCategoriesSpecification(PagGetAllCategoriesSettingsParams settings) :
-        base(bs => string.IsNullOrEmpty(settings.Search) || bs.Name.Contains(settings.Search))
+        base(bs => string.IsNullOrEmpty(settings.Search) || bs.Name!.Contains(settings.Search))
     {
         ApplyPaging(settings.PageSize * (settings.PageIndex - 1), settings.PageSize);
 

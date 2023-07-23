@@ -10,12 +10,12 @@ public sealed class SpecificationEvaluator<T> where T : Audit
         IQueryable<T> inputQuery, 
         ISpecification<T> spec)
     {
-        if (spec.OrderBy != null)
+        if (spec.OrderBy is not null)
         {
             inputQuery = inputQuery.OrderBy(spec.OrderBy);
         }
 
-        if (spec.OrderByDesc != null)
+        if (spec.OrderByDesc is not null)
         {
             inputQuery = inputQuery.OrderBy(spec.OrderByDesc);
         }
@@ -25,7 +25,7 @@ public sealed class SpecificationEvaluator<T> where T : Audit
             inputQuery = inputQuery.IgnoreQueryFilters();
         }
 
-        if (spec.Criteria != null)
+        if (spec.Criteria is not null)
         {
             inputQuery = inputQuery.Where(spec.Criteria);
         }
@@ -35,7 +35,10 @@ public sealed class SpecificationEvaluator<T> where T : Audit
             inputQuery = inputQuery.Skip(spec.Skip).Take(spec.Take);
         }
 
-        inputQuery = spec.Includes.Aggregate(inputQuery, (current, include) => current.Include(include));
+        inputQuery = spec.Includes.Aggregate(
+            inputQuery, 
+            (current, include) => 
+            current.Include(include));
 
         return inputQuery;
     }

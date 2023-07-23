@@ -6,7 +6,7 @@ namespace MSschool.Application.Specifications.PagGetAllCategories;
 public class PagGetAllCategoriesCounterSpec : BaseSpecification<Category>
 {
     public PagGetAllCategoriesCounterSpec(PagGetAllCategoriesSettingsParams settings) :
-        base(bs => string.IsNullOrEmpty(settings.Search) || bs.Name.Contains(settings.Search))
+        base(bs => string.IsNullOrEmpty(settings.Search) || bs.Name!.Contains(settings.Search))
     {
         AddIgnoreQueryFilters(settings.DisableGlobalFilters);
     }

@@ -2,6 +2,7 @@
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
+using MSschool.Application.Specifications.GetCategory;
 
 namespace MSschool.Application.Features.Categories.Commands.DeleteCategory;
 
@@ -16,9 +17,13 @@ public sealed class DeleteCategoryCommandHandler : ICommandHandler<DeleteCategor
 
     public async Task<Id> Handle(DeleteCategoryCommand request, CancellationToken cancellationToken)
     {
+        var settings = new GetCategorySettingsParams(true);
+
+        var spec = new GetCategorySpec(settings);
+
         var category = await _unitOfWork
             .Repository<Category>()
-            .GetByIdAsync(request.Id) ??
+            .GetIdWithSpec(spec) ??
             throw new Exception(
                 "La categoria que intenta eliminar no existe");
 
