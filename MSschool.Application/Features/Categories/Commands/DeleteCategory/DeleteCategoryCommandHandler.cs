@@ -17,13 +17,13 @@ public sealed class DeleteCategoryCommandHandler : ICommandHandler<DeleteCategor
 
     public async Task<Id> Handle(DeleteCategoryCommand request, CancellationToken cancellationToken)
     {
-        var settings = new GetCategorySettingsParams(true);
+        var settings = new GetCategorySettingsParams(true, request.Id);
 
         var spec = new GetCategorySpec(settings);
 
         var category = await _unitOfWork
             .Repository<Category>()
-            .GetIdWithSpec(spec) ??
+            .GetIdWithSpec(spec, request.Id) ??
             throw new Exception(
                 "La categoria que intenta eliminar no existe");
 

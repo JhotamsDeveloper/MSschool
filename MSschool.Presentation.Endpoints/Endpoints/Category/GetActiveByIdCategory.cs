@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.OpenApi.Models;
-using MSschool.Application.Features.Categories.Queries.GetActiveCategoryById;
+using MSschool.Application.Features.Categories.Queries.GetCategoryById;
 using MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
 
 namespace MSschool.Presentation.Endpoints.Endpoints.Category;
@@ -25,7 +25,7 @@ internal class GetActiveByIdCategory
 
         static async Task<IResult> GetActiveCategoryById(Guid id, ISender sender)
         {
-            var query = new GetActiveCategoryByIdQuery(id);
+            var query = new GetCategoryByIdQuery(id, false);
             var result = await sender.Send(query);
             return Results.Ok(result);
         }

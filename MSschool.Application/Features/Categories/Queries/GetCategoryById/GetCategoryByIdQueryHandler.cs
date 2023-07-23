@@ -20,16 +20,24 @@ public sealed class GetCategoryByIdQueryHandler : IQueryHandler<GetCategoryByIdQ
 
     public async Task<GetCategoryByIdResponse> Handle(GetCategoryByIdQuery request, CancellationToken cancellationToken)
     {
-        var settings = new GetCategorySettingsParams(request.IgnoreQueryFilters);
+
+        var settings = new GetCategorySettingsParams(
+            request.IgnoreQueryFilters, 
+            request.Id);
 
         var spec = new GetCategorySpec(settings);
 
         var category = await _unitOfWork
             .Repository<Category>()
-            .GetIdWithSpec(spec) ??
-            throw new BadRequestEx(
-                "La categoria que intenta buscar no existe");
+            .GetIdWithSpec(spec, request.Id) ??
+            throw new Exception(
+                "La categoria que intenta eliminar no existe");
 
-        return category;
+        var result = new GetCategoryByIdResponse(
+            category.Id!.Value!,
+            category.Name,
+            category.Description);
+
+        return result;
     }
 }
