@@ -30,7 +30,7 @@ public class CreateCategoryCommandHandlerTest
     {
         InitializeDependencies();
 
-        var command = new CreateCategoryCommand("TestCategory", "TestDescription", Guid.NewGuid());
+        var command = new CreateCategoryCommand("TestCategory", "TestDescription");
 
         var category = new Category(
             new Id(Guid.Parse(Id)),
