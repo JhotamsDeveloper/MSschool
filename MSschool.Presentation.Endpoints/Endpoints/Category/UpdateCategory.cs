@@ -15,7 +15,7 @@ internal static class UpdateCategory
         category.MapPut("/Update", UpdateCategory)
             .WithOpenApi(generatedOperation => new(generatedOperation)
             {
-                OperationId = "UpdateCategory",
+                OperationId = "Update",
                 Tags = new List<OpenApiTag>() { new OpenApiTag { Name = "Category" } },
                 Summary = "Servicio encargado de actualizar las categorias",
                 Description = "This is a description"

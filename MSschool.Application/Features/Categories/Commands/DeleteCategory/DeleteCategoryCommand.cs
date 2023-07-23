@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MSschool.Application.Abstractions;
+using MSschool.Application.Domain.Common;
 
-namespace MSschool.Application.Features.Categories.Commands.DeleteCategory
-{
-    internal class DeleteCategoryCommand
-    {
-    }
-}
+namespace MSschool.Application.Features.Categories.Commands.DeleteCategory;
+
+public record DeleteCategoryCommand(Guid Id) : ICommand<Id>;

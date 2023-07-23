@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSschool.Application.Features.Categories.Commands.DeleteCategory
 {
-    internal class DeleteCommandValidation
+    internal class DeleteCategoryCommandValidation
     {
     }
 }

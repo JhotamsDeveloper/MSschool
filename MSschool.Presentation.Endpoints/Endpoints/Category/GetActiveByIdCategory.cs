@@ -8,14 +8,14 @@ using MSschool.Application.Features.Categories.Queries.PagGetAllCategories;
 
 namespace MSschool.Presentation.Endpoints.Endpoints.Category;
 
-internal class GetActiveCategoryById
+internal class GetActiveByIdCategory
 {
     internal static void Endpoind(RouteGroupBuilder category)
     {
-        category.MapGet("GetActiveCategoryById/{id}", GetActiveCategoryById)
+        category.MapGet("GetActiveById/{id}", GetActiveCategoryById)
             .WithOpenApi(generatedOperation => new(generatedOperation)
             {
-                OperationId = "GetActiveCategoryById",
+                OperationId = "GetActiveById",
                 Tags = new List<OpenApiTag>() { new OpenApiTag { Name = "Category" } },
                 Summary = "Servicio encargado de obtener solo las categorias activas",
                 Description = "This is a description"

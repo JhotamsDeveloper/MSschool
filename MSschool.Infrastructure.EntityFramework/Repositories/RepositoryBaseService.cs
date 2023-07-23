@@ -124,6 +124,7 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
         var result = await _context
             .Set<T>()
             .AsNoTracking()
+            .IgnoreQueryFilters()
             .FirstOrDefaultAsync(
             firsth => firsth.Id!.Equals(new Id(id)));
 

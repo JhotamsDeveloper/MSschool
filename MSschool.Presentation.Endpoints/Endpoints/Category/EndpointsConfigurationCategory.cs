@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Routing;
 
 namespace MSschool.Presentation.Endpoints.Endpoints.Category;
 
-public class CategoryEndpointsConfiguration : ICarterModule
+public class EndpointsConfigurationCategory : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
@@ -12,8 +12,9 @@ public class CategoryEndpointsConfiguration : ICarterModule
 
         AddCategory.Endpoint(category);
         UpdateCategory.Endpoint(category);
-        AllActive.Endpoint(category);
-        AllIncludingInactive.Endpoint(category);
-        GetActiveCategoryById.Endpoind(category);
+        AllActiveCategory.Endpoint(category);
+        AllIncludingInactiveCategory.Endpoint(category);
+        GetActiveByIdCategory.Endpoind(category);
+        DeleteCategory.Endpoint(category);
     }
 }

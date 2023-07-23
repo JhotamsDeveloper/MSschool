@@ -8,7 +8,7 @@ using MSschool.Application.Handlers;
 
 namespace MSschool.Presentation.Endpoints.Endpoints.Category;
 
-internal static class AllIncludingInactive
+internal static class AllIncludingInactiveCategory
 {
     internal static void Endpoint(RouteGroupBuilder category)
     {
