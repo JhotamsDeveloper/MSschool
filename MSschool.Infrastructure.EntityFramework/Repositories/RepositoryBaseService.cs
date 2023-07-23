@@ -138,23 +138,16 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
 
     public async Task<T> GetIdWithSpec(ISpecification<T> spec)
     {
-        var result = await ApplySpecification(spec)
+        var firstOrDefaultAsync = await ApplySpecification(spec)
             .FirstOrDefaultAsync();
-        if (result is null)
-        {
-            return null!;
-        }
-        return result;
+
+        return firstOrDefaultAsync!;
     }
 
     public async Task<IReadOnlyList<T>> GetAllWithSpec(ISpecification<T> spec)
     {
         var result = await ApplySpecification(spec).ToListAsync();
-        if (result is null)
-        {
-            return null!;
-        }
-        return result;
+        return result!;
     }
 
     public void Update(T entity)

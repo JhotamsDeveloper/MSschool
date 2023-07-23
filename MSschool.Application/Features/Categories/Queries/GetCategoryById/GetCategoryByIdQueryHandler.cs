@@ -31,7 +31,7 @@ public sealed class GetCategoryByIdQueryHandler : IQueryHandler<GetCategoryByIdQ
             .Repository<Category>()
             .GetIdWithSpec(spec) ??
             throw new Exception(
-                "La categoria que intenta eliminar no existe");
+                "La categoría que intenta buscar esta inactiva o no existe.");
 
         var result = new GetCategoryByIdResponse(
             category.Id!.Value!,

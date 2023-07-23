@@ -16,5 +16,6 @@ public class EndpointsConfigurationCategory : ICarterModule
         AllIncludingInactiveCategory.Endpoint(category);
         GetActiveByIdCategory.Endpoind(category);
         DeleteCategory.Endpoint(category);
+        GetIncludingInactiveByIdCategory.Endpoind(category);
     }
 }
