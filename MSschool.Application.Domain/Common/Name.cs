@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace MSschool.Application.Domain.Common;
+﻿namespace MSschool.Application.Domain.Common;
 
 public record Name
 {

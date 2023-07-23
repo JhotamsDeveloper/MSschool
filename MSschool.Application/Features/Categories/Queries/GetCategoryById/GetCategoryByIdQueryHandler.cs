@@ -29,7 +29,7 @@ public sealed class GetCategoryByIdQueryHandler : IQueryHandler<GetCategoryByIdQ
 
         var category = await _unitOfWork
             .Repository<Category>()
-            .GetIdWithSpec(spec, request.Id) ??
+            .GetIdWithSpec(spec) ??
             throw new Exception(
                 "La categoria que intenta eliminar no existe");
 

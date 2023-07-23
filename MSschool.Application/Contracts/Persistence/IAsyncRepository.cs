@@ -19,7 +19,7 @@ public interface IAsyncRepository<T> where T : class
         List<Expression<Func<T, object>>>? includes = null, 
         bool? disableTracking = true);
     Task<int> CountAsync(ISpecification<T> spec);
-    Task<T> GetIdWithSpec(ISpecification<T> spec, Guid id);
+    Task<T> GetIdWithSpec(ISpecification<T> spec);
     Task<IReadOnlyList<T?>> GetAllWithSpec(ISpecification<T> spec);
     Task<bool> Exitst(Expression<Func<T, bool>> predicate);
     Task<T> GetByIdAsync(Guid id);

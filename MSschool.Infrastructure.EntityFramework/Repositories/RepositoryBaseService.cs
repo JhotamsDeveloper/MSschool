@@ -136,10 +136,10 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
         return await ApplySpecification(spec).CountAsync();
     }
 
-    public async Task<T> GetIdWithSpec(ISpecification<T> spec, Guid id)
+    public async Task<T> GetIdWithSpec(ISpecification<T> spec)
     {
         var result = await ApplySpecification(spec)
-            .FirstOrDefaultAsync(x => x.Id.Equals(id));
+            .FirstOrDefaultAsync();
         if (result is null)
         {
             return null!;
