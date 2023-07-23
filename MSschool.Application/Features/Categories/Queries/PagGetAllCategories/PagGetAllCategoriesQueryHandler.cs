@@ -44,9 +44,9 @@ public sealed class PagGetAllCategoriesQueryHandler :
 
         var data = categories.Select(category =>
         new PagGetAllCategoriesResponse(
-            category.Id.Value,
-            category.Name,
-            category.Description))
+            category!.Id.Value,
+            category!.Name!,
+            category!.Description!))
             .ToList();
 
         var result = new PaginationResponse<PagGetAllCategoriesResponse>()

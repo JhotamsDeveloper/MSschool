@@ -138,12 +138,21 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
     public async Task<T> GetIdWithSpec(ISpecification<T> spec)
     {
         var result = await ApplySpecification(spec).FirstOrDefaultAsync();
-        return result!;
+        if (result is null)
+        {
+            return null!;
+        }
+        return result;
     }
 
     public async Task<IReadOnlyList<T>> GetAllWithSpec(ISpecification<T> spec)
     {
-        return await ApplySpecification(spec).ToListAsync();
+        var result = await ApplySpecification(spec).ToListAsync();
+        if (result is null)
+        {
+            return null!;
+        }
+        return result;
     }
 
     public void Update(T entity)
@@ -164,6 +173,7 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
 
     private IQueryable<T> ApplySpecification(ISpecification<T> spec)
     {
-        return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
+        return SpecificationEvaluator<T>
+            .GetQuery(_context.Set<T>().AsQueryable(), spec);
     }
 }
