@@ -1,7 +1,7 @@
 ﻿using MSschool.Application.Abstractions;
 using MSschool.Application.Domain.Common;
 
-namespace MSschool.Application.Features.User.Command.CreateUser;
+namespace MSschool.Application.Features.ApplicationUsers.Command.CreateUser;
 
 public record CreateUserCommand(
     string FirstName,

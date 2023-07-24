@@ -34,19 +34,19 @@ public partial class User : Audit
         CellPhone = cellPhone;
     }
 
-    public string FirstName { get; private set; } = null!;
+    public string FirstName { get; private set; } = string.Empty;
 
     public string? SecondName { get; private set; }
 
-    public string Surname { get; private set; } = null!;
+    public string Surname { get; private set; } = string.Empty;
 
     public string? SecondSurname { get; private set; }
 
-    public string DocumentType { get; private set; } = null!;
+    public string DocumentType { get; private set; } = string.Empty;
 
-    public string DocumentNumber { get; private set; } = null!;
+    public string DocumentNumber { get; private set; } = string.Empty;
 
-    public string Email { get; private set; } = null!;
+    public string Email { get; private set; } = string.Empty;
 
     public string? Phone { get; private set; }
 
@@ -55,6 +55,7 @@ public partial class User : Audit
     public string? CellPhone { get; private set; }
 
     public Address? AddressOfBirth { get; private set; }
+
     public Address? AddressCurrent { get; private set; }
 
     public virtual ICollection<AcademicProgramUser> AcademicProgramUsers { get; private set; } = new List<AcademicProgramUser>();
