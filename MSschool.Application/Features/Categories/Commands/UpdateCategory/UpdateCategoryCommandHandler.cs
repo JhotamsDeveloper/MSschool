@@ -6,7 +6,7 @@ using MSschool.Application.Domain.Models.Categories;
 
 namespace MSschool.Application.Features.Categories.Commands.UpdateCategory;
 
-internal class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryCommand, Id>
+public class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryCommand, Id>
 {
     private readonly IUnitOfWork _unitOfWork;
 

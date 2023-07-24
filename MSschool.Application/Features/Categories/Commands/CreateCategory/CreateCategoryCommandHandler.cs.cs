@@ -7,7 +7,7 @@ using MSschool.Application.Exceptions;
 
 namespace MSschool.Application.Features.Categories.Commands.CreateCategory;
 
-public class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryCommand, Id>
+public sealed class CreateCategoryCommandHandler : ICommandHandler<CreateCategoryCommand, Id>
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly ILogger<CreateCategoryCommandHandler> _logger;
