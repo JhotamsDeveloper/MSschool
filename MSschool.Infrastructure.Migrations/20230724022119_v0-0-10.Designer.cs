@@ -4,6 +4,7 @@ using MSschool.Infrastructure.EntityFramework.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MSschool.Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(MsschoolContext))]
-    partial class MsschoolContextModelSnapshot : ModelSnapshot
+    [Migration("20230724022119_v0-0-10")]
+    partial class v0010
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

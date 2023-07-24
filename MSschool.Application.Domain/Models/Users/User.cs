@@ -20,16 +20,7 @@ public partial class User : Audit
         string email, 
         string? phone, 
         DateTime? birthdate, 
-        string? cellPhone, 
-        string? indicativeCountryOfBirth, 
-        string? countryOfBirth, 
-        string? departmentOfBirth, 
-        string? cityOfBirth, 
-        string? indicativeCountryOfDomicile, 
-        string? countryOfDomicile, 
-        string? departmentOdDomicile, 
-        string? cityOfDomicile, 
-        string? addressOfDomicile) : base(id)
+        string? cellPhone) : base(id)
     {
         FirstName = firstName;
         SecondName = secondName;
@@ -41,15 +32,6 @@ public partial class User : Audit
         Phone = phone;
         Birthdate = birthdate;
         CellPhone = cellPhone;
-        IndicativeCountryOfBirth = indicativeCountryOfBirth;
-        CountryOfBirth = countryOfBirth;
-        DepartmentOfBirth = departmentOfBirth;
-        CityOfBirth = cityOfBirth;
-        IndicativeCountryOfDomicile = indicativeCountryOfDomicile;
-        CountryOfDomicile = countryOfDomicile;
-        DepartmentOdDomicile = departmentOdDomicile;
-        CityOfDomicile = cityOfDomicile;
-        AddressOfDomicile = addressOfDomicile;
     }
 
     public string FirstName { get; private set; } = null!;
@@ -72,23 +54,8 @@ public partial class User : Audit
 
     public string? CellPhone { get; private set; }
 
-    public string? IndicativeCountryOfBirth { get; private set; }
-
-    public string? CountryOfBirth { get; private set; }
-
-    public string? DepartmentOfBirth { get; private set; }
-
-    public string? CityOfBirth { get; private set; }
-
-    public string? IndicativeCountryOfDomicile { get; private set; }
-
-    public string? CountryOfDomicile { get; private set; }
-
-    public string? DepartmentOdDomicile { get; private set; }
-
-    public string? CityOfDomicile { get; private set; }
-
-    public string? AddressOfDomicile { get; private set; }
+    public Address? AddressOfBirth { get; private set; }
+    public Address? AddressCurrent { get; private set; }
 
     public virtual ICollection<AcademicProgramUser> AcademicProgramUsers { get; private set; } = new List<AcademicProgramUser>();
 
