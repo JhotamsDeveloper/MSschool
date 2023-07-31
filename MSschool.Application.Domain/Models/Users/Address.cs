@@ -1,4 +1,6 @@
-﻿namespace MSschool.Application.Domain.Models.Users;
+﻿using MSschool.Application.Domain.Common;
+
+namespace MSschool.Application.Domain.Models.Users;
 
 public class Address
 {

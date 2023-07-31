@@ -4,6 +4,7 @@ using MSschool.Infrastructure.EntityFramework.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MSschool.Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(MsschoolContext))]
-    partial class MsschoolContextModelSnapshot : ModelSnapshot
+    [Migration("20230731055722_v0-0-16")]
+    partial class v0016
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,13 +191,13 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9591becc-0a3f-41c5-8ffe-922fa7998e61"),
+                            Id = new Guid("9ad2e461-5ef1-4791-9934-e655d7ab9e0b"),
                             Description = "Persona que presta los servicios de docencia a la institución.",
                             Name = "Docente"
                         },
                         new
                         {
-                            Id = new Guid("64d0cf80-0e7e-4a3a-a88e-dc70bd0a3cd3"),
+                            Id = new Guid("ae5402ff-2c88-41e9-883b-651f45f3572e"),
                             Description = "Persona que se encuentra estudiando a la institución.",
                             Name = "Estudiante"
                         });
@@ -507,9 +510,68 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                     b.ToTable("UserCategories");
                 });
 
+            modelBuilder.Entity("MSschool.Application.Domain.Models.Users.Address", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("Availability")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CityCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CountryCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreatedByUser")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Department")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DepartmentCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Direction")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastModifiedByUser")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Addresses");
+                });
+
             modelBuilder.Entity("MSschool.Application.Domain.Models.Users.User", b =>
                 {
                     b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AddressCurrentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AddressOfBirthId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool?>("Availability")
@@ -573,6 +635,10 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AddressCurrentId");
+
+                    b.HasIndex("AddressOfBirthId");
 
                     b.ToTable("Users");
                 });
@@ -735,91 +801,13 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.Users.User", b =>
                 {
-                    b.OwnsOne("MSschool.Application.Domain.Models.Users.Address", "AddressCurrent", b1 =>
-                        {
-                            b1.Property<Guid>("UserId")
-                                .HasColumnType("uniqueidentifier");
+                    b.HasOne("MSschool.Application.Domain.Models.Users.Address", "AddressCurrent")
+                        .WithMany()
+                        .HasForeignKey("AddressCurrentId");
 
-                            b1.Property<string>("City")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("CityCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Country")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("CountryCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Department")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("DepartmentCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Direction")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("UserId");
-
-                            b1.ToTable("Users");
-
-                            b1.ToJson("AddressCurrent");
-
-                            b1.WithOwner()
-                                .HasForeignKey("UserId");
-                        });
-
-                    b.OwnsOne("MSschool.Application.Domain.Models.Users.Address", "AddressOfBirth", b1 =>
-                        {
-                            b1.Property<Guid>("UserId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("City")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("CityCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Country")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("CountryCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Department")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("DepartmentCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Direction")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("UserId");
-
-                            b1.ToTable("Users");
-
-                            b1.ToJson("AddressOfBirth");
-
-                            b1.WithOwner()
-                                .HasForeignKey("UserId");
-                        });
+                    b.HasOne("MSschool.Application.Domain.Models.Users.Address", "AddressOfBirth")
+                        .WithMany()
+                        .HasForeignKey("AddressOfBirthId");
 
                     b.Navigation("AddressCurrent");
 

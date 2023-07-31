@@ -59,9 +59,9 @@ public partial class User : Audit
 
     public string? CellPhone { get; private set; }
 
-    public Address? AddressOfBirth { get; private set; } = new();
+    public Address? AddressOfBirth { get; private set; }
 
-    public Address? AddressCurrent { get; private set; } = new();
+    public Address? AddressCurrent { get; private set; }
 
     public virtual ICollection<AcademicProgramUser> AcademicProgramUsers { get; private set; } = new List<AcademicProgramUser>();
 

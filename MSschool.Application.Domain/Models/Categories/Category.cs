@@ -34,9 +34,11 @@ public class Category : Audit
             Availability? availability, 
             CreatedDate? createdDate)
         {
-            var category = new Category(id);
-            category.Name = name.Value;
-            category.Description = description;
+            var category = new Category(id)
+            {
+                Name = name.Value,
+                Description = description
+            };
             category.SetAvailability(availability);
             category.SetCreatedDate(createdDate);
             return category;
