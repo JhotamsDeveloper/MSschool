@@ -4,6 +4,7 @@ using MSschool.Infrastructure.EntityFramework.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MSschool.Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(MsschoolContext))]
-    partial class MsschoolContextModelSnapshot : ModelSnapshot
+    [Migration("20230731044712_v0-0-14")]
+    partial class v0014
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,7 +59,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AcademicLevels", (string)null);
+                    b.ToTable("AcademicLevels");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.AcademicProgramUsers.AcademicProgramUser", b =>
@@ -91,7 +94,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdUser");
 
-                    b.ToTable("AcademicProgramUsers", (string)null);
+                    b.ToTable("AcademicProgramUsers");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.AcademicsProgram.AcademicProgram", b =>
@@ -150,7 +153,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdInstitution");
 
-                    b.ToTable("AcademicsPrograms", (string)null);
+                    b.ToTable("AcademicsPrograms");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.Categories.Category", b =>
@@ -183,7 +186,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
 
                     b.HasData(
                         new
@@ -249,7 +252,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdUser");
 
-                    b.ToTable("CourseNotes", (string)null);
+                    b.ToTable("CourseNotes");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.Institutions.Institution", b =>
@@ -310,7 +313,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Institutions", (string)null);
+                    b.ToTable("Institutions");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.Schedules.Schedule", b =>
@@ -351,7 +354,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdAcademicProgram");
 
-                    b.ToTable("Schedules", (string)null);
+                    b.ToTable("Schedules");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.Subjects.Subject", b =>
@@ -395,7 +398,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Subjects", (string)null);
+                    b.ToTable("Subjects");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.SubjectsAcademicProgram.SubjectOfTheAcademicProgram", b =>
@@ -430,7 +433,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdSubject");
 
-                    b.ToTable("SubjectsAcademicPrograms", (string)null);
+                    b.ToTable("SubjectsAcademicPrograms");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.UserAssignments.UserAssignment", b =>
@@ -469,7 +472,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdUser");
 
-                    b.ToTable("UserAssignments", (string)null);
+                    b.ToTable("UserAssignments");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.UserCategories.UserCategory", b =>
@@ -504,7 +507,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdUser");
 
-                    b.ToTable("UserCategories", (string)null);
+                    b.ToTable("UserCategories");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.Users.User", b =>
@@ -574,7 +577,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.ValueOfTheSubjects.SubjectValue", b =>
@@ -616,7 +619,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                     b.HasIndex("IdSubject");
 
-                    b.ToTable("SubjectValues", (string)null);
+                    b.ToTable("SubjectValues");
                 });
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.AcademicProgramUsers.AcademicProgramUser", b =>
@@ -735,7 +738,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
             modelBuilder.Entity("MSschool.Application.Domain.Models.Users.User", b =>
                 {
-                    b.OwnsOne("MSschool.Application.Domain.Models.Users.User.AddressCurrent#MSschool.Application.Domain.Models.Users.Address", "AddressCurrent", b1 =>
+                    b.OwnsOne("MSschool.Application.Domain.Models.Users.Address", "AddressCurrent", b1 =>
                         {
                             b1.Property<Guid>("UserId")
                                 .HasColumnType("uniqueidentifier");
@@ -770,7 +773,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                             b1.HasKey("UserId");
 
-                            b1.ToTable("Users", (string)null);
+                            b1.ToTable("Users");
 
                             b1.ToJson("AddressCurrent");
 
@@ -778,7 +781,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
                                 .HasForeignKey("UserId");
                         });
 
-                    b.OwnsOne("MSschool.Application.Domain.Models.Users.User.AddressOfBirth#MSschool.Application.Domain.Models.Users.Address", "AddressOfBirth", b1 =>
+                    b.OwnsOne("MSschool.Application.Domain.Models.Users.Address", "AddressOfBirth", b1 =>
                         {
                             b1.Property<Guid>("UserId")
                                 .HasColumnType("uniqueidentifier");
@@ -813,7 +816,7 @@ namespace MSschool.Infrastructure.EntityFramework.Migrations
 
                             b1.HasKey("UserId");
 
-                            b1.ToTable("Users", (string)null);
+                            b1.ToTable("Users");
 
                             b1.ToJson("AddressOfBirth");
 

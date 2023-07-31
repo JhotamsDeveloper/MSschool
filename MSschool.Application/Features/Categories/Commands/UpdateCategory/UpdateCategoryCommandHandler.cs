@@ -1,8 +1,8 @@
 ﻿using MSschool.Application.Abstractions;
-using MSschool.Application.Constants;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
+using MSschool.Application.Exceptions;
 
 namespace MSschool.Application.Features.Categories.Commands.UpdateCategory;
 
@@ -20,11 +20,11 @@ public class UpdateCategoryCommandHandler : ICommandHandler<UpdateCategoryComman
         var category = await _unitOfWork
             .Repository<Category>()
             .GetByIdAsync(request.Id) ??
-            throw new Exception(
+            throw new BadRequestEx(
                 "La categoria que intenta actualizar no existe");
 
         category = Category.Factory
-            .Update(new Id(request.Id), new Name(request.Name),request.Description,category.Availability,category.CreatedDate);
+            .Update(new Id(request.Id), new Name(request.Name), request.Description, category.Availability, category.CreatedDate);
 
         await _unitOfWork.Repository<Category>().UpdateAsync(category);
 

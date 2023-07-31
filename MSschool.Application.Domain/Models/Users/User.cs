@@ -10,16 +10,16 @@ namespace MSschool.Application.Domain.Models.Users;
 public partial class User : Audit
 {
     public User(
-        Id id, 
-        string firstName, 
-        string? secondName, 
-        string surname, 
-        string? secondSurname, 
-        string documentType, 
-        string documentNumber, 
-        string email, 
-        string? phone, 
-        DateTime? birthdate, 
+        Id id,
+        string firstName,
+        string? secondName,
+        string surname,
+        string? secondSurname,
+        string documentType,
+        string documentNumber,
+        string email,
+        string? phone,
+        DateTime? birthdate,
         string? cellPhone) : base(id)
     {
         FirstName = firstName;
@@ -32,6 +32,11 @@ public partial class User : Audit
         Phone = phone;
         Birthdate = birthdate;
         CellPhone = cellPhone;
+    }
+
+    private User(Id id) : base(id)
+    {
+
     }
 
     public string FirstName { get; private set; } = string.Empty;
@@ -54,9 +59,9 @@ public partial class User : Audit
 
     public string? CellPhone { get; private set; }
 
-    public Address? AddressOfBirth { get; private set; }
+    public Address? AddressOfBirth { get; private set; } = new();
 
-    public Address? AddressCurrent { get; private set; }
+    public Address? AddressCurrent { get; private set; } = new();
 
     public virtual ICollection<AcademicProgramUser> AcademicProgramUsers { get; private set; } = new List<AcademicProgramUser>();
 
@@ -69,4 +74,48 @@ public partial class User : Audit
     public virtual ICollection<UserAssignment> UserAssignments { get; private set; } = new List<UserAssignment>();
 
     public virtual ICollection<UserCategory> UserCategories { get; private set; } = new List<UserCategory>();
+
+    public static class Factory
+    {
+        public static User AddPlaceOfBirth(
+            Id id,
+            string firstName,
+            string? secondName,
+            string surname,
+            string? secondSurname,
+            string documentType,
+            string documentNumber,
+            string email,
+            string? phone,
+            DateTime? birthdate,
+            string? cellPhone,
+            string country,
+            string countryCode,
+            string department,
+            string departmentCode,
+            string city,
+            string cityCode,
+            string direction,
+            Availability? availability,
+            CreatedDate? createdDate)
+        {
+            var user = new User(id)
+            {
+                FirstName = firstName,
+                SecondName = secondName,
+                Surname = surname,
+                SecondSurname = secondSurname,
+                DocumentType = documentType,
+                DocumentNumber = documentNumber,
+                Email = email,
+                Phone = phone,
+                Birthdate = birthdate,
+                CellPhone = cellPhone,
+                AddressOfBirth = new Address(country, countryCode, department, departmentCode, city, cityCode, direction),
+            };
+            user.SetAvailability(availability);
+            user.SetCreatedDate(createdDate);
+            return user;
+        }
+    }
 }

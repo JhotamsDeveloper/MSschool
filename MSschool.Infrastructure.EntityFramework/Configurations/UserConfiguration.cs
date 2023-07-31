@@ -21,9 +21,9 @@ internal class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(e => e.SecondSurname).HasMaxLength(50);
         builder.Property(e => e.Surname).HasMaxLength(50);
         builder.OwnsOne(address => address.AddressCurrent,
-            a => a.ToJson());
+            ownedNavigationBuilder => ownedNavigationBuilder.ToJson());
         builder.OwnsOne(address => address.AddressOfBirth,
-            a => a.ToJson());
+            ownedNavigationBuilder => ownedNavigationBuilder.ToJson());
 
         #region "AUDIT"
         builder.HasKey(x => x.Id);

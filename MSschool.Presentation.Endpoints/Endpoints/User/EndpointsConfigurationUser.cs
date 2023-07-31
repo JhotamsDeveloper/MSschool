@@ -15,5 +15,6 @@ public class EndpointsConfigurationUser : ICarterModule
     {
         var user = app.MapGroup("/user");
         AddUser.Endpoint(user);
+        AddUserPlaceOfBirth.Endpoint(user);
     }
 }

@@ -2,7 +2,6 @@
 using MSschool.Application.Abstractions;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
-using MSschool.Application.Domain.Models.Categories;
 using MSschool.Application.Domain.Models.Users;
 using MSschool.Application.Exceptions;
 using System.Linq.Expressions;

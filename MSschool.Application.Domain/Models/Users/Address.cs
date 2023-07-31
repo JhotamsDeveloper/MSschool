@@ -2,6 +2,10 @@
 
 public class Address
 {
+    public Address()
+    {
+        
+    }
     public Address(
         string country, 
         string countryCode, 

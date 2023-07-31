@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MSschool.Application.Contracts.Insfrastructure;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.AcademicLevels;
