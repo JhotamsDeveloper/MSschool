@@ -161,7 +161,7 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
 
     public async Task UpdateAsync(T entity)
     {
-        _context.Set<T>().Attach(entity);
+        _context.Set<T>().Update(entity);
         _context.Entry(entity).State = EntityState.Modified;
         await Task.CompletedTask;
     }

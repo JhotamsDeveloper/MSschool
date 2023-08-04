@@ -32,6 +32,8 @@ public partial class User : Audit
         Phone = phone;
         Birthdate = birthdate;
         CellPhone = cellPhone;
+        AddressOfBirth = new();
+        AddressCurrent = new();
     }
 
     private User(Id id) : base(id)

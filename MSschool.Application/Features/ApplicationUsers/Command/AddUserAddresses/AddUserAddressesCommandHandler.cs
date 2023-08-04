@@ -24,7 +24,7 @@ public sealed class AddUserAddressesCommandHandler : ICommandHandler<AddUserAddr
             .Repository<User>()
             .GetByIdAsync(request.IdUser) ?? throw new BadRequestEx($"El id {request.IdUser} que intenta actualizar no existe");
 
-        User.Factory.AddPlaceOfBirth(new Id(request.IdUser), user.FirstName, user.SecondName, user.Surname,
+        user = User.Factory.AddPlaceOfBirth(new Id(request.IdUser), user.FirstName, user.SecondName, user.Surname,
             user.Email, user.DocumentType, user.DocumentNumber, user.Email, user.Phone, user.Birthdate,
             user.CellPhone, request.Country, request.CountryCode, request.Department, request.DepartmentCode,
             request.City, request.CityCode, request.Direction, user.Availability,user.CreatedDate);
