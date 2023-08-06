@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using MSschool.Application.Contracts.Insfrastructure;
+using MSschool.Application.Contracts.Persistence;
 
 namespace MSschool.Infrastructure.EntityFramework.Repositories;
 

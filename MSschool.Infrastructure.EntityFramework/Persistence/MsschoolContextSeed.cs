@@ -12,5 +12,5 @@ internal static class MsschoolContextSeed
             new Category(new Id(Guid.NewGuid()), "Docente", "Persona que presta los servicios de docencia a la institución."),
             new Category(new Id(Guid.NewGuid()), "Estudiante", "Persona que se encuentra estudiando a la institución."),
         };
-    } 
+    }
 }

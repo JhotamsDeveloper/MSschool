@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MSschool.Application.Contracts.Insfrastructure;
+using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.AcademicLevels;
 using MSschool.Application.Domain.Models.AcademicProgramUsers;
 using MSschool.Application.Domain.Models.AcademicsProgram;
 using MSschool.Application.Domain.Models.Categories;
 using MSschool.Application.Domain.Models.CourseNotes;
+using MSschool.Application.Domain.Models.Geolocation;
 using MSschool.Application.Domain.Models.Institutions;
 using MSschool.Application.Domain.Models.Schedules;
 using MSschool.Application.Domain.Models.Subjects;
@@ -57,6 +58,8 @@ public partial class MsschoolContext : DbContext
     public virtual DbSet<UserAssignment> UserAssignments { get; set; }
 
     public virtual DbSet<UserCategory> UserCategories { get; set; }
+
+    public virtual DbSet<Colombia> Colombia { get; set; }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

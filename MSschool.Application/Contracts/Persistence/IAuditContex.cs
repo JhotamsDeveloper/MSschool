@@ -1,4 +1,4 @@
-﻿namespace MSschool.Application.Contracts.Insfrastructure;
+﻿namespace MSschool.Application.Contracts.Persistence;
 
 public interface IAuditContex
 {

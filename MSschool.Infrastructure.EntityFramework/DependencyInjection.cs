@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MSschool.Application.Contracts.Insfrastructure;
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Infrastructure.EntityFramework.Persistence;
 using MSschool.Infrastructure.EntityFramework.Repositories;
