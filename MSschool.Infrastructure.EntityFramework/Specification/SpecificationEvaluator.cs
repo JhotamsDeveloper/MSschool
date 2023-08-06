@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MSschool.Application.Domain.Common;
-using MSschool.Application.Domain.Specifications;
+using MSschool.Application.Domain.Shared.Specifications;
 
 namespace MSschool.Infrastructure.EntityFramework.Specification;
 

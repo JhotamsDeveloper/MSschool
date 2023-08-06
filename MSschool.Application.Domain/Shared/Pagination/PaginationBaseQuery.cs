@@ -1,4 +1,4 @@
-﻿using MSschool.Application.Domain.Specifications;
+﻿using MSschool.Application.Domain.Shared.Specifications;
 
 namespace MSschool.Application.Domain.Shared.Pagination;
 

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace MSschool.Application.Domain.Specifications;
+namespace MSschool.Application.Domain.Shared.Specifications;
 
 public interface ISpecification<T>
 {

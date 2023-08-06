@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
-using MSschool.Application.Domain.Specifications;
+using MSschool.Application.Domain.IRepositories;
+using MSschool.Application.Domain.Shared.Specifications;
 using MSschool.Application.Domain.ValuesObjects;
 using MSschool.Infrastructure.EntityFramework.Persistence;
 using MSschool.Infrastructure.EntityFramework.Specification;

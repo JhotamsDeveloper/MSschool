@@ -1,4 +1,4 @@
-﻿namespace MSschool.Application.Contracts.Persistence;
+﻿namespace MSschool.Application.Domain.IRepositories;
 
 public interface IUnitOfWork : IDisposable
 {

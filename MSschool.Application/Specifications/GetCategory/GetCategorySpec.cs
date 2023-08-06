@@ -1,5 +1,5 @@
 ﻿using MSschool.Application.Domain.Models.Categories;
-using MSschool.Application.Domain.Specifications;
+using MSschool.Application.Domain.Shared.Specifications;
 using MSschool.Application.Domain.ValuesObjects;
 
 namespace MSschool.Application.Specifications.GetCategory;

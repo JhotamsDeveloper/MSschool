@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MSschool.Application.Contracts.Persistence;
+using MSschool.Application.Domain.IRepositories;
 using MSschool.Infrastructure.EntityFramework.Persistence;
 using MSschool.Infrastructure.EntityFramework.Repositories;
 
@@ -29,5 +30,3 @@ namespace MSschool.Infrastructure.EntityFramework
         }
     }
 }
-
-

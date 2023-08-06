@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using MSschool.Application.Contracts.Persistence;
+using MSschool.Application.Domain.IRepositories;
 using System.Transactions;
 
 namespace MSschool.Application.Behaviours;

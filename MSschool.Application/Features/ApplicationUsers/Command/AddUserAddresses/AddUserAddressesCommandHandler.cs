@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using MSschool.Application.Abstractions;
-using MSschool.Application.Contracts.Persistence;
+using MSschool.Application.Domain.IRepositories;
 using MSschool.Application.Domain.Models.Users;
 using MSschool.Application.Domain.ValuesObjects;
 using MSschool.Application.Exceptions;

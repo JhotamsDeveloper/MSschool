@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using MSschool.Application.Contracts.Persistence;
+using MSschool.Application.Domain.IRepositories;
 using MSschool.Infrastructure.EntityFramework.Persistence;
 using System.Collections;
 

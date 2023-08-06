@@ -1,5 +1,5 @@
 ﻿using MSschool.Application.Abstractions;
-using MSschool.Application.Contracts.Persistence;
+using MSschool.Application.Domain.IRepositories;
 using MSschool.Application.Domain.Models.Categories;
 using MSschool.Application.Domain.Shared.Pagination;
 using MSschool.Application.Specifications.PagGetAllCategories;

@@ -1,4 +1,4 @@
-﻿namespace MSschool.Application.Domain.Specifications;
+﻿namespace MSschool.Application.Domain.Shared.Specifications;
 
 public abstract class SpecificationParams
 {
@@ -12,6 +12,6 @@ public abstract class SpecificationParams
     public int PageSize
     {
         get => pageSize;
-        set => pageSize = (value > maxPageSize) ? maxPageSize : value;
+        set => pageSize = value > maxPageSize ? maxPageSize : value;
     }
 }

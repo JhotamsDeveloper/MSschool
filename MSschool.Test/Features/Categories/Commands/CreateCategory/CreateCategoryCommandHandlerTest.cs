@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Moq;
 using MSschool.Application.Constants;
-using MSschool.Application.Contracts.Persistence;
+using MSschool.Application.Domain.IRepositories;
 using MSschool.Application.Domain.Models.Categories;
 using MSschool.Application.Domain.ValuesObjects;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
