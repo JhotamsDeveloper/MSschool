@@ -1,6 +1,6 @@
 ﻿using MSschool.Application.Domain.Helpers;
 
-namespace MSschool.Application.Domain.Common;
+namespace MSschool.Application.Domain.ValuesObjects;
 
 public record LastModifiedDate
 {

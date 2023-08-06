@@ -1,4 +1,6 @@
-﻿namespace MSschool.Application.Domain.Common;
+﻿using MSschool.Application.Domain.ValuesObjects;
+
+namespace MSschool.Application.Domain.Common;
 
 public partial class Audit
 {

@@ -2,6 +2,7 @@
 using MSschool.Application.Contracts.Persistence;
 using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Specifications;
+using MSschool.Application.Domain.ValuesObjects;
 using MSschool.Infrastructure.EntityFramework.Persistence;
 using MSschool.Infrastructure.EntityFramework.Specification;
 using System.Linq.Expressions;
@@ -14,14 +15,14 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
 
     public RepositoryBaseService(MsschoolContext context) => _context = context;
 
-    public void Add(T entity) 
-    { 
+    public void Add(T entity)
+    {
         _context
             .Set<T>()
             .Add(entity);
     }
 
-    public async Task AddAsync(T entity) 
+    public async Task AddAsync(T entity)
     {
         await _context
             .Set<T>()
@@ -40,7 +41,7 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
         _context
             .Set<T>()
             .Remove(entity);
-        
+
         await Task.CompletedTask;
     }
 
@@ -58,7 +59,7 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
             .ToListAsync();
     }
 
-    public async Task<IReadOnlyList<T>> GetAllIgnoreQueryFiltersAsync() 
+    public async Task<IReadOnlyList<T>> GetAllIgnoreQueryFiltersAsync()
     {
         return await _context.Set<T>()
             .IgnoreQueryFilters()
@@ -74,9 +75,9 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
     }
 
     public async Task<IReadOnlyList<T>> GetAsync(
-        Expression<Func<T, bool>>? predicate = null, 
-        Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, 
-        string? includeString = null, 
+        Expression<Func<T, bool>>? predicate = null,
+        Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
+        string? includeString = null,
         bool? disableTracking = true)
     {
         IQueryable<T> query = _context.Set<T>();
@@ -97,9 +98,9 @@ internal sealed class RepositoryBaseService<T> : IAsyncRepository<T> where T : A
     }
 
     public async Task<IReadOnlyList<T>> GetAsync(
-        Expression<Func<T, bool>>? predicate = null, 
-        Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, 
-        List<Expression<Func<T, object>>>? includes = null, 
+        Expression<Func<T, bool>>? predicate = null,
+        Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
+        List<Expression<Func<T, object>>>? includes = null,
         bool? disableTracking = true)
     {
         IQueryable<T> query = _context.Set<T>();

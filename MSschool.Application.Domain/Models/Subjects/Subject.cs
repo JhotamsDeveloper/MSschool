@@ -3,6 +3,7 @@ using MSschool.Application.Domain.Models.CourseNotes;
 using MSschool.Application.Domain.Models.SubjectsAcademicProgram;
 using MSschool.Application.Domain.Models.UserAssignments;
 using MSschool.Application.Domain.Models.ValueOfTheSubjects;
+using MSschool.Application.Domain.ValuesObjects;
 
 namespace MSschool.Application.Domain.Models.Subjects;
 

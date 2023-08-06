@@ -1,10 +1,10 @@
 ﻿using MSschool.Application.Domain.Helpers;
 
-namespace MSschool.Application.Domain.Common;
+namespace MSschool.Application.Domain.ValuesObjects;
 
-public record CreatedDate 
+public record CreatedDate
 {
-    private CreatedDate(DateTime value) => 
+    private CreatedDate(DateTime value) =>
         Value = value;
 
     public DateTime Value { get; private set; }

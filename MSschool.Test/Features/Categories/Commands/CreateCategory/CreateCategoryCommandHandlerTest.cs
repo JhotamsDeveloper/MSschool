@@ -2,8 +2,8 @@
 using Moq;
 using MSschool.Application.Constants;
 using MSschool.Application.Contracts.Persistence;
-using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
+using MSschool.Application.Domain.ValuesObjects;
 using MSschool.Application.Features.Categories.Commands.CreateCategory;
 using Xunit;
 

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.UserCategories;
+using MSschool.Application.Domain.ValuesObjects;
 
 namespace MSschool.Infrastructure.EntityFramework.Configurations;
 

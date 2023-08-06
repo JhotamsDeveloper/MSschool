@@ -1,4 +1,4 @@
-﻿namespace MSschool.Application.Domain.Common;
+﻿namespace MSschool.Application.Domain.ValuesObjects;
 
 public record Name
 {

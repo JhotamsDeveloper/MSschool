@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using MSschool.Application.Abstractions;
 using MSschool.Application.Contracts.Persistence;
-using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Users;
+using MSschool.Application.Domain.ValuesObjects;
 using MSschool.Application.Exceptions;
 
 namespace MSschool.Application.Features.ApplicationUsers.Command.AddUserAddresses;
@@ -27,7 +27,7 @@ public sealed class AddUserAddressesCommandHandler : ICommandHandler<AddUserAddr
         user = User.Factory.AddPlaceOfBirth(new Id(request.IdUser), user.FirstName, user.SecondName, user.Surname,
             user.Email, user.DocumentType, user.DocumentNumber, user.Email, user.Phone, user.Birthdate,
             user.CellPhone, request.Country, request.CountryCode, request.Department, request.DepartmentCode,
-            request.City, request.CityCode, request.Direction, user.Availability,user.CreatedDate);
+            request.City, request.CityCode, request.Direction, user.Availability, user.CreatedDate);
 
         await _unitOfWork
             .Repository<User>()

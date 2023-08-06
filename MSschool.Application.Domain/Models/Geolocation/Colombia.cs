@@ -1,4 +1,5 @@
 ﻿using MSschool.Application.Domain.Common;
+using MSschool.Application.Domain.ValuesObjects;
 
 namespace MSschool.Application.Domain.Models.Geolocation;
 

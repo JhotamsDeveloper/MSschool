@@ -16,6 +16,7 @@ using MSschool.Application.Domain.Models.UserAssignments;
 using MSschool.Application.Domain.Models.UserCategories;
 using MSschool.Application.Domain.Models.Users;
 using MSschool.Application.Domain.Models.ValueOfTheSubjects;
+using MSschool.Application.Domain.ValuesObjects;
 using System.Reflection;
 
 namespace MSschool.Infrastructure.EntityFramework.Persistence;

@@ -1,5 +1,5 @@
 ﻿using MSschool.Application.Abstractions;
-using MSschool.Application.Domain.Common;
+using MSschool.Application.Domain.ValuesObjects;
 
 namespace MSschool.Application.Features.Categories.Commands.UpdateCategory;
 

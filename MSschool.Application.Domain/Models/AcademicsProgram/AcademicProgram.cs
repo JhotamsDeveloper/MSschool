@@ -5,6 +5,7 @@ using MSschool.Application.Domain.Models.Institutions;
 using MSschool.Application.Domain.Models.Schedules;
 using MSschool.Application.Domain.Models.SubjectsAcademicProgram;
 using MSschool.Application.Domain.Models.Users;
+using MSschool.Application.Domain.ValuesObjects;
 
 namespace MSschool.Application.Domain.Models.AcademicsProgram;
 

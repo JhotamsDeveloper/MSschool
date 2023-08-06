@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using MSschool.Application.Abstractions;
 using MSschool.Application.Contracts.Persistence;
-using MSschool.Application.Domain.Common;
 using MSschool.Application.Domain.Models.Categories;
+using MSschool.Application.Domain.ValuesObjects;
 using MSschool.Application.Exceptions;
 
 namespace MSschool.Application.Features.Categories.Commands.CreateCategory;

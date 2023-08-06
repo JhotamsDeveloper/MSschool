@@ -4,6 +4,7 @@ using MSschool.Application.Domain.Models.AcademicsProgram;
 using MSschool.Application.Domain.Models.CourseNotes;
 using MSschool.Application.Domain.Models.UserAssignments;
 using MSschool.Application.Domain.Models.UserCategories;
+using MSschool.Application.Domain.ValuesObjects;
 
 namespace MSschool.Application.Domain.Models.Users;
 
