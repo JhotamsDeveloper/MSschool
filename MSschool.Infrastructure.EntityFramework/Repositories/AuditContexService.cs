@@ -3,7 +3,7 @@ using MSschool.Application.Contracts.Persistence;
 
 namespace MSschool.Infrastructure.EntityFramework.Repositories;
 
-public class AuditContexService : IAuditContex
+internal sealed class AuditContexService : IAuditContex
 {
     private readonly IHttpContextAccessor _httpContextAccessor;
 

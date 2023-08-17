@@ -1,5 +1,5 @@
 ç
-SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Common\Audit.cs
+SC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Common\Audit.cs
 	namespace 	
 MSschool
  
@@ -175,7 +175,7 @@ SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Common\Audi
 ;))/ 0
 }** 
 }++ —
-]C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Helpers\DateTimeHelper.cs
+]C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Helpers\DateTimeHelper.cs
 	namespace 	
 MSschool
  
@@ -224,7 +224,7 @@ SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Common\Audi
 }
 
  ﬂ(
-eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\IRepositories\IAsyncRepository.cs
+eC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\IRepositories\IAsyncRepository.cs
 	namespace 	
 MSschool
  
@@ -551,7 +551,7 @@ Expression  
 ) 
 ; 
 }!! π
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\IRepositories\IUnitOfWork.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\IRepositories\IUnitOfWork.cs
 	namespace 	
 MSschool
  
@@ -593,7 +593,7 @@ Repository (
 )$ %
 ;% &
 } û
-jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\AcademicLevels\AcademicLevel.cs
+jC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\AcademicLevels\AcademicLevel.cs
 	namespace 	
 MSschool
  
@@ -718,7 +718,7 @@ jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Acad
 )l m
 ;m n
 } ë
-vC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\AcademicProgramUsers\AcademicProgramUser.cs
+vC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\AcademicProgramUsers\AcademicProgramUser.cs
 	namespace 	
 MSschool
  
@@ -842,7 +842,7 @@ vC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Acad
 ;< =
 }> ?
 } ±)
-nC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\AcademicsProgram\AcademicProgram.cs
+nC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\AcademicsProgram\AcademicProgram.cs
 	namespace
 
  	
@@ -1170,7 +1170,7 @@ nC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Acad
 ;
 88î ï
 }99 …
-aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Categories\Category.cs
+aC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Categories\Category.cs
 	namespace 	
 MSschool
  
@@ -1355,7 +1355,7 @@ Categories- 7
 }.. 	
 }// 
 }00 ˘
-dC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\CourseNotes\CourseNote.cs
+dC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\CourseNotes\CourseNote.cs
 	namespace 	
 MSschool
  
@@ -1580,7 +1580,7 @@ CourseNote
 !//E F
 ;//F G
 }00 ¸
-bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Geolocation\Colombia.cs
+bC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Geolocation\Colombia.cs
 	namespace 	
 MSschool
  
@@ -1731,7 +1731,7 @@ Department 
 Empty6 ;
 ;; <
 } π
-fC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Institutions\Institution.cs
+fC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Institutions\Institution.cs
 	namespace 	
 MSschool
  
@@ -1953,7 +1953,7 @@ Department   
 )**t u
 ;**u v
 }++ ã
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Schedules\Schedule.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Schedules\Schedule.cs
 	namespace 	
 MSschool
  
@@ -2092,7 +2092,7 @@ Department   
 ;R S
 }T U
 } ’
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\SubjectsAcademicProgram\SubjectOfTheAcademicProgram.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\SubjectsAcademicProgram\SubjectOfTheAcademicProgram.cs
 	namespace 	
 MSschool
  
@@ -2210,7 +2210,7 @@ Department   
 !K L
 ;L M
 } °
-^C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Subjects\Subject.cs
+^C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Subjects\Subject.cs
 	namespace 	
 MSschool
  
@@ -2458,7 +2458,7 @@ CourseNote%%X b
 )++p q
 ;++q r
 },, ·
-lC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\UserAssignments\UserAssignment.cs
+lC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\UserAssignments\UserAssignment.cs
 	namespace 	
 MSschool
  
@@ -2590,7 +2590,7 @@ lC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\User
 ;< =
 }> ?
 } ˘
-iC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\UserCategories\UserCategory.cs
+iC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\UserCategories\UserCategory.cs
 	namespace 	
 MSschool
  
@@ -2706,7 +2706,7 @@ IdCategory 
 ;< =
 }> ?
 } ä
-[C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Users\Address.cs
+[C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Users\Address.cs
 	namespace 	
 MSschool
  
@@ -2904,7 +2904,7 @@ Department 
 Empty##; @
 ;##@ A
 }$$ ÙT
-XC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Users\User.cs
+XC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Users\User.cs
 	namespace		 	
 MSschool		
  
@@ -3531,7 +3531,7 @@ departmentuuC M
 }zz 	
 }{{ 
 }|| —
-mC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\ValueOfTheSubjects\SubjectValue.cs
+mC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\ValueOfTheSubjects\SubjectValue.cs
 	namespace 	
 MSschool
  
@@ -3671,7 +3671,7 @@ mC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Valu
 !K L
 ;L M
 } Õ
-lC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Pagination\PaginationBaseQuery.cs
+lC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Pagination\PaginationBaseQuery.cs
 	namespace 	
 MSschool
  
@@ -3693,7 +3693,7 @@ Pagination- 7
 { 
 } ˝
 
-kC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Pagination\PaginationResponse.cs
+kC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Pagination\PaginationResponse.cs
 	namespace 	
 MSschool
  
@@ -3778,7 +3778,7 @@ Pagination- 7
 }
 
  ‹(
-nC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Specifications\BaseSpecification.cs
+nC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Specifications\BaseSpecification.cs
 	namespace 	
 MSschool
  
@@ -4090,7 +4090,7 @@ Expression!!" ,
 ;--# $
 }.. 
 }//  
-kC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Specifications\ISpecification.cs
+kC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Specifications\ISpecification.cs
 	namespace 	
 MSschool
  
@@ -4226,7 +4226,7 @@ Expression
 ; 
 }  
 } ‚
-pC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Specifications\SpecificationParams.cs
+pC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Specifications\SpecificationParams.cs
 	namespace 	
 MSschool
  
@@ -4349,7 +4349,7 @@ pC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Spec
 ;C D
 } 
 } §
-aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\Availability.cs
+aC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\Availability.cs
 	namespace 	
 MSschool
  
@@ -4368,7 +4368,7 @@ aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjec
 Value  %
 )% &
 ;& '—	
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\CreatedDate.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\CreatedDate.cs
 	namespace 	
 MSschool
  
@@ -4454,7 +4454,7 @@ aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjec
 } 
 } 
 ; ê
-WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\Id.cs
+WC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\Id.cs
 	namespace 	
 MSschool
  
@@ -4473,7 +4473,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjec
 Value 
 ) 
 ; «	
-eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\LastModifiedDate.cs
+eC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\LastModifiedDate.cs
 	namespace 	
 MSschool
  
@@ -4555,7 +4555,7 @@ eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjec
 ;2 3
 } 
 } ¡	
-YC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\Name.cs
+YC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\Name.cs
 	namespace 	
 MSschool
  

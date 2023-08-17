@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AnalysisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <SonarConfigDir>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf</SonarConfigDir>
-  <SonarOutputDir>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\out</SonarOutputDir>
-  <SonarBinDir>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\bin</SonarBinDir>
-  <SonarScannerWorkingDirectory>C:\Users\Jhonatan\source\repos\MSschool</SonarScannerWorkingDirectory>
+  <SonarConfigDir>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf</SonarConfigDir>
+  <SonarOutputDir>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\out</SonarOutputDir>
+  <SonarBinDir>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\bin</SonarBinDir>
+  <SonarScannerWorkingDirectory>C:\Users\Jhonatan\source\repos\msschool</SonarScannerWorkingDirectory>
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
   <SonarQubeVersion>10.1.0.73491</SonarQubeVersion>
-  <SonarProjectKey>MSschool.Application</SonarProjectKey>
+  <SonarProjectKey>MSschooltest</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
     <ConfigSetting Id="VsCoverageConverterToolPath" />
     <ConfigSetting Id="UnchangedFilesPath" />
-    <ConfigSetting Id="sonar.pullrequest.cache.basepath" Value="C:\Users\Jhonatan\source\repos\MSschool" />
+    <ConfigSetting Id="sonar.pullrequest.cache.basepath" Value="C:\Users\Jhonatan\source\repos\msschool" />
     <ConfigSetting Id="settings.file.path" Value="C:\Users\Jhonatan\.dotnet\tools\.store\dotnet-sonarscanner\5.13.1\dotnet-sonarscanner\5.13.1\tools\net5.0\any\SonarQube.Analysis.xml" />
   </AdditionalConfig>
   <ServerSettings>
@@ -118,8 +118,8 @@
     <Property Name="sonar.auth.gitlab.url">https://gitlab.com</Property>
     <Property Name="sonaranalyzer-vbnet.pluginKey">vbnet</Property>
     <Property Name="sonar.updatecenter.url">https://update.sonarsource.org/update-center.properties</Property>
-    <Property Name="sonar.core.startTime">8/16/2023 4:29:05 PM</Property>
-    <Property Name="sonar.core.id">147B411E-AYoAQJDY7C5S-_Krtp2w</Property>
+    <Property Name="sonar.core.startTime">8/16/2023 9:16:14 PM</Property>
+    <Property Name="sonar.core.id">147B411E-AYoBR3b_kZzgn6N_XPZ1</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
@@ -127,8 +127,8 @@
   <AnalyzersSettings>
     <AnalyzerSettings>
       <Language>cs</Language>
-      <RulesetPath>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf\Sonar-cs.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf\Sonar-cs-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf\Sonar-cs.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf\Sonar-cs-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="9.3.0.71466" StaticResourceName="SonarAnalyzer-9.3.0.71466.zip">
           <AssemblyPaths>
@@ -150,13 +150,13 @@
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf\cs\SonarLint.xml</Path>
+        <Path>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf\cs\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
     <AnalyzerSettings>
       <Language>vbnet</Language>
-      <RulesetPath>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf\Sonar-vbnet.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf\Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf\Sonar-vbnet.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf\Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="9.3.0.71466" StaticResourceName="SonarAnalyzer-9.3.0.71466.zip">
           <AssemblyPaths>
@@ -178,7 +178,7 @@
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf\vbnet\SonarLint.xml</Path>
+        <Path>C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf\vbnet\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
   </AnalyzersSettings>

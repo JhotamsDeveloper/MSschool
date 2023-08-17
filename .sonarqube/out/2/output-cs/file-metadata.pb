@@ -1,0 +1,15 @@
+r
+iC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\AddCategory.csutf-8x
+oC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\AllActiveCategory.csutf-8ƒ
+zC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\AllIncludingInactiveCategory.csutf-8u
+lC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\DeleteCategory.csutf-8…
+|C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\EndpointsConfigurationCategory.csutf-8|
+sC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\GetActiveByIdCategory.csutf-8‡
+~C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\GetIncludingInactiveByIdCategory.csutf-8u
+lC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\UpdateCategory.csutf-8j
+aC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\User\AddUser.csutf-8v
+mC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\User\AddUserPlaceOfBirth.csutf-8}
+tC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\User\EndpointsConfigurationUser.csutf-8–
+ŠC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\obj\Debug\net7.0\MSschool.Presentation.Endpoints.GlobalUsings.g.csutf-8“
+‡C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8”
+ˆC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\obj\Debug\net7.0\MSschool.Presentation.Endpoints.AssemblyInfo.csutf-8

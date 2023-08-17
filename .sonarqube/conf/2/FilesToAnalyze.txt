@@ -1,0 +1,11 @@
+﻿C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\AddCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\AllActiveCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\AllIncludingInactiveCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\DeleteCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\EndpointsConfigurationCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\GetActiveByIdCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\GetIncludingInactiveByIdCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\Category\UpdateCategory.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\User\AddUser.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\User\AddUserPlaceOfBirth.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Endpoints\Endpoints\User\EndpointsConfigurationUser.cs

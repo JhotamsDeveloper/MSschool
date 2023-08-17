@@ -1,1 +1,1 @@
-C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\out\0
+C:\Users\Jhonatan\source\repos\msschool\.sonarqube\out\0

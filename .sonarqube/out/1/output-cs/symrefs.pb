@@ -1,11 +1,11 @@
 Ö
-UC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\ICommand.cs
+UC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\ICommand.cs
 
  
 
 		 
 		 #		0 9÷
-\C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\ICommandHandler.cs
+\C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\ICommandHandler.cs
 
   
 ! (< CK R
@@ -18,17 +18,17 @@ UC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IComm
 		+ 4		R [
 
  'w
-SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IQuery.cs
+SC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\IQuery.cs
 
  
  !. 7®
-ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IQueryHandler.cs
+ZC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\IQueryHandler.cs
 
  
  % 
  
 ' 0 % #Ø
-bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\LoggingPipelineBehavior.cs
+bC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\LoggingPipelineBehavior.cs
  $
 
  4+ BP
@@ -50,7 +50,7 @@ bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\Logging
 \ ` 
 	t Ö
   Å
-eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\UnhandledExceptionBehavior.cs
+eC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\UnhandledExceptionBehavior.cs
 
  'F
 ( 0 
@@ -68,7 +68,7 @@ eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\Unhandl
 \ ` 
 	t Ö
  q |í
-]C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\UnitOfWorkBehevior.cs
+]C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\UnitOfWorkBehevior.cs
 
  &2
 ' / 1 9( 0(( (
@@ -88,7 +88,7 @@ eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\Unhandl
 
   
 && $ Ö
-]C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\ValidationBehavior.cs
+]C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\ValidationBehavior.cs
 
  F
   (I Qd l		, 45 =( 00 83
@@ -106,7 +106,7 @@ eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\Unhandl
   1 9
 7 8< =
 L MQ Rò
-ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\CategoryOrdering.cs
+ZC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\CategoryOrdering.cs
 
  $
 
@@ -117,7 +117,7 @@ ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\Category
  
 
  ®
-jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\Pagination\PaginationHandlerKeys.cs
+jC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\Pagination\PaginationHandlerKeys.cs
 
  )
 
@@ -128,18 +128,18 @@ jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\Paginati
  $
 
  #n
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\SupportedDocumentTypes.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\SupportedDocumentTypes.cs
 
  "q
-cC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\UnitOfWorkSaveChangesEnum.cs
+cC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\UnitOfWorkSaveChangesEnum.cs
 
  %|
-bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Contracts\Persistence\IAuditContex.cs
+bC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Contracts\Persistence\IAuditContex.cs
 
  
 
  ˇ
-SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\DependencyInjection.cs
+SC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\DependencyInjection.cs
  +! 4
 
 
@@ -148,20 +148,20 @@ SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\DependencyInjectio
 $ ,     ## 
  ; B/ 6
   -  {
-WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\BadRequestEx.cs
+WC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\BadRequestEx.cs
 
  
   '0 7~
-ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\ErrorInternalEx.cs
+ZC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\ErrorInternalEx.cs
 
  
 # *3 :è
-UC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\NotFoundEx.cs
+UC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\NotFoundEx.cs
 
  
  !B F
 * -L OÛ
-WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\ValidationEx.cs
+WC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\ValidationEx.cs
 
  
 ) /  
@@ -170,7 +170,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
 * +/ 0
    ,
    ,˘
-äC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommand.cs
+äC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommand.cs
 
  %
 
@@ -191,7 +191,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
  
 
  ¡
-ëC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommandHandler.cs
+ëC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommandHandler.cs
 
 
  2 ;J h(
@@ -205,7 +205,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
 
 P añ
   D HT Xe i  + /@ DL PX \ ? CR V"" Ñ
-~C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommand.cs
+~C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommand.cs
 
  
 
@@ -230,7 +230,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
  
 
  «
-ÖC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandHandler.cs
+ÖC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandHandler.cs
  , 5D \(
 ! ,  )## 
 7 >  
@@ -246,17 +246,17 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
 ''0 =D Q
 ''P W)) $** &
 (( )) ** ñ
-áC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandValidator.cs
+áC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandValidator.cs
 
  '®
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommand.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommand.cs
 
  #
 
  
 
  º
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandHandler.cs.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandHandler.cs.cs
 
 
  0 9H d(
@@ -272,16 +272,16 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
   
   
 ## ** ,, ∞
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandValidation.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandValidation.cs
 
  ,
 		 		 ú
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommand.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommand.cs
 
  #
 
 ) +—
-àC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandHandler.cs
+àC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandHandler.cs
 
 		 0(
 ! ,  ( 
@@ -294,10 +294,10 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
  ' /
   
  = E ö
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandValidation.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandValidation.cs
 
 		 2¥
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommand.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommand.cs
 
  #
 
@@ -306,7 +306,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
  
 
 		 ·
-àC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommandHandler.cs
+àC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommandHandler.cs
 
 
 
@@ -319,19 +319,19 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
 
 R c<
   U ]l t= E   æ
-ÉC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCommandValidation.cs
+ÉC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCommandValidation.cs
 
  $
 		 		 
   ß
-ÄC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQuery.cs
+ÄC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQuery.cs
 
  (
 
 . 0
 
 7 I∞
-áC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQueryHandler.cs
+áC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQueryHandler.cs
 
 
  / 8G b
@@ -348,7 +348,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
     (
  %% && '' 
 $$ )) ∂
-ÉC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdResponse.cs
+ÉC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdResponse.cs
 
  +
 
@@ -357,10 +357,10 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
 = A
 
 K Vó
-àC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQuery.cs
+àC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQuery.cs
 
  %÷
-èC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQueryHandler.cs
+èC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQueryHandler.cs
 
 		 3(
 ! ,    *%%$ /
@@ -380,7 +380,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
 -- 77 (
 --% -// 00 11 
 44 == æ
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesResponse.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesResponse.cs
 
  )
 
@@ -389,7 +389,7 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
  
 
  ∏
-\C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Handlers\PagApiMinimalHelper.cs
+\C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Handlers\PagApiMinimalHelper.cs
  '		 /))$ 7
 
 / 3
@@ -410,19 +410,19 @@ WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\Validat
    ) 2'' #2
 "" $$ $$ $$' /''% -
 && )): @r
-XC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Models\ConnectionStrings.cs
+XC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Models\ConnectionStrings.cs
 
  
 
  #ö
-tC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\GetCategory\GetCategorySettingsParams.cs
+tC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\GetCategory\GetCategorySettingsParams.cs
 
  '
 
 - A
 
 H JÆ
-jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\GetCategory\GetCategorySpec.cs
+jC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\GetCategory\GetCategorySpec.cs
 
  
 		5 =
@@ -433,15 +433,15 @@ jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\Get
  
 
  –
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesCounterSpec.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesCounterSpec.cs
 
  +(
 L T		( 0		N V &
 		 		< >ì
-ÑC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSettingsParams.cs
+ÑC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSettingsParams.cs
 
  .Ú
-ÉC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSpecification.cs
+ÉC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSpecification.cs
 
  4Z
 		N V

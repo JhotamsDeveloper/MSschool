@@ -1,0 +1,855 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.7.0.0",
+        "fileVersion": "4.7.0-2.23251.6 (2cfd4b21)",
+        "semanticVersion": "4.7.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230704135621_v0-0-7.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 79,
+                  "endLine": 31,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230704135621_v0-0-7.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 79,
+                  "endLine": 32,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531035411_v0-0-3.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 79,
+                  "endLine": 31,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531035411_v0-0-3.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 79,
+                  "endLine": 32,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531042131_v0-0-4.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 79,
+                  "endLine": 35,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531042131_v0-0-4.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 79,
+                  "endLine": 36,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531195157_v0-0-5.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 79,
+                  "endLine": 41,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531195157_v0-0-5.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 79,
+                  "endLine": 42,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230704135621_v0-0-7.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 79,
+                  "endLine": 54,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230704135621_v0-0-7.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 79,
+                  "endLine": 55,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531032913_v0-0-2.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 79,
+                  "endLine": 39,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531032913_v0-0-2.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 79,
+                  "endLine": 40,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531032913_v0-0-2.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 79,
+                  "endLine": 66,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531032913_v0-0-2.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 79,
+                  "endLine": 67,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531035411_v0-0-3.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 79,
+                  "endLine": 54,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531035411_v0-0-3.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 79,
+                  "endLine": 55,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531042131_v0-0-4.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 79,
+                  "endLine": 66,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531042131_v0-0-4.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 79,
+                  "endLine": 67,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531195157_v0-0-5.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 79,
+                  "endLine": 74,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230531195157_v0-0-5.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 79,
+                  "endLine": 75,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 294,
+                  "startColumn": 79,
+                  "endLine": 294,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 79,
+                  "endLine": 295,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230705032334_v0-0-8.cs",
+                "region": {
+                  "startLine": 574,
+                  "startColumn": 79,
+                  "endLine": 574,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230705032334_v0-0-8.cs",
+                "region": {
+                  "startLine": 575,
+                  "startColumn": 79,
+                  "endLine": 575,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 357,
+                  "startColumn": 31,
+                  "endLine": 357,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 377,
+                  "startColumn": 31,
+                  "endLine": 377,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 397,
+                  "startColumn": 31,
+                  "endLine": 397,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 417,
+                  "startColumn": 31,
+                  "endLine": 417,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 437,
+                  "startColumn": 31,
+                  "endLine": 437,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 457,
+                  "startColumn": 31,
+                  "endLine": 457,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 477,
+                  "startColumn": 31,
+                  "endLine": 477,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 497,
+                  "startColumn": 31,
+                  "endLine": 497,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 537,
+                  "startColumn": 31,
+                  "endLine": 537,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 557,
+                  "startColumn": 31,
+                  "endLine": 557,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 577,
+                  "startColumn": 31,
+                  "endLine": 577,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 597,
+                  "startColumn": 31,
+                  "endLine": 597,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 617,
+                  "startColumn": 31,
+                  "endLine": 617,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 642,
+                  "startColumn": 79,
+                  "endLine": 642,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Infrastructure.Migrations/20230601054259_v0-0-6.cs",
+                "region": {
+                  "startLine": 643,
+                  "startColumn": 79,
+                  "endLine": 643,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S4581": {
+          "id": "S4581",
+          "shortDescription": "\"new Guid()\" should not be used",
+          "fullDescription": "When the syntax new Guid() (i.e. parameterless instantiation) is used, it must be that one of three things is wanted:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4581",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

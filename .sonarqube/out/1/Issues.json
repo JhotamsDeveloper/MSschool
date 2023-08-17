@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Specifications/PagGetAllCategories/PagGetAllCategoriesSpecification.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Specifications/PagGetAllCategories/PagGetAllCategoriesSpecification.cs",
                 "region": {
                   "startLine": 19,
                   "startColumn": 37,
@@ -39,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Specifications/PagGetAllCategories/PagGetAllCategoriesSpecification.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Specifications/PagGetAllCategories/PagGetAllCategoriesSpecification.cs",
                 "region": {
                   "startLine": 23,
                   "startColumn": 41,
@@ -60,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Specifications/PagGetAllCategories/PagGetAllCategoriesSpecification.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Specifications/PagGetAllCategories/PagGetAllCategoriesSpecification.cs",
                 "region": {
                   "startLine": 35,
                   "startColumn": 37,
@@ -81,7 +81,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Abstractions/ICommand.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Abstractions/ICommand.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 27,
@@ -102,243 +102,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Abstractions/IQuery.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Abstractions/IQuery.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 25,
                   "endLine": 5,
                   "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3376",
-          "level": "warning",
-          "message": "Make this class name end with 'Exception'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/BadRequestEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 14,
-                  "endLine": 3,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/BadRequestEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 14,
-                  "endLine": 3,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/BadRequestEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 8,
-                  "endLine": 3,
-                  "endColumn": 13
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/BadRequestEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 8,
-                  "endLine": 3,
-                  "endColumn": 13
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'BadRequestEx' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'BadRequestEx(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3376",
-          "level": "warning",
-          "message": "Make this class name end with 'Exception'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 14,
-                  "endLine": 3,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 14,
-                  "endLine": 3,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 8,
-                  "endLine": 3,
-                  "endColumn": 13
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 8,
-                  "endLine": 3,
-                  "endColumn": 13
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'ErrorInternalEx' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'ErrorInternalEx(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3376",
-          "level": "warning",
-          "message": "Make this class name end with 'Exception'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/NotFoundEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 14,
-                  "endLine": 3,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/NotFoundEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 14,
-                  "endLine": 3,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/NotFoundEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 8,
-                  "endLine": 3,
-                  "endColumn": 13
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/NotFoundEx.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 8,
-                  "endLine": 3,
-                  "endColumn": 13
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'NotFoundEx' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'NotFoundEx(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S2344",
-          "level": "warning",
-          "message": "Rename this enumeration to remove the 'Enum' suffix.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Constants/UnitOfWorkSaveChangesEnum.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 13,
-                  "endLine": 3,
-                  "endColumn": 38
                 }
               }
             }
@@ -354,12 +123,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Abstractions/ICommandHandler.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Abstractions/ICommandHandler.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 34,
                   "endLine": 5,
                   "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2344",
+          "level": "warning",
+          "message": "Rename this enumeration to remove the 'Enum' suffix.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Constants/UnitOfWorkSaveChangesEnum.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 38
                 }
               }
             }
@@ -375,7 +165,91 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ValidationEx.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/BadRequestEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3376",
+          "level": "warning",
+          "message": "Make this class name end with 'Exception'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3376",
+          "level": "warning",
+          "message": "Make this class name end with 'Exception'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/NotFoundEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2094",
+          "level": "warning",
+          "message": "Remove this empty class, write its code or make it an \"interface\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Features/Categories/Commands/DeleteCategory/DeleteCategoryCommandValidation.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 20,
+                  "endLine": 9,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3376",
+          "level": "warning",
+          "message": "Make this class name end with 'Exception'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ValidationEx.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 14,
@@ -396,7 +270,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ValidationEx.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ValidationEx.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 14,
@@ -409,7 +283,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ValidationEx.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ValidationEx.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 8,
@@ -420,7 +294,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Exceptions/ValidationEx.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ValidationEx.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 8,
@@ -439,24 +313,150 @@
           }
         },
         {
-          "ruleId": "S2094",
+          "ruleId": "S3925",
           "level": "warning",
-          "message": "Remove this empty class, write its code or make it an \"interface\".",
+          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Features/Categories/Commands/DeleteCategory/DeleteCategoryCommandValidation.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
                 "region": {
-                  "startLine": 9,
-                  "startColumn": 20,
-                  "endLine": 9,
-                  "endColumn": 51
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 8,
+                  "endLine": 3,
+                  "endColumn": 13
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/ErrorInternalEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 8,
+                  "endLine": 3,
+                  "endColumn": 13
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Add 'System.SerializableAttribute' attribute on 'ErrorInternalEx' because it implements 'ISerializable'.",
+              "1": "Add a 'protected' constructor 'ErrorInternalEx(SerializationInfo, StreamingContext)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S3925",
+          "level": "warning",
+          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/BadRequestEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/BadRequestEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 8,
+                  "endLine": 3,
+                  "endColumn": 13
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/BadRequestEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 8,
+                  "endLine": 3,
+                  "endColumn": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Add 'System.SerializableAttribute' attribute on 'BadRequestEx' because it implements 'ISerializable'.",
+              "1": "Add a 'protected' constructor 'BadRequestEx(SerializationInfo, StreamingContext)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S3925",
+          "level": "warning",
+          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/NotFoundEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/NotFoundEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 8,
+                  "endLine": 3,
+                  "endColumn": 13
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Exceptions/NotFoundEx.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 8,
+                  "endLine": 3,
+                  "endColumn": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Add 'System.SerializableAttribute' attribute on 'NotFoundEx' because it implements 'ISerializable'.",
+              "1": "Add a 'protected' constructor 'NotFoundEx(SerializationInfo, StreamingContext)'."
+            }
           }
         },
         {
@@ -466,7 +466,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Features/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Features/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs",
                 "region": {
                   "startLine": 13,
                   "startColumn": 59,
@@ -487,7 +487,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Features/ApplicationUsers/Command/AddUserAddresses/AddUserAddressesCommandHandler.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Features/ApplicationUsers/Command/AddUserAddresses/AddUserAddressesCommandHandler.cs",
                 "region": {
                   "startLine": 13,
                   "startColumn": 62,
@@ -508,7 +508,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Behaviours/UnitOfWorkBehevior.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Behaviours/UnitOfWorkBehevior.cs",
                 "region": {
                   "startLine": 32,
                   "startColumn": 9,
@@ -529,7 +529,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application/Behaviours/UnitOfWorkBehevior.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application/Behaviours/UnitOfWorkBehevior.cs",
                 "region": {
                   "startLine": 28,
                   "startColumn": 17,

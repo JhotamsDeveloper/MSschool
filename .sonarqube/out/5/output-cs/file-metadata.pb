@@ -1,0 +1,9 @@
+f
+]C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Error\CodeErrorException.csutf-8e
+\C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Error\CodeErrorResponse.csutf-8l
+cC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Middleware\ExceptionMiddleware.csutf-8\
+LC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Program.cswindows-1252â
+~C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\MSschool.Presentation.Api.GlobalUsings.g.csutf-8ç
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8á
+|C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\MSschool.Presentation.Api.AssemblyInfo.csutf-8õ
+èC:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\MSschool.Presentation.Api.MvcApplicationPartsAssemblyInfo.csutf-8

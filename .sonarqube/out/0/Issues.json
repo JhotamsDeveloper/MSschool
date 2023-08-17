@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Shared/Specifications/BaseSpecification.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Shared/Specifications/BaseSpecification.cs",
                 "region": {
                   "startLine": 7,
                   "startColumn": 12,
@@ -31,7 +31,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Shared/Specifications/BaseSpecification.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Shared/Specifications/BaseSpecification.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 38,
@@ -46,18 +46,18 @@
           }
         },
         {
-          "ruleId": "S3604",
+          "ruleId": "S1144",
           "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "message": "Remove the unused private field 'ordinalIgnoreCase'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/ValuesObjects/Name.cs",
                 "region": {
-                  "startLine": 30,
-                  "startColumn": 47,
-                  "endLine": 30,
-                  "endColumn": 54
+                  "startLine": 5,
+                  "startColumn": 5,
+                  "endLine": 5,
+                  "endColumn": 91
                 }
               }
             }
@@ -73,91 +73,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Schedules/Schedule.cs",
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 49,
-                  "endLine": 24,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3604",
-          "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/AcademicsProgram/AcademicProgram.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 46,
-                  "endLine": 35,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3604",
-          "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/AcademicLevels/AcademicLevel.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 46,
-                  "endLine": 19,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3604",
-          "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Subjects/Subject.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 50,
-                  "endLine": 35,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3604",
-          "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Geolocation/Colombia.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Geolocation/Colombia.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 48,
@@ -178,12 +94,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Subjects/Subject.cs",
                 "region": {
-                  "startLine": 32,
-                  "startColumn": 52,
-                  "endLine": 32,
-                  "endColumn": 59
+                  "startLine": 35,
+                  "startColumn": 50,
+                  "endLine": 35,
+                  "endColumn": 57
                 }
               }
             }
@@ -199,12 +115,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/AcademicsProgram/AcademicProgram.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/AcademicsProgram/AcademicProgram.cs",
                 "region": {
-                  "startLine": 37,
-                  "startColumn": 55,
-                  "endLine": 37,
-                  "endColumn": 62
+                  "startLine": 35,
+                  "startColumn": 46,
+                  "endLine": 35,
+                  "endColumn": 53
                 }
               }
             }
@@ -220,7 +136,91 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Geolocation/Colombia.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/ValueOfTheSubjects/SubjectValue.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 46,
+                  "endLine": 22,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3604",
+          "level": "warning",
+          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/AcademicLevels/AcademicLevel.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 46,
+                  "endLine": 19,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3604",
+          "level": "warning",
+          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Schedules/Schedule.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 49,
+                  "endLine": 24,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3604",
+          "level": "warning",
+          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 47,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3604",
+          "level": "warning",
+          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Geolocation/Colombia.cs",
                 "region": {
                   "startLine": 19,
                   "startColumn": 52,
@@ -241,12 +241,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/AcademicsProgram/AcademicProgram.cs",
                 "region": {
-                  "startLine": 34,
-                  "startColumn": 56,
-                  "endLine": 34,
-                  "endColumn": 63
+                  "startLine": 37,
+                  "startColumn": 55,
+                  "endLine": 37,
+                  "endColumn": 62
                 }
               }
             }
@@ -262,12 +262,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/AcademicsProgram/AcademicProgram.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
                 "region": {
-                  "startLine": 39,
-                  "startColumn": 50,
-                  "endLine": 39,
-                  "endColumn": 57
+                  "startLine": 32,
+                  "startColumn": 52,
+                  "endLine": 32,
+                  "endColumn": 59
                 }
               }
             }
@@ -283,7 +283,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Geolocation/Colombia.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Geolocation/Colombia.cs",
                 "region": {
                   "startLine": 21,
                   "startColumn": 46,
@@ -304,7 +304,49 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/AcademicsProgram/AcademicProgram.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 50,
+                  "endLine": 39,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3604",
+          "level": "warning",
+          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 56,
+                  "endLine": 34,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3604",
+          "level": "warning",
+          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
                 "region": {
                   "startLine": 36,
                   "startColumn": 46,
@@ -325,7 +367,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
                 "region": {
                   "startLine": 38,
                   "startColumn": 50,
@@ -346,54 +388,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Institutions/Institution.cs",
                 "region": {
                   "startLine": 40,
                   "startColumn": 49,
                   "endLine": 40,
                   "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3604",
-          "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/ValueOfTheSubjects/SubjectValue.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 46,
-                  "endLine": 22,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1144",
-          "level": "warning",
-          "message": "Remove the unused private field 'ordinalIgnoreCase'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/ValuesObjects/Name.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 5,
-                  "endLine": 5,
-                  "endColumn": 91
                 }
               }
             }
@@ -409,7 +409,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Users/User.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Users/User.cs",
                 "region": {
                   "startLine": 13,
                   "startColumn": 16,
@@ -430,7 +430,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Jhonatan/source/repos/MSschool/MSschool.Application.Domain/Models/Users/User.cs",
+                "uri": "file:///C:/Users/Jhonatan/source/repos/msschool/MSschool.Application.Domain/Models/Users/User.cs",
                 "region": {
                   "startLine": 83,
                   "startColumn": 43,

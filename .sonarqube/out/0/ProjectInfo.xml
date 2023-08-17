@@ -3,15 +3,15 @@
   <ProjectName>MSschool.Application.Domain</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>fec64146-fb96-48f4-8e0e-5a3ccdd8d07e</ProjectGuid>
-  <FullPath>C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\MSschool.Application.Domain.csproj</FullPath>
+  <ProjectGuid>3810599d-4135-4f07-b8b6-121424535f59</ProjectGuid>
+  <FullPath>C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\MSschool.Application.Domain.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\conf\0\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\Jhonatan\source\repos\msschool\.sonarqube\conf\0\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\out\0\Issues.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\Jhonatan\source\repos\MSschool\.sonarqube\out\0</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\Jhonatan\source\repos\msschool\.sonarqube\out\0\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\Jhonatan\source\repos\msschool\.sonarqube\out\0</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

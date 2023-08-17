@@ -1,5 +1,5 @@
 »
-UC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\ICommand.cs
+UC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\ICommand.cs
 	namespace 	
 MSschool
  
@@ -30,7 +30,7 @@ UC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IComm
 
  
 } Î
-\C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\ICommandHandler.cs
+\C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\ICommandHandler.cs
 	namespace 	
 MSschool
  
@@ -95,7 +95,7 @@ UC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IComm
 ' (
 { 
 } ∆
-SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IQuery.cs
+SC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\IQuery.cs
 	namespace 	
 MSschool
  
@@ -117,7 +117,7 @@ SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IQuer
 >7 8
 { 
 } †
-ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IQueryHandler.cs
+ZC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Abstractions\IQueryHandler.cs
 	namespace 	
 MSschool
  
@@ -151,7 +151,7 @@ ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Abstractions\IQuer
 ># $
 { 
 } ß
-bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\LoggingPipelineBehavior.cs
+bC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\LoggingPipelineBehavior.cs
 	namespace 	
 MSschool
  
@@ -317,7 +317,7 @@ Behaviours )
 ; 
 }   
 }!! Í
-eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\UnhandledExceptionBehavior.cs
+eC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\UnhandledExceptionBehavior.cs
 	namespace 	
 MSschool
  
@@ -459,7 +459,7 @@ Behaviours )
 } 	
 } 
 } Æ
-]C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\UnitOfWorkBehevior.cs
+]C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\UnitOfWorkBehevior.cs
 	namespace 	
 MSschool
  
@@ -632,7 +632,7 @@ unitOfWork  
 ;((9 :
 })) 
 }** ‘
-]C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Behaviours\ValidationBehavior.cs
+]C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Behaviours\ValidationBehavior.cs
 	namespace 	
 MSschool
  
@@ -826,7 +826,7 @@ SelectMany, 6
 ; 
 } 
 } ”
-ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\CategoryOrdering.cs
+ZC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\CategoryOrdering.cs
 	namespace 	
 MSschool
  
@@ -873,7 +873,7 @@ ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\Category
 $str! )
 ;) *
 }		 ú
-jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\Pagination\PaginationHandlerKeys.cs
+jC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\Pagination\PaginationHandlerKeys.cs
 	namespace 	
 MSschool
  
@@ -923,7 +923,7 @@ Pagination) 3
 $str& 0
 ;0 1
 }		 µ
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\SupportedDocumentTypes.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\SupportedDocumentTypes.cs
 	namespace 	
 MSschool
  
@@ -959,7 +959,7 @@ Pagination) 3
 }
 
   
-cC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\UnitOfWorkSaveChangesEnum.cs
+cC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Constants\UnitOfWorkSaveChangesEnum.cs
 	namespace 	
 MSschool
  
@@ -982,7 +982,7 @@ cC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Constants\UnitOfWo
  
 $num 
 } ‡
-bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Contracts\Persistence\IAuditContex.cs
+bC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Contracts\Persistence\IAuditContex.cs
 	namespace 	
 MSschool
  
@@ -1006,7 +1006,7 @@ bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Contracts\Persiste
 ) 
 ;  
 } Œ
-SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\DependencyInjection.cs
+SC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\DependencyInjection.cs
 	namespace 	
 MSschool
  
@@ -1156,7 +1156,7 @@ AddMediatR 
 }$$ 	
 }%% 
 }'' ‚
-WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\BadRequestEx.cs
+WC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\BadRequestEx.cs
 	namespace 	
 MSschool
  
@@ -1188,7 +1188,7 @@ Exceptions )
 { 
 } 
 }		 Î
-ZC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\ErrorInternalEx.cs
+ZC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\ErrorInternalEx.cs
 	namespace 	
 MSschool
  
@@ -1220,7 +1220,7 @@ Exceptions )
 { 
 } 
 }		 ù
-UC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\NotFoundEx.cs
+UC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\NotFoundEx.cs
 	namespace 	
 MSschool
  
@@ -1266,7 +1266,7 @@ NotFoundEx 
 { 
 } 
 }		 ¡
-WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Exceptions\ValidationEx.cs
+WC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Exceptions\ValidationEx.cs
 	namespace 	
 MSschool
  
@@ -1381,7 +1381,7 @@ Dictionary 
 ;7 8
 } 
 } Î
-äC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommand.cs
+äC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommand.cs
 	namespace 	
 MSschool
  
@@ -1441,7 +1441,7 @@ Department		 
 : 
 ICommand 
 ; Ê 
-ëC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommandHandler.cs
+ëC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\AddUserAddresses\AddUserAddressesCommandHandler.cs
 	namespace 	
 MSschool
  
@@ -1684,7 +1684,7 @@ Repository!! 
 ;"" 
 }## 
 }$$ ˚
-~C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommand.cs
+~C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommand.cs
 	namespace 	
 MSschool
  
@@ -1755,7 +1755,7 @@ SecondName 
 Id! #
 ># $
 ;$ %Ÿ%
-ÖC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandHandler.cs
+ÖC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandHandler.cs
 	namespace		 	
 MSschool		
  
@@ -2022,7 +2022,7 @@ Expression'' 
 DocumentNumber**' 5
 ;**5 6
 }++ ”
-áC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandValidator.cs
+áC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\ApplicationUsers\Command\CreateUser\CreateUserCommandValidator.cs
 	namespace 	
 MSschool
  
@@ -2057,7 +2057,7 @@ CreateUserA K
 
  
 } ≠
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommand.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommand.cs
 	namespace 	
 MSschool
  
@@ -2091,7 +2091,7 @@ Categories( 2
 Id# %
 >% &
 ;& '¬
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandHandler.cs.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandHandler.cs.cs
 	namespace 	
 MSschool
  
@@ -2313,7 +2313,7 @@ Repository)) 
 ;,, 
 }-- 
 }.. ·	
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandValidation.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\CreateCategory\CreateCategoryCommandValidation.cs
 	namespace 	
 MSschool
  
@@ -2396,7 +2396,7 @@ Categories( 2
 ô ö
 } 
 } Ì
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommand.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommand.cs
 	namespace 	
 MSschool
  
@@ -2425,7 +2425,7 @@ Categories( 2
 Id8 :
 >: ;
 ;; <Ó
-àC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandHandler.cs
+àC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandHandler.cs
 	namespace 	
 MSschool
  
@@ -2562,7 +2562,7 @@ Repository $
 ; 
 }   
 }!! ã
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandValidation.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\DeleteCategory\DeleteCategoryCommandValidation.cs
 	namespace 	
 MSschool
  
@@ -2586,7 +2586,7 @@ Categories( 2
  
 } 
 } ﬁ
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommand.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommand.cs
 	namespace 	
 MSschool
  
@@ -2623,7 +2623,7 @@ Categories( 2
 Id		# %
 >		% &
 ;		& 'é
-àC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommandHandler.cs
+àC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCategoryCommandHandler.cs
 	namespace 	
 MSschool
  
@@ -2797,7 +2797,7 @@ Repository $
 ;   
 }!! 
 }"" Û
-ÉC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCommandValidation.cs
+ÉC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Commands\UpdateCategory\UpdateCommandValidation.cs
 	namespace 	
 MSschool
  
@@ -2900,7 +2900,7 @@ Categories( 2
 ô ö
 } 
 } “
-ÄC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQuery.cs
+ÄC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQuery.cs
 	namespace 	
 MSschool
  
@@ -2933,7 +2933,7 @@ Categories( 2
 GetCategoryByIdResponseT k
 >k l
 ;l m¢
-áC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQueryHandler.cs
+áC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdQueryHandler.cs
 	namespace 	
 MSschool
  
@@ -3115,7 +3115,7 @@ Repository 
 ;)) 
 }** 
 }++ ¿
-ÉC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdResponse.cs
+ÉC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\GetCategoryById\GetCategoryByIdResponse.cs
 	namespace 	
 MSschool
  
@@ -3148,7 +3148,7 @@ Categories( 2
 DescriptionK V
 )V W
 ;W XÃ
-àC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQuery.cs
+àC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQuery.cs
 	namespace 	
 MSschool
  
@@ -3179,7 +3179,7 @@ Categories( 2
 >u v
 { 
 } œ)
-èC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQueryHandler.cs
+èC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesQueryHandler.cs
 	namespace 	
 MSschool
  
@@ -3481,7 +3481,7 @@ totalPages88 "
 ;== 
 }>> 
 }?? ü
-ãC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesResponse.cs
+ãC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Features\Categories\Queries\PagGetAllCategories\PagGetAllCategoriesResponse.cs
 	namespace 	
 MSschool
  
@@ -3513,7 +3513,7 @@ Categories( 2
 Description 
 ) 
 ; Ò
-\C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Handlers\PagApiMinimalHelper.cs
+\C:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Handlers\PagApiMinimalHelper.cs
 	namespace 	
 MSschool
  
@@ -3708,7 +3708,7 @@ FromResult)) #
 ;))A B
 }** 
 }++ 
-XC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Models\ConnectionStrings.cs
+XC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Models\ConnectionStrings.cs
 	namespace 	
 MSschool
  
@@ -3733,7 +3733,7 @@ XC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Models\ConnectionS
 ;. /
 }0 1
 } ä
-tC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\GetCategory\GetCategorySettingsParams.cs
+tC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\GetCategory\GetCategorySettingsParams.cs
 	namespace 	
 MSschool
  
@@ -3755,7 +3755,7 @@ tC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\Get
 IdH J
 )J K
 ;K L¥
-jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\GetCategory\GetCategorySpec.cs
+jC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\GetCategory\GetCategorySpec.cs
 	namespace 	
 MSschool
  
@@ -3842,7 +3842,7 @@ jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\Get
 } 
 } ¶
 
-ÅC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesCounterSpec.cs
+ÅC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesCounterSpec.cs
 	namespace 	
 MSschool
  
@@ -3907,7 +3907,7 @@ jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\Get
 ;< =
 } 
 } ‚
-ÑC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSettingsParams.cs
+ÑC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSettingsParams.cs
 	namespace 	
 MSschool
  
@@ -3925,7 +3925,7 @@ jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\Get
 SpecificationParams1 D
 { 
 }  
-ÉC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSpecification.cs
+ÉC:\Users\Jhonatan\source\repos\msschool\MSschool.Application\Specifications\PagGetAllCategories\PagGetAllCategoriesSpecification.cs
 	namespace 	
 MSschool
  

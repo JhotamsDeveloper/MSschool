@@ -1,0 +1,15 @@
+﻿C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Error\CodeErrorException.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Error\CodeErrorResponse.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Middleware\ExceptionMiddleware.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Program.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\MSschool.Presentation.Api.GlobalUsings.g.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\MSschool.Presentation.Api.AssemblyInfo.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\obj\Debug\net7.0\MSschool.Presentation.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\appsettings.Development.json
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\appsettings.json
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Dockerfile
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Dockerfile.original
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Dockerfile1.original
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Presentation.Api\Properties\launchSettings.json
+C:\Users\Jhonatan\source\repos\msschool\.dockerignore

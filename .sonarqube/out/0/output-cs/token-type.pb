@@ -1,5 +1,5 @@
 Ã
-SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Common\Audit.cs
+SC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Common\Audit.cs
  
  	
      
@@ -15,10 +15,10 @@ SC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Common\Audi
  ! '"" 
 "" ""$ 4'' 
 '' ''& ,Ÿ
-]C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Helpers\DateTimeHelper.cs
+]C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Helpers\DateTimeHelper.cs
  	
  	   $   " $ 0H b  ( 6­
-eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\IRepositories\IAsyncRepository.cs
+eC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\IRepositories\IAsyncRepository.cs
  
  
  	
@@ -31,10 +31,10 @@ eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\IRepositori
       	      / 3    -. /= A   $& *> B 	      / 3    -. /= A      &6 :   $ 	  '( ) 	 
  () * 	  + 9: ; 	   ! %& ') - 	 
              ”
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\IRepositories\IUnitOfWork.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\IRepositories\IUnitOfWork.cs
  	
     *  ) 04 9: AD I   
-jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\AcademicLevels\AcademicLevel.cs
+jC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\AcademicLevels\AcademicLevel.cs
  
  
  
@@ -47,7 +47,7 @@ jC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Acad
    %& )/ 3 
  " %' ./ 2 
    .D GI LR UV Z[ jò
-vC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\AcademicProgramUsers\AcademicProgramUser.cs
+vC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\AcademicProgramUsers\AcademicProgramUser.cs
  
  
  
@@ -69,7 +69,7 @@ vC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Acad
  # &( /0 3 
   "B EG NO R 
   , /1 89 <™
-nC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\AcademicsProgram\AcademicProgram.cs
+nC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\AcademicsProgram\AcademicProgram.cs
  
  
  
@@ -100,7 +100,7 @@ nC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Acad
 66 66 66 '665 866: A66B E66K N66O S66T \77 
 77 77 77 277K N77P W77X [77a d77e i77j }88 
 88 88 88 :88W Z88\ c88d g88m p88q u	88v ‘Í
-aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Categories\Category.cs
+aC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Categories\Category.cs
  
  
  
@@ -114,7 +114,7 @@ aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Cate
  ! $& -. 1 
    +> AC JK NT WX \] i 
          !! "" ## $$ && && && '-- 	
-dC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\CourseNotes\CourseNote.cs
+dC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\CourseNotes\CourseNote.cs
  
  
  
@@ -140,7 +140,7 @@ dC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Cour
 ++ ++ ++1 4++6 =++> A++G K-- 
 -- -- --. 1--3 :--; >--D H// 
 // // //+ .//0 7//8 ;//A EÄ
-bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Geolocation\Colombia.cs
+bC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Geolocation\Colombia.cs
  
  
  	
@@ -151,7 +151,7 @@ bC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Geol
   "$ +, /5 ; 
    &' * 
    %& )/ 5À
-fC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Institutions\Institution.cs
+fC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Institutions\Institution.cs
  
  
  
@@ -169,7 +169,7 @@ fC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Inst
 && &&  &&" )&&* -&&3 7(( 
 (( (( ((! ((() ,((2 6** 
 ** ** ** .**D G**I P**Q T**Z ]**^ b**c rÀ
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Schedules\Schedule.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Schedules\Schedule.cs
  
  
  
@@ -185,7 +185,7 @@ fC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Inst
  ! $& -. 1 
   "$ +, / 
   "B EG NO R¨
-C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\SubjectsAcademicProgram\SubjectOfTheAcademicProgram.cs
+C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\SubjectsAcademicProgram\SubjectOfTheAcademicProgram.cs
  
  
  
@@ -205,7 +205,7 @@ fC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Inst
   "A DF MN QW [ 
   1 46 => AG K“
 
-^C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Subjects\Subject.cs
+^C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Subjects\Subject.cs
  
  
  
@@ -235,7 +235,7 @@ fC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Inst
 '' '' '' +''= @''B I''J M''S V''W [''\ h)) 
 )) )) )) :))W Z))\ c))d g))m p))q u	))v ‘++ 
 ++ ++ ++ -++A D++F M++N Q++W Z++[ _++` nÊ
-lC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\UserAssignments\UserAssignment.cs
+lC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\UserAssignments\UserAssignment.cs
  
  
  
@@ -255,7 +255,7 @@ lC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\User
  # &( /0 3 
   2 57 >? B 
   , /1 89 <ó
-iC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\UserCategories\UserCategory.cs
+iC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\UserCategories\UserCategory.cs
  
  
  
@@ -274,7 +274,7 @@ iC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\User
    $% ( 
   4 79 @A D 
   , /1 89 <ƒ
-[C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Users\Address.cs
+[C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Users\Address.cs
  
  	
     
@@ -287,7 +287,7 @@ iC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\User
 !! !! !! %!!& )!!/ 5"" 
 "" ""  """ )""* -""3 9## 
 ## ## !### *##+ .##4 :º
-XC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Users\User.cs
+XC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\Users\User.cs
  
  
  
@@ -318,7 +318,7 @@ XC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\User
 MM MM MM -MMA DMMF MMMN QMMW ZMM[ _MM` nOO 
 OO OO OO +OO> AOOC JOOK NOOT WOOX \OO] iQQ 
 QQ QQ QQ SS SS SS TT UU VV WW XX YY ZZ [[ \\ ]] ^^ __ `` aa bb cc dd ee ff gg ii ii ii uu! $uu% ,yy Û
-mC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\ValueOfTheSubjects\SubjectValue.cs
+mC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Models\ValueOfTheSubjects\SubjectValue.cs
  
  
  
@@ -334,11 +334,11 @@ mC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Models\Valu
    "# & 
     '( + 
   1 46 => AG K¼
-lC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Pagination\PaginationBaseQuery.cs
+lC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Pagination\PaginationBaseQuery.cs
  
  	
     # 6
-kC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Pagination\PaginationResponse.cs
+kC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Pagination\PaginationResponse.cs
  	
      !# () *- 2 
     
@@ -346,7 +346,7 @@ kC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Pagi
    " 
   # &( +1 8		 
 		 		 		  #Ô
-nC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Specifications\BaseSpecification.cs
+nC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Specifications\BaseSpecification.cs
  
  	
      $ 23 4 
@@ -360,7 +360,7 @@ nC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Spec
    "# & 
    "# & 
  ! $& -. 1   () -. /1 7   () -. /1 7!! !! !!" ,!!- 1!!2 3!!5 ;%% %% %% "%%) ,)) ++ ++ ++) -Ñ
-kC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Specifications\ISpecification.cs
+kC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Specifications\ISpecification.cs
  
  	
      !    ) , 	    "1 4		 		 		 		 		* -
@@ -374,7 +374,7 @@ kC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Spec
  
 
 . 1  !      Ø
-pC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Specifications\SpecificationParams.cs
+pC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\Shared\Specifications\SpecificationParams.cs
  	
     )   $ &    
    "		 
@@ -392,10 +392,10 @@ pC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\Shared\Spec
 ) * 
  ' *, / 
     > C¥
-aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\Availability.cs
+aC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\Availability.cs
  	
     ‚
-`C:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\CreatedDate.cs
+`C:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\CreatedDate.cs
  
  	
        
@@ -411,10 +411,10 @@ aC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjec
 
 ) , 
     !   ›
-WC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\Id.cs
+WC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\Id.cs
  	
     ù
-eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\LastModifiedDate.cs
+eC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\LastModifiedDate.cs
  
  	
       %
@@ -428,7 +428,7 @@ eC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjec
 
 ! % 
   "  !   #á
-YC:\Users\Jhonatan\source\repos\MSschool\MSschool.Application.Domain\ValuesObjects\Name.cs
+YC:\Users\Jhonatan\source\repos\msschool\MSschool.Application.Domain\ValuesObjects\Name.cs
  	
       "7 G 
    
